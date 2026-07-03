@@ -1,4 +1,7 @@
 <style>
+  html {
+    scroll-behavior: smooth !important;
+  }
   header.page-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
     background-size: cover !important;
@@ -38,7 +41,7 @@
   }
 </style>
 
-<div style="scroll-behavior: smooth;">
+<div>
 
   <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; margin-bottom: 25px; justify-content: center;">
     <a href="#who-i-am" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🏠 Profile</a>
