@@ -1,159 +1,140 @@
-<html style="scroll-behavior: smooth;">
+<div style="scroll-behavior: smooth;">
 
-# MALCOLM JEREMIAH RICHARD
-### BSc (Hons) Information Technology Student | UI/UX Portfolio
+  <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true'); background-size: cover; background-position: center; padding: 60px 30px; border-radius: 8px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+    <h1 style="color: white; margin: 0; font-size: 32px; font-weight: 700; letter-spacing: 0.5px; text-shadow: 0 2px 5px rgba(0,0,0,0.65);">MALCOLM JEREMIAH RICHARD</h1>
+    <p style="color: #e1e4e8; margin: 10px 0 0 0; font-size: 15px; font-weight: 400; text-shadow: 0 1px 3px rgba(0,0,0,0.65); text-transform: uppercase; letter-spacing: 1px;">BSc (Hons) Information Technology Student | UI/UX Portfolio</p>
+  </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; margin-bottom: 5px;">
-  <a href="#-who-i-am" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🏠 Profile</a>
-  <a href="#-projects-overview" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📂 Featured Projects</a>
-  <a href="#-case-study-1-ergochef" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🍳 Case 1: ErgoChef+</a>
-  <a href="#-case-study-2-automated-job-tracker-ui" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🤖 Case 2: Job Tracker</a>
-  <a href="#-academic-integrity--submission" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📋 Submission</a>
-</div>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; margin-bottom: 25px;">
+    <a href="#who-i-am" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🏠 Profile</a>
+    <a href="#projects-overview" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📂 Featured Projects</a>
+    <a href="#case-study-1-ergochef" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🍳 Case 1: ErgoChef+</a>
+    <a href="#case-study-2-automated-job-tracker-ui" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🤖 Case 2: Job Tracker</a>
+    <a href="#submission" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📋 Submission</a>
+  </div>
 
----
+  <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 25px 0;">
 
-<br id="-who-i-am">
-
-## 👤 Who I Am
-
-<!-- Main Container using Flexbox for adaptive layout -->
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 30px;">
-  
-  <!-- Left Side: Profile Summary Card with Integrated Photo -->
-  <div style="flex: 2; min-width: 300px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+  <div id="who-i-am" style="padding-top: 10px;">
+    <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 16px;">👤 Who I Am</h2>
     
-    <!-- Profile Image Holder -->
-    <img src="https://raw.githubusercontent.com/malcolmjeremiah/malcolmjeremiah.github.io/main/WhatsApp%20Image%202026-07-03%20at%2010.14.22%20PM.jpeg" alt="Malcolm" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 2px 6px rgba(0,0,0,0.15); flex-shrink: 0;" />
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+      <div style="flex: 2; min-width: 300px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+        <img src="https://raw.githubusercontent.com/malcolmjeremiah/malcolmjeremiah.github.io/main/WhatsApp%20Image%202026-07-03%20at%2010.14.22%20PM.jpeg" alt="Malcolm" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 2px 6px rgba(0,0,0,0.15); flex-shrink: 0;" />
+        <div style="flex: 1; min-width: 220px;">
+          <p style="font-size: 15px; line-height: 1.6; color: #24292e; margin: 0; font-weight: 400;">
+            I am an <strong>Information Technology</strong> student specializing in software automation, data extraction, and user-centered workflow optimization. My design philosophy is rooted in <strong>functional minimalism</strong>: digital interfaces should actively reduce user cognitive load, mask complex database architecture, and adapt seamlessly to a user's real-world mental model. I bridge the gap between back-end technical scripting logic and clean, empathetic front-end layout execution.
+          </p>
+        </div>
+      </div>
+
+      <div style="flex: 1; min-width: 240px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center;">
+        <h4 style="margin-top: 0; margin-bottom: 12px; color: #24292e; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">🛠️ Skill Stack</h4>
+        <div style="margin-bottom: 16px;">
+          <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Python</span>
+          <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">PHP</span>
+          <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">JavaScript</span>
+          <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">GIT</span>
+        </div>
+        <h4 style="margin-top: 4px; margin-bottom: 12px; color: #24292e; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">📐 Methods</h4>
+        <div>
+          <span style="font-size: 11px; font-weight: bold; background-color: #edf2f7; color: #2d3748; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Heuristic Evaluation</span>
+          <span style="font-size: 11px; font-weight: bold; background-color: #edf2f7; color: #2d3748; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Cognitive Walkthrough</span>
+          <span style="font-size: 11px; font-weight: bold; background-color: #edf2f7; color: #2d3748; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Task Mapping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 30px 0;">
+
+  <div id="projects-overview" style="padding-top: 10px;">
+    <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 16px;">📂 Featured Projects</h2>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 10px; font-weight: bold; background-color: #ffe8d6; color: #c05621; padding: 4px 8px; border-radius: 20px; display: inline-block; margin-bottom: 12px; text-transform: uppercase;">Group Project Case Study</span>
+          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #24292e;">ErgoChef+: AI Ergonomic Assistant</h3>
+          <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0 0 16px 0;">An AI-enabled kitchen ecosystem utilizing advanced posture-sensing technology to mitigate ergonomic stress and long-term musculoskeletal fatigue for cooks.</p>
+        </div>
+        <div style="margin-top: 15px;">
+          <div style="margin-bottom: 12px; font-size: 12px; color: #24292e;"><strong>Role:</strong> Lead UI & Interaction Designer</div>
+          <a href="#case-study-1-ergochef" style="font-size: 13px; font-weight: bold; color: #c05621; text-decoration: none;">Read Full Case Study →</a>
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 10px; font-weight: bold; background-color: #dcffe4; color: #28a745; padding: 4px 8px; border-radius: 20px; display: inline-block; margin-bottom: 12px; text-transform: uppercase;">Individual Case Study</span>
+          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #24292e;">Automated Job Tracker UI</h3>
+          <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0 0 16px 0;">Designing visual UI constraints and input validation controls for script-driven backend software parsing automated job briefs from Outlook into Excel.</p>
+        </div>
+        <div style="margin-top: 15px;">
+          <div style="margin-bottom: 12px; font-size: 12px; color: #24292e;"><strong>Role:</strong> UI & System Designer</div>
+          <a href="#case-study-2-automated-job-tracker-ui" style="font-size: 13px; font-weight: bold; color: #28a745; text-decoration: none;">Read Full Case Study →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 30px 0;">
+
+  <div id="case-study-1-ergochef" style="padding-top: 10px;">
+    <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 4px;">🍳 Case Study 1: ErgoChef+</h2>
+    <p style="color: #586069; font-size: 14px; margin: 0 0 16px 0;"><strong>Role:</strong> Lead UI & Interaction Designer (Group Project)</p>
     
-    <!-- Profile Bio Text -->
-    <div style="flex: 1; min-width: 220px;">
-      <p style="font-size: 15px; line-height: 1.6; color: #24292e; margin: 0; font-weight: 400;">
-        I am an <strong>Information Technology</strong> student specializing in software automation, data extraction, and user-centered workflow optimization. My design philosophy is rooted in <strong>functional minimalism</strong>: digital interfaces should actively reduce user cognitive load, mask complex database architecture, and adapt seamlessly to a user's real-world mental model. I bridge the gap between back-end technical scripting logic and clean, empathetic front-end layout execution.
+    <div style="background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 24px;">
+      <h4 style="margin-top: 0; color: #c05621; font-size: 16px;">📋 Project Overview & Context</h4>
+      <p style="font-size: 14px; line-height: 1.6; color: #24292e; margin-bottom: 12px;">
+        <strong>The Problem:</strong> Cooking involves highly repetitive, physically demanding actions like bending, chopping, stirring, and prolonged standing. These movements generate heavy ergonomic stress, muscle fatigue, and musculoskeletal strain. Existing smart tools automate cooking tasks but completely ignore the chef's posture and long-term joint health.
+      </p>
+      <p style="font-size: 14px; line-height: 1.6; color: #24292e; margin-bottom: 0;">
+        <strong>Project Goals & Value Proposition:</strong> ErgoChef+ integrates AI-driven posture detection, non-intrusive reminders, and personalized ergonomic reports. The goal is to provide real-time guidance to adapt to diverse cooking contexts and establish healthy, long-term kitchen habits.
+        <br><br>
+        <strong>Target Audience:</strong> Busy home cooks, culinary professionals, and elderly or diverse users prone to physical kitchen fatigue.
       </p>
     </div>
-    
+
+    <h4 style="color: #24292e; font-size: 16px; margin-bottom: 12px;">📐 Design Process & Iterative Framework</h4>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">1. Research & Discovery</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Conducted quantitative user surveys and qualitative interviews to map baseline physical discomfort zones during food prep.</span>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">2. Ideation & Sketches</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Sketched low-fidelity kitchen spatial layouts and camera-to-app physical telemetry interactions on paper.</span>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">3. Storyboarding</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Mapped out contextual user flow scenarios to establish how and when the system alerts a user to change their physical posture.</span>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">4. High-Fi Prototyping</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Translated layouts into a functional, live web platform using Lovable to track real-time visual tracking data.</span>
+      </div>
+    </div>
+
+    <div style="background-color: #fcf8f2; border: 1px solid #f0e4d4; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
+      <h4 style="margin-top: 0; color: #c05621; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">🎨 Design Artefacts & Live Media</h4>
+      <p style="font-size: 13px; color: #586069; margin-bottom: 16px;">Explore the system architecture across low-fidelity ideation sketches, conceptual storyboards, the official video pitch, and the final high-fidelity live deployment platform.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+        <a href="https://ergo-chef-journey.lovable.app/" target="_blank" style="background-color: #c05621; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">🌐 Launch Live App Prototype</a>
+        <a href="https://youtu.be/-QOms8I-tbM" target="_blank" style="background-color: #24292e; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">📺 Watch Project Video Presentation</a>
+      </div>
+    </div>
   </div>
 
-  <!-- Right Side: Technical Skill Stack Card -->
-  <div style="flex: 1; min-width: 240px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center;">
-    <h4 style="margin-top: 0; margin-bottom: 12px; color: #24292e; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">🛠️ Skill Stack</h4>
-    
-    <div style="margin-bottom: 16px;">
-      <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Python</span>
-      <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">PHP</span>
-      <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">JavaScript</span>
-      <span style="font-size: 11px; font-weight: bold; background-color: #e2e8f0; color: #4a5568; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">GIT</span>
-    </div>
+  <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 30px 0;">
 
-    <h4 style="margin-top: 4px; margin-bottom: 12px; color: #24292e; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">📐 Methods</h4>
-    <div>
-      <span style="font-size: 11px; font-weight: bold; background-color: #edf2f7; color: #2d3748; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Heuristic Evaluation</span>
-      <span style="font-size: 11px; font-weight: bold; background-color: #edf2f7; color: #2d3748; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Cognitive Walkthrough</span>
-      <span style="font-size: 11px; font-weight: bold; background-color: #edf2f7; color: #2d3748; padding: 5px 9px; border-radius: 4px; display: inline-block; margin-bottom: 5px; margin-right: 4px;">Task Mapping</span>
-    </div>
+  <div id="case-study-2-automated-job-tracker-ui" style="padding-top: 10px; margin-bottom: 40px;">
+    <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 4px;">🤖 Case Study 2: Automated Job Tracker UI</h2>
+    <p style="color: #586069; font-size: 14px; margin-bottom: 16px;"><strong>Role:</strong> UI & System Designer (Individual Project)</p>
+    <p style="font-size: 14px; color: #24292e; line-height: 1.6;">Detailed case study overview for the automated script integration system is coming up next.</p>
+  </div>
+
+  <div id="submission" style="padding-top: 10px; margin-bottom: 50px;">
+    <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 16px;">📋 Academic Integrity & Submission</h2>
+    <p style="font-size: 14px; color: #24292e; line-height: 1.6;">Final checklist items regarding submission compliance go here.</p>
   </div>
 
 </div>
-
-<hr style="height: 1px; border: none; background-color: #e1e4e8; margin-top: 40px; margin-bottom: 40px;">
-
-<br id="-projects-overview">
-
-## 📂 Featured Projects
-### `High-Level System Overview`
-
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 30px;">
-
-  <!-- Project 1: ErgoChef+ -->
-  <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <span style="font-size: 10px; font-weight: bold; background-color: #ffe8d6; color: #c05621; padding: 4px 8px; border-radius: 20px; display: inline-block; margin-bottom: 12px; text-transform: uppercase;">Group Project Case Study</span>
-      <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #24292e;">ErgoChef+: AI Ergonomic Assistant</h3>
-      <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0 0 16px 0;">
-        An AI-enabled kitchen ecosystem utilizing advanced posture-sensing technology to mitigate ergonomic stress, awkward postures, and long-term musculoskeletal fatigue for cooks.
-      </p>
-    </div>
-    <div>
-      <div style="margin-bottom: 12px; font-size: 12px; color: #24292e;"><strong>Role:</strong> Lead UI & Interaction Designer</div>
-      <a href="#-case-study-1-ergochef" style="font-size: 13px; font-weight: bold; color: #c05621; text-decoration: none;">Read Full Case Study →</a>
-    </div>
-  </div>
-
-  <!-- Project 2: Automated Job Tracker -->
-  <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <span style="font-size: 10px; font-weight: bold; background-color: #dcffe4; color: #28a745; padding: 4px 8px; border-radius: 20px; display: inline-block; margin-bottom: 12px; text-transform: uppercase;">Individual Case Study</span>
-      <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #24292e;">Automated Job Tracker UI</h3>
-      <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0 0 16px 0;">
-        Designing visual UI constraints and input validation controls for script-driven backend software parsing automated job briefs from Outlook into Excel.
-      </p>
-    </div>
-    <div>
-      <div style="margin-bottom: 12px; font-size: 12px; color: #24292e;"><strong>Role:</strong> UI & System Designer</div>
-      <a href="#-case-study-2-automated-job-tracker-ui" style="font-size: 13px; font-weight: bold; color: #28a745; text-decoration: none;">Read Full Case Study →</a>
-    </div>
-  </div>
-
-</div>
-
-<hr style="height: 1px; border: none; background-color: #e1e4e8; margin-top: 40px; margin-bottom: 40px;">
-
-<br id="-case-study-1-ergochef">
-
-## 🍳 Case Study 1: ErgoChef+ (AI-Powered Cooking Assistant)
-### `Role: Lead UI & Interaction Designer (Group Project)`
-
-<!-- Overview Card -->
-<div style="background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 24px;">
-  <h4 style="margin-top: 0; color: #c05621; font-size: 16px;">📋 Project Overview & Context</h4>
-  <p style="font-size: 14px; line-height: 1.6; color: #24292e; margin-bottom: 12px;">
-    <strong>The Problem:</strong> Cooking involves highly repetitive, physically demanding actions like bending, chopping, stirring, and prolonged standing. These movements generate heavy ergonomic stress, muscle fatigue, and musculoskeletal strain. Existing smart tools automate cooking tasks but completely ignore the chef's posture and long-term joint health.
-  </p>
-  <p style="font-size: 14px; line-height: 1.6; color: #24292e; margin-bottom: 0;">
-    <strong>Project Goals & Value Proposition:</strong> ErgoChef+ integrates AI-driven posture detection, non-intrusive reminders, and personalized ergonomic reports. The goal is to provide real-time guidance to adapt to diverse cooking contexts and establish healthy, long-term kitchen habits.
-    <br><br>
-    <strong>Target Audience:</strong> Busy home cooks, culinary professionals, and elderly or diverse users prone to physical kitchen fatigue.
-  </p>
-</div>
-
-<!-- Design Process Timeline -->
-<h4 style="color: #24292e; font-size: 16px; margin-bottom: 12px;">📐 Design Process & Iterative Framework</h4>
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
-  
-  <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
-    <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">1. Research & Discovery</strong>
-    <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Conducted quantitative user surveys and qualitative interviews to map baseline physical discomfort zones during food prep.</span>
-  </div>
-
-  <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
-    <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">2. Ideation & Sketches</strong>
-    <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Sketched low-fidelity kitchen spatial layouts and camera-to-app physical telemetry interactions on paper.</span>
-  </div>
-
-  <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
-    <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">3. Storyboarding</strong>
-    <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Mapped out contextual user flow scenarios to establish how and when the system alerts a user to change their physical posture.</span>
-  </div>
-
-  <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
-    <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">4. High-Fi Prototyping</strong>
-    <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Translated layouts into a functional, live web platform using Lovable to track real-time visual tracking data.</span>
-  </div>
-
-</div>
-
-<!-- Design Artefacts Block -->
-<div style="background-color: #fcf8f2; border: 1px solid #f0e4d4; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
-  <h4 style="margin-top: 0; color: #c05621; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">🎨 Design Artefacts & Live Media</h4>
-  <p style="font-size: 13px; color: #586069; margin-bottom: 16px;">
-    Explore the system architecture across low-fidelity ideation sketches, conceptual storyboards, the official video pitch, and the final high-fidelity live deployment platform.
-  </p>
-  
-  <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-    <a href="https://ergo-chef-journey.lovable.app/" target="_blank" style="background-color: #c05621; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">🌐 Launch Live App Prototype</a>
-    <a href="https://youtu.be/-QOms8I-tbM" target="_blank" style="background-color: #24292e; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">📺 Watch Project Video Presentation</a>
-  </div>
-</div>
-
-</html>
