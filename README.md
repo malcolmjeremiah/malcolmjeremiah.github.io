@@ -15,16 +15,17 @@
 
 ## 👤 Who I Am
 
-<div style="display: grid; grid-template-columns: 2.2fr 1fr; gap: 24px; margin-top: 20px; margin-bottom: 30px;">
+<!-- Main Container using Flexbox for adaptive layout -->
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-top: 20px; margin-bottom: 30px;">
   
   <!-- Left Side: Profile Summary Card with Integrated Photo -->
-  <div style="background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+  <div style="flex: 2; min-width: 300px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
     
     <!-- Profile Image Holder -->
-    <img src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/WhatsApp%20Image%202026-07-03%20at%2010.14.22%20PM.jpeg?raw=true" alt="Malcolm Jeremiah Richard" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 2px 6px rgba(0,0,0,0.15);" />
+    <img src="https://raw.githubusercontent.com/malcolmjeremiah/malcolmjeremiah.github.io/main/WhatsApp%20Image%202026-07-03%20at%2010.14.22%20PM.jpeg" alt="Malcolm" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 2px 6px rgba(0,0,0,0.15); flex-shrink: 0;" />
     
     <!-- Profile Bio Text -->
-    <div style="flex: 1; min-width: 200px;">
+    <div style="flex: 1; min-width: 220px;">
       <p style="font-size: 15px; line-height: 1.6; color: #24292e; margin: 0; font-weight: 400;">
         I am an <strong>Information Technology</strong> student specializing in software automation, data extraction, and user-centered workflow optimization. My design philosophy is rooted in <strong>functional minimalism</strong>: digital interfaces should actively reduce user cognitive load, mask complex database architecture, and adapt seamlessly to a user's real-world mental model. I bridge the gap between back-end technical scripting logic and clean, empathetic front-end layout execution.
       </p>
@@ -32,8 +33,8 @@
     
   </div>
 
-  <!-- Right Side: Updated Technical Skill Stack Card -->
-  <div style="background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center;">
+  <!-- Right Side: Technical Skill Stack Card -->
+  <div style="flex: 1; min-width: 240px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: center;">
     <h4 style="margin-top: 0; margin-bottom: 12px; color: #24292e; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">🛠️ Skill Stack</h4>
     
     <div style="margin-bottom: 16px;">
