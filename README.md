@@ -1,18 +1,46 @@
 <style>
   header.page-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 4rem 2rem !important;
+    padding: 5rem 2rem !important;
+    text-align: center !important;
   }
-  header.page-header h1, header.page-header h2 {
-    display: none !important;
+  
+  /* Forces your Name into the main theme header element */
+  header.page-header h1.project-name {
+    display: block !important;
+    color: #ffffff !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.65) !important;
+    margin: 0 !important;
+  }
+  header.page-header h1.project-name::after {
+    content: "MALCOLM JEREMIAH RICHARD";
+  }
+  
+  /* Forces your Degree Subtitle into the main theme header element */
+  header.page-header h2.project-tagline {
+    display: block !important;
+    color: #e1e4e8 !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.65) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-top: 10px !important;
+    opacity: 1 !important;
+  }
+  header.page-header h2.project-tagline::after {
+    content: "BSc (Hons) Information Technology Student | UI/UX Portfolio";
   }
 </style>
 
 <div style="scroll-behavior: smooth;">
 
-  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: -15px; margin-bottom: 25px; justify-content: center;">
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; margin-bottom: 25px; justify-content: center;">
     <a href="#who-i-am" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🏠 Profile</a>
     <a href="#projects-overview" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📂 Featured Projects</a>
     <a href="#case-study-1-ergochef" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🍳 Case 1: ErgoChef+</a>
@@ -129,19 +157,71 @@
         <a href="https://youtu.be/-QOms8I-tbM" target="_blank" style="background-color: #24292e; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">📺 Watch Project Video Presentation</a>
       </div>
     </div>
+
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+      <div style="flex: 1; min-width: 280px; background-color: #fff5f5; border: 1px solid #ffe3e3; border-radius: 8px; padding: 20px;">
+        <h4 style="margin-top: 0; color: #c53030; font-size: 15px; margin-bottom: 10px;">⚠️ Challenges & UX Solutions</h4>
+        <p style="font-size: 13px; line-height: 1.6; color: #2f2f2f; margin: 0;">
+          <strong>The Challenge:</strong> Ensuring prompt posture warning alerts didn't disrupt the user's active cooking workflow split focus.
+          <br><br>
+          <strong>The Solution:</strong> Implemented subtle, non-intrusive sound layouts and progressive visual overlay alerts that auto-dismissed once correct body calibration was recorded.
+        </p>
+      </div>
+      <div style="flex: 1; min-width: 280px; background-color: #f0fff4; border: 1px solid #c6f6d5; border-radius: 8px; padding: 20px;">
+        <h4 style="margin-top: 0; color: #22543d; font-size: 15px; margin-bottom: 10px;">🚀 Project Results & Feedback</h4>
+        <p style="font-size: 13px; line-height: 1.6; color: #2f2f2f; margin: 0;">
+          <strong>Outcomes:</strong> Live web dashboard evaluation runs tracked an average improvement in posture alignment and high user interface satisfaction.
+          <br><br>
+          <strong>Feedback:</strong> Peer testers confirmed that the clean layout telemetry structure made monitoring joint habits natural and stress-free.
+        </p>
+      </div>
+    </div>
   </div>
 
   <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 30px 0;">
 
-  <div id="case-study-2-automated-job-tracker-ui" style="padding-top: 10px; margin-bottom: 40px;">
+  <div id="case-study-2-automated-job-tracker-ui" style="padding-top: 10px;">
     <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 4px;">🤖 Case Study 2: Automated Job Tracker UI</h2>
-    <p style="color: #586069; font-size: 14px; margin-bottom: 16px;"><strong>Role:</strong> UI & System Designer (Individual Project)</p>
-    <p style="font-size: 14px; color: #24292e; line-height: 1.6;">Detailed case study overview for the automated script integration system is coming up next.</p>
+    <p style="color: #586069; font-size: 14px; margin: 0 0 16px 0;"><strong>Role:</strong> Lead UI & System Designer (Individual Project)</p>
+    
+    <div style="background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); margin-bottom: 24px;">
+      <h4 style="margin-top: 0; color: #28a745; font-size: 16px;">📋 Project Overview & Context</h4>
+      <p style="font-size: 14px; line-height: 1.6; color: #24292e; margin-bottom: 12px;">
+        <strong>The Problem:</strong> Manual corporate extraction of incoming business job briefs from email networks into structured spreadsheets is error-prone, highly repetitive, and time-intensive. While backend automation scripts can process raw values rapidly, they often lack safe formatting boundaries and explicit field validations.
+      </p>
+      <p style="font-size: 14px; line-height: 1.6; color: #24292e; margin-bottom: 0;">
+        <strong>Project Goals & System Architecture:</strong> This script-driven configuration utility pipes real-time data from corporate Microsoft Outlook endpoints directly into Excel cells via background Python scripts and VBA handlers. The design goal was to craft intuitive error validations and clean visual indicators to ensure data layout compliance.
+        <br><br>
+        <strong>Target Audience:</strong> Corporate administrative coordinators and database processing teams handling large lead and workflow matrices.
+      </p>
+    </div>
+
+    <h4 style="color: #24292e; font-size: 16px; margin-bottom: 12px;">📐 Design Process & Validation Steps</h4>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">1. Task Flow Analysis</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Mapped out how regex patterns catch raw data fragments inside unstructured messaging headers.</span>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">2. Boundary Layouts</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Designed visual warning alerts to point out missing values before compiling cell values.</span>
+      </div>
+      <div style="flex: 1; min-width: 200px; background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px;">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">3. Integration Testing</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">Constructed robust macro event tracking chains to guarantee reliable cross-platform script executions.</span>
+      </div>
+    </div>
   </div>
+
+  <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 30px 0;">
 
   <div id="submission" style="padding-top: 10px; margin-bottom: 50px;">
     <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 16px;">📋 Academic Integrity & Submission</h2>
-    <p style="font-size: 14px; color: #24292e; line-height: 1.6;">Final checklist items regarding submission compliance go here.</p>
+    <div style="background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+      <p style="font-size: 14px; color: #24292e; line-height: 1.6; margin: 0;">
+        This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term.
+      </p>
+    </div>
   </div>
 
 </div>
