@@ -1,11 +1,18 @@
+<style>
+  header.page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 4rem 2rem !important;
+  }
+  header.page-header h1, header.page-header h2 {
+    display: none !important;
+  }
+</style>
+
 <div style="scroll-behavior: smooth;">
 
-  <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true'); background-size: cover; background-position: center; padding: 60px 30px; border-radius: 8px; text-align: center; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-    <h1 style="color: white; margin: 0; font-size: 32px; font-weight: 700; letter-spacing: 0.5px; text-shadow: 0 2px 5px rgba(0,0,0,0.65);">MALCOLM JEREMIAH RICHARD</h1>
-    <p style="color: #e1e4e8; margin: 10px 0 0 0; font-size: 15px; font-weight: 400; text-shadow: 0 1px 3px rgba(0,0,0,0.65); text-transform: uppercase; letter-spacing: 1px;">BSc (Hons) Information Technology Student | UI/UX Portfolio</p>
-  </div>
-
-  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; margin-bottom: 25px;">
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: -15px; margin-bottom: 25px; justify-content: center;">
     <a href="#who-i-am" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🏠 Profile</a>
     <a href="#projects-overview" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📂 Featured Projects</a>
     <a href="#case-study-1-ergochef" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🍳 Case 1: ErgoChef+</a>
