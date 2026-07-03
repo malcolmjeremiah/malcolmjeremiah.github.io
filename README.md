@@ -1,3 +1,5 @@
+<html style="scroll-behavior: smooth;">
+
 # MALCOLM JEREMIAH RICHARD
 ### BSc (Hons) Information Technology Student | UI/UX Portfolio
 
@@ -142,7 +144,7 @@
 </div>
 
 <!-- Design Artefacts Block -->
-<div style="background-color: #fcf8f2; border: 1px solid #f0e4d4; border-radius: 8px; padding: 24px; margin-top: 24px; margin-bottom: 24px;">
+<div style="background-color: #fcf8f2; border: 1px solid #f0e4d4; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
   <h4 style="margin-top: 0; color: #c05621; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">🎨 Design Artefacts & Live Media</h4>
   <p style="font-size: 13px; color: #586069; margin-bottom: 16px;">
     Explore the system architecture across low-fidelity ideation sketches, conceptual storyboards, the official video pitch, and the final high-fidelity live deployment platform.
@@ -150,6 +152,8 @@
   
   <div style="display: flex; flex-wrap: wrap; gap: 12px;">
     <a href="https://ergo-chef-journey.lovable.app/" target="_blank" style="background-color: #c05621; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">🌐 Launch Live App Prototype</a>
-    <a href="https://youtu.-QOms8I-tbM" target="_blank" style="background-color: #24292e; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">📺 Watch Project Video Presentation</a>
+    <a href="https://youtu.be/-QOms8I-tbM" target="_blank" style="background-color: #24292e; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">📺 Watch Project Video Presentation</a>
   </div>
 </div>
+
+</html>
