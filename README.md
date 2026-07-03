@@ -266,15 +266,15 @@
     <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 4px;">⚡ Personal Challenges & Problem Solving</h2>
     <p style="color: #586069; font-size: 14px; margin: 0 0 20px 0;">A transparent log of advanced development bottlenecks, system failures, and the engineering frameworks utilized to resolve them.</p>
     
-    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 30px;">
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
       
       <!-- Challenge 1 -->
       <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
         <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">1. GitHub Layout Processing Collisions</strong>
         <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
-          <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (`#`, `##`).
-          <br>
-          <strong>Resolution:</strong> Refactored structural elements into explicit inline HTML layout components (`<div>`) to completely bypass theme build interference.
+          <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (like # or ##).
+          <br><br>
+          <strong>Resolution:</strong> Refactored structural elements into explicit inline HTML layout components using encoded wrappers to completely bypass theme build interference.
         </p>
       </div>
 
@@ -283,8 +283,8 @@
         <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">2. Theme Layout Banner Overrides</strong>
         <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
           <strong>Problem:</strong> Default layout headers forced rigid green gradient branding boxes on desktop viewports.
-          <br>
-          <strong>Resolution:</strong> Injected targeted `<style>` element modifications to manually reset header containers with responsive asset URLs.
+          <br><br>
+          <strong>Resolution:</strong> Injected targeted style element modifications to manually reset header containers with responsive asset URLs.
         </p>
       </div>
 
@@ -293,7 +293,7 @@
         <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">3. Non-Intrusive Telemetry Alerts</strong>
         <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
           <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
-          <br>
+          <br><br>
           <strong>Resolution:</strong> Restructured notification cycles using progressive visual overlays that clear as soon as posture metrics correct.
         </p>
       </div>
@@ -307,7 +307,7 @@
         <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">4. Learning Portal Navigation Friction</strong>
         <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
           <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
-          <br>
+          <br><br>
           <strong>Resolution:</strong> Designed a compressed, expandable grid framework to make common actions instantly accessible.
         </p>
       </div>
@@ -317,19 +317,19 @@
         <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">5. Anchor Link Navigation Jumps</strong>
         <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
           <strong>Problem:</strong> Traditional link clicks caused abrupt page snaps, lowering the overall presentation feel.
-          <br>
-          <strong>Resolution:</strong> Enabled root document `scroll-behavior: smooth` configurations to provide a fluid sliding transition.
+          <br><br>
+          <strong>Resolution:</strong> Enabled root document scroll-behavior configurations to provide a fluid sliding transition.
         </p>
       </div>
 
       <!-- Challenge 6 -->
       <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
         <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">6. Viewport Adaptability Constraints</strong>
-        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">
+        <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
           <strong>Problem:</strong> Rigid dimension styling scales skewed multi-column layout matrices on mobile interfaces.
-          <br>
+          <br><br>
           <strong>Resolution:</strong> Standardized flex container parameters to wrap smoothly across varying devices.
-        </span>
+        </p>
       </div>
 
     </div>
