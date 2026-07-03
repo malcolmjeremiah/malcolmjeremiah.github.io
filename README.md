@@ -50,6 +50,7 @@
     <a href="#projects-overview" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📂 Featured Projects</a>
     <a href="#case-study-1-ergochef" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">🍳 Case 1: ErgoChef+</a>
     <a href="#case-study-2-elearn-ux-audit" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📚 Case 2: eLearn Audit</a>
+    <a href="#personal-challenges" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">⚡ Challenges</a>
     <a href="#submission" style="background-color: #24292e; color: white; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">📋 Submission</a>
   </div>
 
@@ -227,7 +228,7 @@
       </div>
     </div>
 
-    <!-- Design Artefacts Block (Satisfies Rubric Part 3) -->
+    <!-- Design Artefacts Block -->
     <div style="background-color: #f2f7fc; border: 1px solid #d4e3f0; border-radius: 8px; padding: 24px; margin-bottom: 24px;">
       <h4 style="margin-top: 0; color: #0366d6; font-size: 15px; text-transform: uppercase; letter-spacing: 0.5px;">🎨 Design Artefacts & Audited Layouts</h4>
       <p style="font-size: 13px; color: #586069; margin-bottom: 16px;">Review the wireframes, card-sorting directories, navigation matrices, and user journey optimization wireframes compiled during the heuristic audit phase.</p>
@@ -237,7 +238,7 @@
       </div>
     </div>
 
-    <!-- Challenges & Results Block (Satisfies Rubric Parts 4 & 5) -->
+    <!-- Challenges & Results Block -->
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
       <div style="flex: 1; min-width: 280px; background-color: #fff5f5; border: 1px solid #ffe3e3; border-radius: 8px; padding: 20px;">
         <h4 style="margin-top: 0; color: #c53030; font-size: 15px; margin-bottom: 10px;">⚠️ Challenges & UX Solutions</h4>
@@ -255,6 +256,82 @@
           <strong>Feedback:</strong> Student peer groups reported that the simplified card framework felt significantly more modern, responsive, and intuitive.
         </p>
       </div>
+    </div>
+  </div>
+
+  <hr style="height: 1px; border: none; background-color: #e1e4e8; margin: 30px 0;">
+
+  <!-- Section: Personal Challenges & Problem Solving (6 Challenges Matrix) -->
+  <div id="personal-challenges" style="padding-top: 10px;">
+    <h2 style="color: #24292e; font-size: 22px; font-weight: 600; margin-bottom: 4px;">⚡ Personal Challenges & Problem Solving</h2>
+    <p style="color: #586069; font-size: 14px; margin: 0 0 20px 0;">A transparent log of advanced development bottlenecks, system failures, and the engineering frameworks utilized to resolve them.</p>
+    
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 30px;">
+      
+      <!-- Challenge 1 -->
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">1. GitHub Layout Processing Collisions</strong>
+        <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
+          <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (`#`, `##`).
+          <br>
+          <strong>Resolution:</strong> Refactored structural elements into explicit inline HTML layout components (`<div>`) to completely bypass theme build interference.
+        </p>
+      </div>
+
+      <!-- Challenge 2 -->
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">2. Theme Layout Banner Overrides</strong>
+        <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
+          <strong>Problem:</strong> Default layout headers forced rigid green gradient branding boxes on desktop viewports.
+          <br>
+          <strong>Resolution:</strong> Injected targeted `<style>` element modifications to manually reset header containers with responsive asset URLs.
+        </p>
+      </div>
+
+      <!-- Challenge 3 -->
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">3. Non-Intrusive Telemetry Alerts</strong>
+        <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
+          <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
+          <br>
+          <strong>Resolution:</strong> Restructured notification cycles using progressive visual overlays that clear as soon as posture metrics correct.
+        </p>
+      </div>
+
+    </div>
+    
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 30px;">
+
+      <!-- Challenge 4 -->
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">4. Learning Portal Navigation Friction</strong>
+        <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
+          <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
+          <br>
+          <strong>Resolution:</strong> Designed a compressed, expandable grid framework to make common actions instantly accessible.
+        </p>
+      </div>
+
+      <!-- Challenge 5 -->
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">5. Anchor Link Navigation Jumps</strong>
+        <p style="font-size: 13px; line-height: 1.5; color: #586069; margin: 0;">
+          <strong>Problem:</strong> Traditional link clicks caused abrupt page snaps, lowering the overall presentation feel.
+          <br>
+          <strong>Resolution:</strong> Enabled root document `scroll-behavior: smooth` configurations to provide a fluid sliding transition.
+        </p>
+      </div>
+
+      <!-- Challenge 6 -->
+      <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
+        <strong style="color: #24292e; font-size: 14px; display: block; margin-bottom: 6px;">6. Viewport Adaptability Constraints</strong>
+        <span style="font-size: 13px; line-height: 1.5; color: #586069; display: block;">
+          <strong>Problem:</strong> Rigid dimension styling scales skewed multi-column layout matrices on mobile interfaces.
+          <br>
+          <strong>Resolution:</strong> Standardized flex container parameters to wrap smoothly across varying devices.
+        </span>
+      </div>
+
     </div>
   </div>
 
