@@ -153,6 +153,7 @@
   
   .badge-btn {
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    cursor: pointer !important;
   }
   .badge-btn:hover {
     transform: translateY(-3px) !important;
@@ -182,11 +183,65 @@
     border-radius: 20px;
     display: inline-block;
   }
+
+  /* Interactive Poster Lightbox Modal CSS Framework */
+  .custom-modal-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(3, 7, 18, 0.85) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    z-index: 10000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+  .custom-modal-overlay.is-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  .custom-modal-window {
+    position: relative !important;
+    max-width: 90% !important;
+    max-height: 85vh !important;
+    transform: scale(0.95) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+  .custom-modal-overlay.is-active .custom-modal-window {
+    transform: scale(1) !important;
+  }
+  .custom-modal-content {
+    max-width: 100% !important;
+    max-height: 85vh !important;
+    object-fit: contain !important;
+    border-radius: 12px !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+  .custom-modal-close-btn {
+    position: absolute !important;
+    top: -45px !important;
+    right: 0 !important;
+    background: none !important;
+    border: none !important;
+    color: #94a3b8 !important;
+    font-size: 32px !important;
+    cursor: pointer !important;
+    transition: color 0.2s ease !important;
+  }
+  .custom-modal-close-btn:hover {
+    color: #ffffff !important;
+  }
 </style>
 
 <div style="margin-top: 10px;">
 
-  <!-- Professional Slick Line Dashboard Navigation -->
   <div class="nav-container">
     <a href="#who-i-am" class="nav-btn">Profile</a>
     <a href="#projects-overview" class="nav-btn">Featured Projects</a>
@@ -196,7 +251,6 @@
     <a href="#submission" class="nav-btn">Submission</a>
   </div>
 
-  <!-- Profile Section -->
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#38bdf8, #818cf8);"></div>
@@ -234,7 +288,6 @@
     </div>
   </div>
 
-  <!-- Featured Projects Overview -->
   <div id="projects-overview" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#f97316, #ef4444);"></div>
@@ -268,7 +321,6 @@
     </div>
   </div>
 
-  <!-- Case Study 1: ErgoChef+ -->
   <div id="case-study-1-ergochef" style="padding-top: 40px; margin-bottom: 80px;">
     <div class="premium-card" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -312,14 +364,13 @@
         </div>
       </div>
 
-      <!-- Action Panel -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Interactive Environments & Documentation</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Deploy live compute nodes or parse compiled telemetry assets below.</p>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; justify-content: center;">
           <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);">Launch Live App Prototype</a>
           <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</a>
-          <a href="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</a>
+          <div onclick="openPosterModal()" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</div>
         </div>
       </div>
 
@@ -345,7 +396,6 @@
     </div>
   </div>
 
-  <!-- Case Study 2: UX Audit -->
   <div id="case-study-2-elearn-ux-audit" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="premium-card" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -416,7 +466,6 @@
     </div>
   </div>
 
-  <!-- Engineering Constraints -->
   <div id="personal-challenges" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#6366f1, #a855f7);"></div>
@@ -484,7 +533,6 @@
 
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
-  <!-- Submission Verification -->
   <div id="submission" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="premium-card" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
@@ -497,4 +545,32 @@
     </div>
   </div>
 
+  <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
+    <div class="custom-modal-window">
+      <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
+      <img class="custom-modal-content" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster Document Container" />
+    </div>
+  </div>
+
 </div>
+
+<script>
+  function openPosterModal() {
+    const modal = document.getElementById('posterModal');
+    modal.classList.add('is-active');
+    document.body.style.overflow = 'hidden'; // Prevents background layer canvas scrolling when viewing poster asset
+  }
+
+  function closePosterModal() {
+    const modal = document.getElementById('posterModal');
+    modal.classList.remove('is-active');
+    document.body.style.overflow = ''; // Restores default viewport scroll mechanics
+  }
+
+  function closePosterModalFromOverlay(event) {
+    // Intercepts event bubble paths so clicking on the image content box won't close the overlay framework prematurely
+    if (event.target.id === 'posterModal') {
+      closePosterModal();
+    }
+  }
+</script>
