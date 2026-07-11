@@ -274,7 +274,7 @@
       
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 28px; margin-bottom: 36px; gap: 16px;">
         <div>
-          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 01 // ErgoChef+</h2>
+          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study: ErgoChef+</h2>
           <p style="color: #f97316; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">AI-Powered Context Cooking Ecosystem</p>
         </div>
         <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UI & Interaction Designer</span>
@@ -292,22 +292,22 @@
         </p>
       </div>
 
-      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Execution Blocks</h4>
+      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Execution Pipeline</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">01 // Research</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Research</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Conducted quantitative user surveys and qualitative interviews to map baseline physical discomfort zones during food prep.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">02 // Sketches</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Sketches</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched low-fidelity kitchen spatial layouts and camera-to-app physical telemetry interactions on paper.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">03 // Scenarios</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Scenarios</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Mapped out contextual user flow scenarios to establish how and when the system alerts a user to change their physical posture.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">04 // Deployment</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Deployment</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Translated layouts into a functional, live web platform using Lovable to track real-time visual tracking data.</span>
         </div>
       </div>
@@ -351,7 +351,7 @@
       
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 28px; margin-bottom: 36px; gap: 16px;">
         <div>
-          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 02 // eLearn UX Audit</h2>
+          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study: eLearn UX Audit</h2>
           <p style="color: #38bdf8; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">Learning Management Portal Optimization Study</p>
         </div>
         <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UX Auditor</span>
@@ -372,15 +372,15 @@
       <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Heuristic Pipeline</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">01 // Heuristics</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Usability Heuristics</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">02 // Optimization</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">User Task Mapping</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">03 // Wireframes</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframe Frameworks</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen.</span>
         </div>
       </div>
@@ -425,7 +425,7 @@
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px; margin-bottom: 24px;">
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">01 // Markdown Conflicts</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">GitHub Layout Collisions</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (like # or ##).
           <br><br>
@@ -434,7 +434,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">02 // Layout Box Injections</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Theme Banner Overrides</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Default layout headers forced rigid green gradient branding boxes on desktop viewports.
           <br><br>
@@ -443,7 +443,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">03 // Telemetry Alerts</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Telemetry Warning Interfaces</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
           <br><br>
@@ -454,7 +454,7 @@
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">04 // Nested Multi-Click Nodes</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Nested Multi-Click Nodes</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
           <br><br>
@@ -463,7 +463,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">05 // Snap Mechanics</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Snap Navigation Mechanics</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Traditional link clicks caused abrupt page snaps, lowering the overall presentation feel.
           <br><br>
@@ -472,7 +472,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">06 // Matrix Skewing</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Mobile Interface Skewing</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Rigid dimension styling scales skewed multi-column layout matrices on mobile interfaces.
           <br><br>
