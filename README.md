@@ -184,23 +184,23 @@
     display: inline-block;
   }
 
-  /* Interactive Poster Lightbox Modal CSS Framework with Real-Time Pan-Zoom Container */
+  /* Interactive Poster Lightbox Modal CSS Framework (With Pan Engine Support) */
   .custom-modal-overlay {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
-    background-color: rgba(3, 7, 18, 0.85) !important;
-    backdrop-filter: blur(16px) !important;
-    -webkit-backdrop-filter: blur(16px) !important;
+    background-color: rgba(3, 7, 18, 0.92) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
     z-index: 10000 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     opacity: 0 !important;
     pointer-events: none !important;
-    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    transition: opacity 0.3s ease !important;
   }
   .custom-modal-overlay.is-active {
     opacity: 1 !important;
@@ -208,26 +208,26 @@
   }
   .custom-modal-window {
     position: relative !important;
-    max-width: 90% !important;
-    max-height: 85vh !important;
-    transform: scale(0.95) !important;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    width: 90vw !important;
+    height: 85vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     overflow: hidden !important;
-    border-radius: 12px !important;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    cursor: grab !important;
+    border-radius: 16px !important;
   }
-  .custom-modal-overlay.is-active .custom-modal-window {
-    transform: scale(1) !important;
+  .custom-modal-window:active {
+    cursor: grabbing !important;
   }
   .custom-modal-content {
     max-width: 100% !important;
-    max-height: 85vh !important;
+    max-height: 100% !important;
     object-fit: contain !important;
-    display: block !important;
-    cursor: zoom-in !important;
-    transition: transform 0.1s ease-out !important;
-    transform-origin: center center !important;
+    user-select: none !important;
+    -webkit-user-drag: none !important;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5) !important;
   }
   .custom-modal-close-btn {
     position: fixed !important;
@@ -258,6 +258,7 @@
 
 <div style="margin-top: 10px;">
 
+  <!-- Professional Slick Line Dashboard Navigation -->
   <div class="nav-container">
     <a href="#who-i-am" class="nav-btn">Profile</a>
     <a href="#projects-overview" class="nav-btn">Featured Projects</a>
@@ -267,6 +268,7 @@
     <a href="#submission" class="nav-btn">Submission</a>
   </div>
 
+  <!-- Profile Section -->
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#38bdf8, #818cf8);"></div>
@@ -304,6 +306,7 @@
     </div>
   </div>
 
+  <!-- Featured Projects Overview -->
   <div id="projects-overview" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#f97316, #ef4444);"></div>
@@ -337,6 +340,7 @@
     </div>
   </div>
 
+  <!-- Case Study 1: ErgoChef+ -->
   <div id="case-study-1-ergochef" style="padding-top: 40px; margin-bottom: 80px;">
     <div class="premium-card" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -380,6 +384,7 @@
         </div>
       </div>
 
+      <!-- Action Panel -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Interactive Environments & Documentation</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Deploy live compute nodes or parse compiled telemetry assets below.</p>
@@ -412,6 +417,7 @@
     </div>
   </div>
 
+  <!-- Case Study 2: UX Audit -->
   <div id="case-study-2-elearn-ux-audit" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="premium-card" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -482,6 +488,7 @@
     </div>
   </div>
 
+  <!-- Engineering Constraints -->
   <div id="personal-challenges" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#6366f1, #a855f7);"></div>
@@ -549,6 +556,7 @@
 
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
+  <!-- Submission Verification -->
   <div id="submission" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="premium-card" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
@@ -561,6 +569,7 @@
     </div>
   </div>
 
+  <!-- Interactive Lightbox Pop-up Component Layout -->
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
     <div class="custom-modal-window" id="modalWindow">
@@ -570,20 +579,26 @@
 
 </div>
 
+<!-- Lightbox Trigger & Toggle Click-To-Zoom Panning Engine -->
 <script>
   const modal = document.getElementById('posterModal');
   const modalWindow = document.getElementById('modalWindow');
   const posterImg = document.getElementById('posterImg');
 
+  let isZoomed = false;
+  let isDragging = false;
+  let startX, startY;
+  let translateX = 0, translateY = 0;
+
   function openPosterModal() {
     modal.classList.add('is-active');
-    document.body.style.overflow = 'hidden'; // Lock base canvas page frame scroll operations
+    document.body.style.overflow = 'hidden'; // Lock parent window scroll bars
     resetZoom();
   }
 
   function closePosterModal() {
     modal.classList.remove('is-active');
-    document.body.style.overflow = ''; // Release parent window scroll lock mechanics
+    document.body.style.overflow = ''; // Restore parent framework layout scrolling
     resetZoom();
   }
 
@@ -593,24 +608,77 @@
     }
   }
 
-  // Next-Gen Real-time Mouse Telemetry Magnification Engine logic
-  modalWindow.addEventListener('mousemove', (e) => {
-    const rect = modalWindow.getBoundingClientRect();
+  // Toggle Zoom Logic on Click / Tap
+  modalWindow.addEventListener('click', (e) => {
+    // If clicking the close button or dragging occurred, don't trigger zoom toggle action logic
+    if (e.target.classList.contains('custom-modal-close-btn') || e.target.tagName === 'BUTTON') return;
     
-    // Convert absolute screen client layout parameters to fractional coordinates loops
-    const x = (e.clientX - rect.left) / rect.width;
-    const y = (e.clientY - rect.top) / rect.height;
-    
-    // Scale tracking interpolation factors (2.2x power zoom matrix)
-    posterImg.style.transformOrigin = `${x * 100}% ${y * 100}%`;
-    posterImg.style.transform = 'scale(2.2)';
+    // Toggle state engine parameter targets
+    if (!isZoomed) {
+      isZoomed = true;
+      posterImg.style.cursor = 'zoom-out';
+      
+      // Calculate viewport cursor relative offset points to immediately snap zoom origin focus zone directly where clicked
+      const rect = modalWindow.getBoundingClientRect();
+      const clickX = (e.clientX - rect.left) / rect.width;
+      const clickY = (e.clientY - rect.top) / rect.height;
+      
+      posterImg.style.transformOrigin = `${clickX * 100}% ${clickY * 100}%`;
+      posterImg.style.transform = 'scale(2.5)';
+    } else {
+      resetZoom();
+    }
   });
 
-  modalWindow.addEventListener('mouseleave', () => {
-    resetZoom();
+  // Drag Pan Mechanics Logic Architecture
+  modalWindow.addEventListener('mousedown', (e) => {
+    if (!isZoomed) return;
+    isDragging = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging || !isZoomed) return;
+    e.preventDefault();
+    
+    translateX = e.clientX - startX;
+    translateY = e.clientY - startY;
+    
+    // Apply pan translate values safely alongside scale configurations
+    const currentOrigin = posterImg.style.transformOrigin;
+    posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  // Mobile Touch Interface Emulation Matrix Support
+  modalWindow.addEventListener('touchstart', (e) => {
+    if (!isZoomed || e.touches.length > 1) return;
+    isDragging = true;
+    startX = e.touches[0].clientX - translateX;
+    startY = e.touches[0].clientY - translateY;
+  });
+
+  window.addEventListener('touchmove', (e) => {
+    if (!isDragging || !isZoomed) return;
+    translateX = e.touches[0].clientX - startX;
+    translateY = e.touches[0].clientY - startY;
+    posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
+  });
+
+  window.addEventListener('touchend', () => {
+    isDragging = false;
   });
 
   function resetZoom() {
+    isZoomed = false;
+    isDragging = false;
+    translateX = 0;
+    translateY = 0;
+    posterImg.style.cursor = 'zoom-in';
     posterImg.style.transform = 'scale(1)';
     posterImg.style.transformOrigin = 'center center';
   }
