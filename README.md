@@ -64,12 +64,26 @@
   
   /* Modern Web Application Element Interaction Styling */
   .nav-btn {
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    transition: color 0.2s ease, background-color 0.2s ease !important;
+  }
+  .nav-btn::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 2px !important;
+    background-color: #0f172a !important;
+    transition: all 0.2s ease !important;
+    transform: translateX(-50%) !important;
   }
   .nav-btn:hover {
-    background-color: #0f172a !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15) !important;
+    color: #0f172a !important;
+    background-color: #f1f5f9 !important;
+  }
+  .nav-btn:hover::after {
+    width: 80% !important;
   }
 
   .premium-card {
@@ -88,17 +102,25 @@
     opacity: 0.9 !important;
     transform: scale(1.02) !important;
   }
+
+  .poster-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  }
+  .poster-img:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
 </style>
 
 <div style="margin-top: 30px;">
 
-  <div style="position: -webkit-sticky; position: sticky; top: 15px; z-index: 999; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; background-color: rgba(255, 255, 255, 0.85); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); padding: 10px; border-radius: 10px; border: 1px solid rgba(226, 232, 240, 0.8); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05); margin-bottom: 35px;">
-    <a href="#who-i-am" class="nav-btn" style="background-color: #1e293b; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">🏠 Profile</a>
-    <a href="#projects-overview" class="nav-btn" style="background-color: #1e293b; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">📂 Featured Projects</a>
-    <a href="#case-study-1-ergochef" class="nav-btn" style="background-color: #1e293b; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">🍳 Case 1: ErgoChef+</a>
-    <a href="#case-study-2-elearn-ux-audit" class="nav-btn" style="background-color: #1e293b; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">📚 Case 2: eLearn Audit</a>
-    <a href="#personal-challenges" class="nav-btn" style="background-color: #1e293b; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">⚡ Challenges</a>
-    <a href="#submission" class="nav-btn" style="background-color: #1e293b; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">📋 Submission</a>
+  <div style="position: -webkit-sticky; position: sticky; top: 15px; z-index: 999; display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; background-color: rgba(255, 255, 255, 0.9); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); padding: 6px 16px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05); margin-bottom: 35px;">
+    <a href="#who-i-am" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Profile</a>
+    <a href="#projects-overview" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Featured Projects</a>
+    <a href="#case-study-1-ergochef" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Case 1: ErgoChef+</a>
+    <a href="#case-study-2-elearn-ux-audit" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Case 2: eLearn Audit</a>
+    <a href="#personal-challenges" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Challenges</a>
+    <a href="#submission" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Submission</a>
   </div>
 
   <div id="who-i-am" style="padding-top: 40px; margin-bottom: 20px;">
@@ -211,14 +233,17 @@
         </div>
       </div>
 
-      <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; margin-bottom: 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
-        <div style="max-width: 500px;">
+      <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; margin-bottom: 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+        <div style="flex: 1; min-width: 280px; max-width: 480px;">
           <h4 style="margin-top: 0; color: #0f172a; font-size: 15px; font-weight: 700; margin-bottom: 6px;">🎨 Design Artefacts & Live Media</h4>
-          <p style="font-size: 13px; color: #475569; margin: 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
+          <p style="font-size: 13px; color: #475569; margin-bottom: 20px;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="background-color: #ea580c; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; text-align: center; box-shadow: 0 4px 6px -1px rgba(234, 88, 12, 0.2);">🌐 Launch Live App Prototype</a>
+            <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="background-color: #0f172a; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; text-align: center; box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);">📺 Watch Video Presentation</a>
+          </div>
         </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="background-color: #ea580c; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; box-shadow: 0 4px 6px -1px rgba(234, 88, 12, 0.2);">🌐 Launch Live App Prototype</a>
-          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="background-color: #0f172a; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);">📺 Watch Video Presentation</a>
+        <div style="flex: 1; min-width: 240px; display: flex; justify-content: center;">
+          <img class="poster-img" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster" style="width: 100%; max-width: 240px; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" />
         </div>
       </div>
 
