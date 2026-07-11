@@ -62,9 +62,35 @@
   /* Utility classes to hide standard theme elements if necessary */
   header.page-header .btn { display: none !important; }
   
-  /* Modern Web Application Element Interaction Styling */
+  /* Navigation Dashboard Component & Interactions */
+  .nav-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05);
+    margin-bottom: 35px;
+  }
+
   .nav-btn {
     position: relative !important;
+    white-space: nowrap !important;
+    color: #475569 !important;
+    padding: 10px 18px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    display: inline-block !important;
+    letter-spacing: 0.3px !important;
     transition: color 0.2s ease, background-color 0.2s ease !important;
   }
   .nav-btn::after {
@@ -86,6 +112,23 @@
     width: 80% !important;
   }
 
+  /* Mobile Responsive Switch for Nav Dashboard */
+  @media (max-width: 768px) {
+    .nav-container {
+      justify-content: flex-start !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+      gap: 4px !important;
+      padding: 6px 8px !important;
+    }
+    .nav-container::-webkit-scrollbar {
+      display: none !important; /* Hide scrollbar for maximum screen space, intuitive swipe mechanics take over */
+    }
+    .nav-btn {
+      padding: 10px 14px !important;
+    }
+  }
+
   .premium-card {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
@@ -103,24 +146,31 @@
     transform: scale(1.02) !important;
   }
 
-  .poster-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  .poster-link {
+    display: block !important;
+    transition: transform 0.3s ease !important;
   }
-  .poster-img:hover {
-    transform: scale(1.02) !important;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  .poster-link:hover {
+    transform: scale(1.03) !important;
+  }
+  .poster-img {
+    transition: box-shadow 0.3s ease !important;
+  }
+  .poster-link:hover .poster-img {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
   }
 </style>
 
 <div style="margin-top: 30px;">
 
-  <div style="position: -webkit-sticky; position: sticky; top: 15px; z-index: 999; display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; background-color: rgba(255, 255, 255, 0.9); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); padding: 6px 16px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 20px -2px rgba(0,0,0,0.05); margin-bottom: 35px;">
-    <a href="#who-i-am" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Profile</a>
-    <a href="#projects-overview" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Featured Projects</a>
-    <a href="#case-study-1-ergochef" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Case 1: ErgoChef+</a>
-    <a href="#case-study-2-elearn-ux-audit" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Case 2: eLearn Audit</a>
-    <a href="#personal-challenges" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Challenges</a>
-    <a href="#submission" class="nav-btn" style="color: #475569; padding: 10px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; display: inline-block; letter-spacing: 0.3px;">Submission</a>
+  <!-- Professional Slick Line Dashboard Navigation (With Mobile Overflow Prevention) -->
+  <div class="nav-container">
+    <a href="#who-i-am" class="nav-btn">Profile</a>
+    <a href="#projects-overview" class="nav-btn">Featured Projects</a>
+    <a href="#case-study-1-ergochef" class="nav-btn">Case 1: ErgoChef+</a>
+    <a href="#case-study-2-elearn-ux-audit" class="nav-btn">Case 2: eLearn Audit</a>
+    <a href="#personal-challenges" class="nav-btn">Challenges</a>
+    <a href="#submission" class="nav-btn">Submission</a>
   </div>
 
   <div id="who-i-am" style="padding-top: 40px; margin-bottom: 20px;">
@@ -233,6 +283,7 @@
         </div>
       </div>
 
+      <!-- Updated Media Area with Clickable Poster and Dynamic Layout -->
       <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; margin-bottom: 30px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
         <div style="flex: 1; min-width: 280px; max-width: 480px;">
           <h4 style="margin-top: 0; color: #0f172a; font-size: 15px; font-weight: 700; margin-bottom: 6px;">🎨 Design Artefacts & Live Media</h4>
@@ -240,10 +291,13 @@
           <div style="display: flex; flex-direction: column; gap: 10px;">
             <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="background-color: #ea580c; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; text-align: center; box-shadow: 0 4px 6px -1px rgba(234, 88, 12, 0.2);">🌐 Launch Live App Prototype</a>
             <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="background-color: #0f172a; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; text-align: center; box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);">📺 Watch Video Presentation</a>
+            <a href="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" target="_blank" class="badge-btn" style="background-color: #475569; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; text-align: center; box-shadow: 0 4px 6px -1px rgba(71, 85, 105, 0.2);">📄 View Full Project Poster</a>
           </div>
         </div>
         <div style="flex: 1; min-width: 240px; display: flex; justify-content: center;">
-          <img class="poster-img" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster" style="width: 100%; max-width: 240px; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" />
+          <a href="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" target="_blank" class="poster-link" title="Click to view high-resolution version">
+            <img class="poster-img" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster" style="width: 100%; max-width: 240px; height: auto; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" />
+          </a>
         </div>
       </div>
 
