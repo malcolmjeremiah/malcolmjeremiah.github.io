@@ -93,7 +93,7 @@
     text-decoration: none !important;
     font-weight: 600 !important;
     font-size: 13px !important;
-    display: inline-block !important;
+    display: inline-block !inline-block;
     letter-spacing: 0.3px !important;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
@@ -290,7 +290,7 @@
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#38bdf8, #818cf8);"></div>
-      <h2 style="color: #ffffff; font-size: 28px; font-weight: 700; margin: 0; letter-spacing: -0.5px;">Executive Summary</h2>
+      <h2 style="color: #ffffff; font-size: 28px; font-weight: 700; margin: 0; letter-spacing: -0.5px;">Introduction</h2>
     </div>
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 28px;">
@@ -327,7 +327,7 @@
   <div id="projects-overview" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#f97316, #ef4444);"></div>
-      <h2 style="color: #ffffff; font-size: 28px; font-weight: 700; margin: 0; letter-spacing: -0.5px;">Case Deployments</h2>
+      <h2 style="color: #ffffff; font-size: 28px; font-weight: 700; margin: 0; letter-spacing: -0.5px;">Featured Projects</h2>
     </div>
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 28px;">
@@ -339,7 +339,7 @@
         </div>
         <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; display: flex; align-items: center; justify-content: space-between;">
           <div style="font-size: 13px; color: #cbd5e1;"><strong>Role:</strong> Lead UI Designer</div>
-          <a href="#case-study-1-ergochef" style="font-size: 14px; font-weight: 700; color: #fdba74; text-decoration: none; display: flex; align-items: center; gap: 4px;">Explore Architecture →</a>
+          <a href="#case-study-1-ergochef" style="font-size: 14px; font-weight: 700; color: #fdba74; text-decoration: none; display: flex; align-items: center; gap: 4px;">Explore Case →</a>
         </div>
       </div>
       
@@ -351,7 +351,7 @@
         </div>
         <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; display: flex; align-items: center; justify-content: space-between;">
           <div style="font-size: 13px; color: #cbd5e1;"><strong>Role:</strong> Lead UX Auditor</div>
-          <a href="#case-study-2-elearn-ux-audit" style="font-size: 14px; font-weight: 700; color: #7dd3fc; text-decoration: none; display: flex; align-items: center; gap: 4px;">Explore Architecture →</a>
+          <a href="#case-study-2-elearn-ux-audit" style="font-size: 14px; font-weight: 700; color: #7dd3fc; text-decoration: none; display: flex; align-items: center; gap: 4px;">Explore Case →</a>
         </div>
       </div>
     </div>
@@ -362,47 +362,47 @@
       
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 28px; margin-bottom: 36px; gap: 16px;">
         <div>
-          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study: ErgoChef+</h2>
+          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 1: ErgoChef+</h2>
           <p style="color: #f97316; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">AI-Powered Context Cooking Ecosystem</p>
         </div>
         <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UI & Interaction Designer</span>
       </div>
       
       <div style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.02) 0%, rgba(234, 88, 12, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.12); border-radius: 16px; padding: 32px; margin-bottom: 45px;">
-        <h4 style="margin-top: 0; color: #fdba74; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">System Parameters & Context</h4>
+        <h4 style="margin-top: 0; color: #fdba74; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">Project Overview & Context</h4>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 20px;">
           <strong>The Problem:</strong> Cooking involves highly repetitive, physically demanding actions like bending, chopping, stirring, and prolonged standing. These movements generate heavy ergonomic stress, muscle fatigue, and musculoskeletal strain. Existing smart tools automate cooking tasks but completely ignore the chef's posture and long-term joint health.
         </p>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 0;">
-          <strong>Ecosystem Core Logic:</strong> ErgoChef+ integrates AI-driven posture detection, non-intrusive reminders, and personalized ergonomic reports. The goal is to provide real-time guidance to adapt to diverse cooking contexts and establish healthy, long-term kitchen habits.
+          <strong>Project Goals & Value Proposition:</strong> ErgoChef+ integrates AI-driven posture detection, non-intrusive reminders, and personalized ergonomic reports. The goal is to provide real-time guidance to adapt to diverse cooking contexts and establish healthy, long-term kitchen habits.
           <br><br>
-          <strong>Target Matrix:</strong> Busy home cooks, culinary professionals, and elderly or diverse users prone to physical kitchen fatigue.
+          <strong>Target Audience:</strong> Busy home cooks, culinary professionals, and elderly or diverse users prone to physical kitchen fatigue.
         </p>
       </div>
 
-      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Execution Pipeline</h4>
+      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Process & Iterative Framework</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Research</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Research & Discovery</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Conducted quantitative user surveys and qualitative interviews to map baseline physical discomfort zones during food prep.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Sketches</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Ideation & Sketches</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched low-fidelity kitchen spatial layouts and camera-to-app physical telemetry interactions on paper.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Scenarios</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Storyboarding</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Mapped out contextual user flow scenarios to establish how and when the system alerts a user to change their physical posture.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Deployment</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">High-Fi Prototyping</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Translated layouts into a functional, live web platform using Lovable to track real-time visual tracking data.</span>
         </div>
       </div>
 
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
-        <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Interactive Environments & Documentation</h4>
-        <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Deploy live compute nodes or parse compiled telemetry assets below.</p>
+        <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
+        <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; justify-content: center;">
           <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);">Launch Live App Prototype</a>
           <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</a>
@@ -412,7 +412,7 @@
 
       <div style="display: flex; flex-wrap: wrap; gap: 24px;">
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.03) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
-          <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">UX Friction Areas</h4>
+          <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>The Challenge:</strong> Ensuring prompt posture warning alerts didn't disrupt the user's active cooking workflow split focus.
             <br><br>
@@ -420,7 +420,7 @@
           </p>
         </div>
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.03) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
-          <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Telemetry Validation</h4>
+          <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>Outcomes:</strong> Live web dashboard evaluation runs tracked an average improvement in posture alignment and high user interface satisfaction.
             <br><br>
@@ -437,28 +437,28 @@
       
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 28px; margin-bottom: 36px; gap: 16px;">
         <div>
-          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study: eLearn UX Audit</h2>
+          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 2: Institutional eLearn UX Audit</h2>
           <p style="color: #38bdf8; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">Learning Management Portal Optimization Study</p>
         </div>
         <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UX Auditor</span>
       </div>
       
       <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.02) 0%, rgba(56, 189, 248, 0.05) 100%); border: 1px solid rgba(56, 189, 248, 0.12); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
-        <h4 style="margin-top: 0; color: #7dd3fc; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">System Parameters & Context</h4>
+        <h4 style="margin-top: 0; color: #7dd3fc; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">Project Overview & Context</h4>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 20px;">
           <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels.
         </p>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 0;">
-          <strong>Goals & System Overhaul:</strong> This project functions as an intensive UI/UX overhaul. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout.
+          <strong>Project Goals & Value Proposition:</strong> This project functions as an intensive UI/UX overhaul. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout.
           <br><br>
-          <strong>Target Matrix:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily.
+          <strong>Target Audience:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily.
         </p>
       </div>
 
-      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Heuristic Pipeline</h4>
+      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Process & Audit Framework</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Usability Heuristics</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Heuristic Evaluation</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
@@ -466,13 +466,13 @@
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframe Frameworks</strong>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframing & Layouts</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen.</span>
         </div>
       </div>
 
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
-        <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefact & Compilation Manifest</h4>
+        <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Audited Layouts</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations.</p>
         <div style="display: flex; justify-content: center;">
           <div onclick="openReportModal()" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #030712; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);">📋 View the Report Here</div>
@@ -481,7 +481,7 @@
 
       <div style="display: flex; flex-wrap: wrap; gap: 24px;">
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.03) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
-          <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">UX Friction Areas</h4>
+          <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
             <br><br>
@@ -489,7 +489,7 @@
           </p>
         </div>
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.03) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
-          <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Audit Metrics</h4>
+          <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups.
             <br><br>
@@ -504,12 +504,12 @@
   <div id="personal-challenges" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#6366f1, #a855f7);"></div>
-      <h2 style="color: #ffffff; font-size: 28px; font-weight: 700; margin: 0; letter-spacing: -0.5px;">Engineering Edge Cases</h2>
+      <h2 style="color: #ffffff; font-size: 28px; font-weight: 700; margin: 0; letter-spacing: -0.5px;">Personal Challenges & Problem Solving</h2>
     </div>
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px; margin-bottom: 24px;">
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">GitHub Layout Collisions</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">GitHub Layout Processing Collisions</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (like # or ##).
           <br><br>
@@ -518,7 +518,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Theme Banner Overrides</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Theme Layout Banner Overrides</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Default layout headers forced rigid green gradient branding boxes on desktop viewports.
           <br><br>
@@ -527,7 +527,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Telemetry Warning Interfaces</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Non-Intrusive Telemetry Alerts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
           <br><br>
@@ -538,7 +538,7 @@
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Nested Multi-Click Nodes</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Learning Portal Navigation Friction</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
           <br><br>
@@ -547,7 +547,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Snap Navigation Mechanics</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Anchor Link Navigation Shifts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Traditional link clicks caused abrupt page snaps, lowering the overall presentation feel.
           <br><br>
@@ -556,7 +556,7 @@
       </div>
 
       <div class="premium-card" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Mobile Interface Skewing</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Viewport Adaptability Constraints</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Rigid dimension styling scales skewed multi-column layout matrices on mobile interfaces.
           <br><br>
@@ -572,7 +572,7 @@
     <div class="premium-card" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
       <div style="flex: 1; min-width: 260px;">
-        <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">Academic Verification Matrix</h3>
+        <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">Academic Integrity & Submission Verification</h3>
         <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.7; margin: 0;">
           This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term.
         </p>
@@ -632,8 +632,8 @@
     document.body.style.overflow = 'hidden';
   }
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
       closePosterModal();
       closeReportModal();
     }
@@ -651,16 +651,16 @@
   }
 
   /* Zoom Mechanics Code Blueprint */
-  modalWindow.addEventListener('click', (e) => {
-    if (e.target.classList.contains('custom-modal-close-btn') || e.target.tagName === 'BUTTON') return;
+  modalWindow.addEventListener('click', (event) => {
+    if (event.target.classList.contains('custom-modal-close-btn') || event.target.tagName === 'BUTTON') return;
     
     if (!isZoomed) {
       isZoomed = true;
       posterImg.style.cursor = 'zoom-out';
       
       const rect = modalWindow.getBoundingClientRect();
-      const clickX = (e.clientX - rect.left) / rect.width;
-      const clickY = (e.clientY - rect.top) / rect.height;
+      const clickX = (event.clientX - rect.left) / rect.width;
+      const clickY = (event.clientY - rect.top) / rect.height;
       
       posterImg.style.transformOrigin = `${clickX * 100}% ${clickY * 100}%`;
       posterImg.style.transform = 'scale(2.5)';
@@ -669,19 +669,19 @@
     }
   });
 
-  modalWindow.addEventListener('mousedown', (e) => {
+  modalWindow.addEventListener('mousedown', (event) => {
     if (!isZoomed) return;
     isDragging = true;
-    startX = e.clientX - translateX;
-    startY = e.clientY - translateY;
+    startX = event.clientX - translateX;
+    startY = event.clientY - translateY;
   });
 
-  window.addEventListener('mousemove', (e) => {
+  window.addEventListener('mousemove', (event) => {
     if (!isDragging || !isZoomed) return;
-    e.preventDefault();
+    event.preventDefault();
     
-    translateX = e.clientX - startX;
-    translateY = e.clientY - startY;
+    translateX = event.clientX - startX;
+    translateY = event.clientY - startY;
     
     posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
   });
@@ -690,17 +690,17 @@
     isDragging = false;
   });
 
-  modalWindow.addEventListener('touchstart', (e) => {
-    if (!isZoomed || e.touches.length > 1) return;
+  modalWindow.addEventListener('touchstart', (event) => {
+    if (!isZoomed || event.touches.length > 1) return;
     isDragging = true;
-    startX = e.touches[0].clientX - translateX;
-    startY = e.touches[0].clientY - translateY;
+    startX = event.touches[0].clientX - translateX;
+    startY = event.touches[0].clientY - translateY;
   });
 
-  window.addEventListener('touchmove', (e) => {
+  window.addEventListener('touchmove', (event) => {
     if (!isDragging || !isZoomed) return;
-    translateX = e.touches[0].clientX - startX;
-    translateY = e.touches[0].clientY - startY;
+    translateX = event.touches[0].clientX - startX;
+    translateY = event.touches[0].clientY - startY;
     posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
   });
 
