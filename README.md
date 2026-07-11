@@ -304,7 +304,7 @@
     </div>
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 28px;">
-      <div class="premium-card" style="flex: 2; min-width: 320px; border-radius: 24px; padding: 40px; display: flex; gap: 35px; align-items: center; flex-wrap: wrap;">
+      <div class="premium-card glow-blue" style="flex: 2; min-width: 320px; border-radius: 24px; padding: 40px; display: flex; gap: 35px; align-items: center; flex-wrap: wrap;">
         <div style="position: relative; flex-shrink: 0;">
           <div style="position: absolute; top: -5px; left: -4px; right: -4px; bottom: -4px; background: linear-gradient(135deg, #38bdf8, #818cf8); border-radius: 50%; z-index: 0; opacity: 0.3; filter: blur(4px);"></div>
           <img src="https://raw.githubusercontent.com/malcolmjeremiah/malcolmjeremiah.github.io/main/WhatsApp%20Image%202026-07-03%20at%2010.14.22%20PM.jpeg" alt="Malcolm" style="position: relative; width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 4px solid #020617; z-index: 1;" />
@@ -316,7 +316,7 @@
         </div>
       </div>
 
-      <div class="premium-card" style="flex: 1; min-width: 280px; border-radius: 24px; padding: 35px; display: flex; flex-direction: column; justify-content: center;">
+      <div class="premium-card glow-blue" style="flex: 1; min-width: 280px; border-radius: 24px; padding: 35px; display: flex; flex-direction: column; justify-content: center;">
         <h4 style="margin-top: 0; margin-bottom: 16px; color: #475569; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Core Architecture Stack</h4>
         <div style="margin-bottom: 28px; display: flex; flex-wrap: wrap; gap: 8px;">
           <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #38bdf8; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(56, 189, 248, 0.15);">Python</span>
@@ -447,10 +447,10 @@
       
       <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 28px; margin-bottom: 36px; gap: 16px;">
         <div>
-          <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 2: Institutional eLearn UX Audit</h2>
-          <p style="color: #38bdf8; font-size: 12px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">Learning Management Portal Optimization Study</p>
+          <h2 style="color: #ffffff; font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 2: Institutional eLearn UX Audit</h2>
+          <p style="color: #38bdf8; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">Learning Management Portal Optimization Study</p>
         </div>
-        <span style="font-size: 11px; font-weight: 600; background-color: rgba(255,255,255,0.02); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.06);">Lead UX Auditor</span>
+        <span style="font-size: 11px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UX Auditor</span>
       </div>
       
       <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.01) 0%, rgba(56, 189, 248, 0.03) 100%); border: 1px solid rgba(56, 189, 248, 0.08); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
@@ -467,15 +467,15 @@
 
       <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Process & Audit Framework</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
-        <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.02); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Heuristic Evaluation</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency.</span>
         </div>
-        <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.02); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">User Task Mapping</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades.</span>
         </div>
-        <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.02); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframing & Layouts</strong>
           <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen.</span>
         </div>
@@ -490,7 +490,7 @@
       </div>
 
       <div style="display: flex; flex-wrap: wrap; gap: 24px;">
-        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.06); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.03) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
@@ -498,7 +498,7 @@
             <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked.
           </p>
         </div>
-        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.06); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.03) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups.
@@ -536,7 +536,7 @@
         </p>
       </div>
 
-      <div class="premium-card glow-orange" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
+      <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
         <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Non-Intrusive Telemetry Alerts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
