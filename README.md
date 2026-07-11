@@ -184,7 +184,7 @@
     display: inline-block;
   }
 
-  /* Interactive Poster Lightbox Modal CSS Framework */
+  /* Interactive Poster Lightbox Modal CSS Framework with Real-Time Pan-Zoom Container */
   .custom-modal-overlay {
     position: fixed !important;
     top: 0 !important;
@@ -212,6 +212,10 @@
     max-height: 85vh !important;
     transform: scale(0.95) !important;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
   }
   .custom-modal-overlay.is-active .custom-modal-window {
     transform: scale(1) !important;
@@ -220,23 +224,35 @@
     max-width: 100% !important;
     max-height: 85vh !important;
     object-fit: contain !important;
-    border-radius: 12px !important;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    display: block !important;
+    cursor: zoom-in !important;
+    transition: transform 0.1s ease-out !important;
+    transform-origin: center center !important;
   }
   .custom-modal-close-btn {
-    position: absolute !important;
-    top: -45px !important;
-    right: 0 !important;
-    background: none !important;
-    border: none !important;
+    position: fixed !important;
+    top: 25px !important;
+    right: 35px !important;
+    background: rgba(15, 23, 42, 0.6) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
     color: #94a3b8 !important;
-    font-size: 32px !important;
+    font-size: 24px !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
     cursor: pointer !important;
-    transition: color 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+    z-index: 10001 !important;
   }
   .custom-modal-close-btn:hover {
     color: #ffffff !important;
+    background: rgba(15, 23, 42, 0.9) !important;
+    transform: scale(1.05) !important;
   }
 </style>
 
@@ -546,31 +562,56 @@
   </div>
 
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
-    <div class="custom-modal-window">
-      <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
-      <img class="custom-modal-content" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster Document Container" />
+    <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
+    <div class="custom-modal-window" id="modalWindow">
+      <img id="posterImg" class="custom-modal-content" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster Document Container" />
     </div>
   </div>
 
 </div>
 
 <script>
+  const modal = document.getElementById('posterModal');
+  const modalWindow = document.getElementById('modalWindow');
+  const posterImg = document.getElementById('posterImg');
+
   function openPosterModal() {
-    const modal = document.getElementById('posterModal');
     modal.classList.add('is-active');
-    document.body.style.overflow = 'hidden'; // Prevents background layer canvas scrolling when viewing poster asset
+    document.body.style.overflow = 'hidden'; // Lock base canvas page frame scroll operations
+    resetZoom();
   }
 
   function closePosterModal() {
-    const modal = document.getElementById('posterModal');
     modal.classList.remove('is-active');
-    document.body.style.overflow = ''; // Restores default viewport scroll mechanics
+    document.body.style.overflow = ''; // Release parent window scroll lock mechanics
+    resetZoom();
   }
 
   function closePosterModalFromOverlay(event) {
-    // Intercepts event bubble paths so clicking on the image content box won't close the overlay framework prematurely
     if (event.target.id === 'posterModal') {
       closePosterModal();
     }
+  }
+
+  // Next-Gen Real-time Mouse Telemetry Magnification Engine logic
+  modalWindow.addEventListener('mousemove', (e) => {
+    const rect = modalWindow.getBoundingClientRect();
+    
+    // Convert absolute screen client layout parameters to fractional coordinates loops
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    
+    // Scale tracking interpolation factors (2.2x power zoom matrix)
+    posterImg.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+    posterImg.style.transform = 'scale(2.2)';
+  });
+
+  modalWindow.addEventListener('mouseleave', () => {
+    resetZoom();
+  });
+
+  function resetZoom() {
+    posterImg.style.transform = 'scale(1)';
+    posterImg.style.transformOrigin = 'center center';
   }
 </script>
