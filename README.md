@@ -247,12 +247,33 @@
     align-items: center !important;
     justify-content: center !important;
     transition: all 0.2s ease !important;
-    z-index: 10001 !important;
+    z-index: 10010 !important;
   }
   .custom-modal-close-btn:hover {
     color: #ffffff !important;
     background: rgba(15, 23, 42, 0.9) !important;
     transform: scale(1.05) !important;
+  }
+
+  /* Table Style Clean Ups */
+  .audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 13.5px;
+    color: #cbd5e1;
+  }
+  .audit-table th {
+    text-align: left;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .audit-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   }
 </style>
 
@@ -432,12 +453,12 @@
       <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.02) 0%, rgba(56, 189, 248, 0.05) 100%); border: 1px solid rgba(56, 189, 248, 0.12); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
         <h4 style="margin-top: 0; color: #7dd3fc; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">System Parameters & Context</h4>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 20px;">
-          <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels.
+          <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops[cite: 1]. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels[cite: 1].
         </p>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 0;">
-          <strong>Goals & System Overhaul:</strong> This project functions as an intensive UI/UX overhaul. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout.
+          <strong>Goals & System Overhaul:</strong> This project functions as an intensive UI/UX overhaul[cite: 1]. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout[cite: 1].
           <br><br>
-          <strong>Target Matrix:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily.
+          <strong>Target Matrix:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily[cite: 1].
         </p>
       </div>
 
@@ -445,24 +466,71 @@
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Usability Heuristics</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency.</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency[cite: 1].</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">User Task Mapping</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades.</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades[cite: 1].</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframe Frameworks</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen.</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen[cite: 1].</span>
         </div>
       </div>
 
+      <!-- Completely Transformed Audit Manifest Block Displaying Data Directly From Your PDF Report -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 35px; margin-bottom: 45px;">
-        <h4 style="margin-top: 0; color: #ffffff; font-size: 16px; font-weight: 700; margin-bottom: 8px;">Audit Manifests</h4>
-        <p style="font-size: 14px; color: #94a3b8; margin-bottom: 24px;">Review the wireframes, card-sorting directories, navigation matrices, and user journey optimization wireframes compiled during the heuristic audit phase.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 14px;">
-          <span style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); color: #f3f4f6; padding: 14px 24px; border-radius: 10px; font-size: 13px; font-weight: 600; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">📄 Usability Mapping Report.pdf</span>
-          <span style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); color: #f3f4f6; padding: 14px 24px; border-radius: 10px; font-size: 13px; font-weight: 600; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">📐 Optimized Architecture Wireframes</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 16px; margin-bottom: 20px;">
+          <div>
+            <h4 style="margin: 0; color: #ffffff; font-size: 17px; font-weight: 700; letter-spacing: -0.3px;">Design Artefact: Continuous Assessment Heuristic Log</h4>
+            <p style="font-size: 13px; color: #64748b; margin: 4px 0 0 0;">Empirical behavioral metrics and diagnostic log maps extracted from the final evaluation manifest[cite: 1].</p>
+          </div>
+          <a href="https://youtu.be/Y513UznKLvU" target="_blank" class="badge-btn" style="background-color: #3b82f6; color: white; padding: 10px 18px; border-radius: 6px; font-size: 12.5px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);">▶️ View Presentation Walkthrough</a>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="audit-table">
+            <thead>
+              <tr>
+                <th>Violation ID[cite: 1]</th>
+                <th>Heuristic Target[cite: 1]</th>
+                <th>Real-World Failure Mechanics[cite: 1]</th>
+                <th>Severity[cite: 1]</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: #f43f5e; font-weight: 600;">V01[cite: 1]</td>
+                <td>H2: System & Real World[cite: 1]</td>
+                <td>Administrative database keys (`SU.481BIT1.202309.FT`) leaked into top profile layout templates[cite: 1].</td>
+                <td><span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 2[cite: 1]</span></td>
+              </tr>
+              <tr>
+                <td style="color: #f43f5e; font-weight: 600;">V02[cite: 1]</td>
+                <td>H5: Error Prevention[cite: 1]</td>
+                <td>Backend enrollment codes hard-coded into legal uneditable name blocks, creating layout branding leakage[cite: 1].</td>
+                <td><span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 2[cite: 1]</span></td>
+              </tr>
+              <tr>
+                <td style="color: #f43f5e; font-weight: 600;">V03[cite: 1]</td>
+                <td>H4: Consistency Standards[cite: 1]</td>
+                <td>Filtering drop-downs default sorting errors return empty templates when students look up finished units[cite: 1].</td>
+                <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3[cite: 1]</span></td>
+              </tr>
+              <tr>
+                <td style="color: #f43f5e; font-weight: 600;">V04[cite: 1]</td>
+                <td>H7: Efficiency of Use[cite: 1]</td>
+                <td>Active dashboard views flooded with expired past-semester classes with no user storage archive capabilities[cite: 1].</td>
+                <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3[cite: 1]</span></td>
+              </tr>
+              <tr>
+                <td style="color: #f43f5e; font-weight: 600;">V08[cite: 1]</td>
+                <td>H1: Visibility of System Status[cite: 1]</td>
+                <td>Global generic `Messages 99+` notification badges combine urgent lecturer notes with basic student club logs[cite: 1].</td>
+                <td><span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 2[cite: 1]</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -470,17 +538,17 @@
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.03) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">UX Friction Areas</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
+            <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding[cite: 1].
             <br><br>
-            <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked.
+            <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked[cite: 1].
           </p>
         </div>
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.03) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Audit Metrics</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups.
+            <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups[cite: 1].
             <br><br>
-            <strong>Feedback:</strong> Student peer groups reported that the simplified card framework felt significantly more modern, responsive, and intuitive.
+            <strong>Feedback:</strong> Student peer groups reported that the simplified card framework felt significantly more modern, responsive, and intuitive[cite: 1].
           </p>
         </div>
       </div>
@@ -557,13 +625,13 @@
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
   <!-- Submission Verification -->
-  <div id="submission" style="padding-top: 20px; margin-bottom: 80px;">
+  <div id="submission" style="padding-top: 20px; margin-bottom: 60px;">
     <div class="premium-card" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
       <div style="flex: 1; min-width: 260px;">
         <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">Academic Verification Matrix</h3>
         <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.7; margin: 0;">
-          This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term.
+          This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term[cite: 1].
         </p>
       </div>
     </div>
@@ -592,13 +660,13 @@
 
   function openPosterModal() {
     modal.classList.add('is-active');
-    document.body.style.overflow = 'hidden'; // Lock parent window scroll bars
+    document.body.style.overflow = 'hidden'; 
     resetZoom();
   }
 
   function closePosterModal() {
     modal.classList.remove('is-active');
-    document.body.style.overflow = ''; // Restore parent framework layout scrolling
+    document.body.style.overflow = ''; 
     resetZoom();
   }
 
@@ -608,17 +676,13 @@
     }
   }
 
-  // Toggle Zoom Logic on Click / Tap
   modalWindow.addEventListener('click', (e) => {
-    // If clicking the close button or dragging occurred, don't trigger zoom toggle action logic
     if (e.target.classList.contains('custom-modal-close-btn') || e.target.tagName === 'BUTTON') return;
     
-    // Toggle state engine parameter targets
     if (!isZoomed) {
       isZoomed = true;
       posterImg.style.cursor = 'zoom-out';
       
-      // Calculate viewport cursor relative offset points to immediately snap zoom origin focus zone directly where clicked
       const rect = modalWindow.getBoundingClientRect();
       const clickX = (e.clientX - rect.left) / rect.width;
       const clickY = (e.clientY - rect.top) / rect.height;
@@ -630,7 +694,6 @@
     }
   });
 
-  // Drag Pan Mechanics Logic Architecture
   modalWindow.addEventListener('mousedown', (e) => {
     if (!isZoomed) return;
     isDragging = true;
@@ -645,8 +708,6 @@
     translateX = e.clientX - startX;
     translateY = e.clientY - startY;
     
-    // Apply pan translate values safely alongside scale configurations
-    const currentOrigin = posterImg.style.transformOrigin;
     posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
   });
 
@@ -654,7 +715,6 @@
     isDragging = false;
   });
 
-  // Mobile Touch Interface Emulation Matrix Support
   modalWindow.addEventListener('touchstart', (e) => {
     if (!isZoomed || e.touches.length > 1) return;
     isDragging = true;
