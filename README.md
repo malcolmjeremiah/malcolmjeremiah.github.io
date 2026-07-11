@@ -229,6 +229,26 @@
     transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5) !important;
   }
+  
+  /* Report PDF Lightbox Modal Window Configurations */
+  .report-modal-window {
+    width: 80vw !important;
+    height: 85vh !important;
+    background-color: #111827 !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .report-frame {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    background: #111827 !important;
+  }
+
   .custom-modal-close-btn {
     position: fixed !important;
     top: 25px !important;
@@ -326,7 +346,7 @@
       <div class="premium-card" style="flex: 1; min-width: 300px; border-radius: 20px; padding: 36px; display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid #38bdf8 !important;">
         <div>
           <span class="pill-metric" style="background-color: rgba(56, 189, 248, 0.1); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.2);">Individual Case Study</span>
-          <h3 style="margin: 20px 0 14px 0; font-size: 22px; color: #ffffff; font-weight: 700; letter-spacing: -0.5px;">Learning Management UX Audit</h3>
+          <h3 style="margin: 20px 0 14px 0; font-size: 22px; color: #ffffff; font-weight: 700; letter-spacing: -0.5px;">Learning Management Portal UX Audit</h3>
           <p style="font-size: 14.5px; line-height: 1.7; color: #94a3b8; margin: 0 0 30px 0;">A comprehensive heuristic evaluation and interface restructuring of the university portal to eliminate navigation friction and multi-click journey loops for students.</p>
         </div>
         <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; display: flex; align-items: center; justify-content: space-between;">
@@ -426,12 +446,12 @@
       <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.02) 0%, rgba(56, 189, 248, 0.05) 100%); border: 1px solid rgba(56, 189, 248, 0.12); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
         <h4 style="margin-top: 0; color: #7dd3fc; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">System Parameters & Context</h4>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 20px;">
-          <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops[cite: 15, 21]. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels[cite: 15].
+          <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels.
         </p>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 0;">
-          <strong>Goals & System Overhaul:</strong> This project functions as an intensive UI/UX overhaul[cite: 15]. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout[cite: 15].
+          <strong>Goals & System Overhaul:</strong> This project functions as an intensive UI/UX overhaul. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout.
           <br><br>
-          <strong>Target Matrix:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily[cite: 15, 23, 25].
+          <strong>Target Matrix:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily.
         </p>
       </div>
 
@@ -439,15 +459,15 @@
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Usability Heuristics</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency[cite: 15, 55].</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">User Task Mapping</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades[cite: 15].</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframe Frameworks</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen[cite: 15].</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen.</span>
         </div>
       </div>
 
@@ -455,7 +475,7 @@
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefact & Compilation Manifest</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations.</p>
         <div style="display: flex; justify-content: center;">
-          <a href="22078778_Assignment1.pdf" target="_blank" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #030712; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);">📋 View the Report Here</a>
+          <div onclick="openReportModal()" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #030712; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);">📋 View the Report Here</div>
         </div>
       </div>
 
@@ -463,17 +483,17 @@
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.03) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">UX Friction Areas</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding[cite: 15, 49].
+            <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
             <br><br>
-            <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked[cite: 15].
+            <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked.
           </p>
         </div>
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.03) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Audit Metrics</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups[cite: 15].
+            <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups.
             <br><br>
-            <strong>Feedback:</strong> Student peer groups reported that the simplified card framework felt significantly more modern, responsive, and intuitive[cite: 15].
+            <strong>Feedback:</strong> Student peer groups reported that the simplified card framework felt significantly more modern, responsive, and intuitive.
           </p>
         </div>
       </div>
@@ -567,10 +587,18 @@
     </div>
   </div>
 
+  <div id="reportModal" class="custom-modal-overlay" onclick="closeReportModalFromOverlay(event)">
+    <button class="custom-modal-close-btn" onclick="closeReportModal()">&times;</button>
+    <div class="report-modal-window">
+      <iframe class="report-frame" src="22078778_Assignment1.pdf"></iframe>
+    </div>
+  </div>
+
 </div>
 
 <script>
-  const modal = document.getElementById('posterModal');
+  const posterModal = document.getElementById('posterModal');
+  const reportModal = document.getElementById('reportModal');
   const modalWindow = document.getElementById('modalWindow');
   const posterImg = document.getElementById('posterImg');
 
@@ -579,14 +607,15 @@
   let startX, startY;
   let translateX = 0, translateY = 0;
 
+  /* Poster Modal Controls */
   function openPosterModal() {
-    modal.classList.add('is-active');
+    posterModal.classList.add('is-active');
     document.body.style.overflow = 'hidden'; 
     resetZoom();
   }
 
   function closePosterModal() {
-    modal.classList.remove('is-active');
+    posterModal.classList.remove('is-active');
     document.body.style.overflow = ''; 
     resetZoom();
   }
@@ -597,6 +626,31 @@
     }
   }
 
+  /* PDF Report Modal Controls */
+  function openReportModal() {
+    reportModal.classList.add('is-active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closePosterModal();
+      closeReportModal();
+    }
+  });
+
+  function closeReportModal() {
+    reportModal.classList.remove('is-active');
+    document.body.style.overflow = '';
+  }
+
+  function closeReportModalFromOverlay(event) {
+    if (event.target.id === 'reportModal') {
+      closeReportModal();
+    }
+  }
+
+  /* Zoom Mechanics Code Blueprint */
   modalWindow.addEventListener('click', (e) => {
     if (e.target.classList.contains('custom-modal-close-btn') || e.target.tagName === 'BUTTON') return;
     
