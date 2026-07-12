@@ -13,6 +13,7 @@
     padding: 60px 20px !important;
     margin: 0 auto !important;
     background-color: #030712 !important;
+    /* Ambient multi-axis mesh lighting background */
     background-image: 
       radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.04) 0px, transparent 50%),
       radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.03) 0px, transparent 50%),
@@ -55,7 +56,7 @@
   
   header.page-header h2.project-tagline {
     display: block !important;
-    color: #e2e8f0 !important; /* Fixed: Upgraded to a highly legible, vibrant light slate tone */
+    color: #e2e8f0 !important;
     font-size: 12px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -206,7 +207,7 @@
 
   .audit-table {
     width: 100% !important;
-    min-width: 700px !important; /* Fixed: Prevents table collapsing or text squishing into skinny rows on mobile viewports */
+    min-width: 700px !important;
     border-collapse: collapse !important;
     font-size: 13.5px !important;
     color: #cbd5e1 !important;
@@ -320,7 +321,6 @@
 
 <div style="margin-top: 10px;">
 
-  <!-- Professional Navigation Row -->
   <div class="nav-container">
     <a href="#who-i-am" class="nav-btn">Profile</a>
     <a href="#projects-overview" class="nav-btn">Featured Projects</a>
@@ -330,7 +330,6 @@
     <a href="#submission" class="nav-btn">Submission</a>
   </div>
 
-  <!-- Profile Section -->
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#38bdf8, #818cf8);"></div>
@@ -368,7 +367,6 @@
     </div>
   </div>
 
-  <!-- Featured Projects Overview -->
   <div id="projects-overview" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#f97316, #ef4444);"></div>
@@ -402,7 +400,6 @@
     </div>
   </div>
 
-  <!-- Case Study 1: ErgoChef+ -->
   <div id="case-study-1-ergochef" style="padding-top: 40px; margin-bottom: 80px;">
     <div class="premium-card glow-orange" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -446,7 +443,6 @@
         </div>
       </div>
 
-      <!-- Action Panel -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -479,7 +475,6 @@
     </div>
   </div>
 
-  <!-- Case Study 2: UX Audit -->
   <div id="case-study-2-elearn-ux-audit" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="premium-card glow-blue" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -491,42 +486,40 @@
         <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UX Auditor</span>
       </div>
       
-      <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.01) 0%, rgba(56, 189, 248, 0.03) 100%); border: 1px solid rgba(56, 189, 248, 0.08); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
+      <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.02) 0%, rgba(56, 189, 248, 0.03) 100%); border: 1px solid rgba(56, 189, 248, 0.08); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
         <h4 style="margin-top: 0; color: #7dd3fc; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px;">Project Overview & Context</h4>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 20px;">
-          <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops[cite: 1]. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels[cite: 1].
+          <strong>The Problem:</strong> The existing university eLearn web interface suffers from severe navigation friction, counter-intuitive architecture, and redundant multi-click journey loops. Students routinely experience heavy cognitive fatigue trying to locate basic announcements, modular assignment submission dropboxes, and grading panels.
         </p>
         <p style="font-size: 15px; line-height: 1.75; color: #cbd5e1; margin-bottom: 0;">
-          <strong>Project Goals & Value Proposition:</strong> This project functions as an intensive UI/UX overhaul[cite: 1]. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout[cite: 1].
+          <strong>Project Goals & Value Proposition:</strong> This project functions as an intensive UI/UX overhaul. By running rigorous heuristic audits, cognitive walkthroughs, and restructuring user navigation architecture, the primary goal was to replace convoluted nested paths with a clean, centralized dashboard directory layout.
           <br><br>
-          <strong>Target Audience:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily[cite: 1].
+          <strong>Target Audience:</strong> University undergraduate students, academic researchers, and lecturing faculties utilizing learning management portals daily.
         </p>
       </div>
 
-      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Heuristic Pipeline</h4>
+      <h4 style="color: #ffffff; font-size: 12px; font-weight: 700; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 2px;">Design Process & Audit Framework</h4>
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; margin-bottom: 45px;">
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Heuristic Evaluation</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency[cite: 1].</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Evaluated the current portal against standard usability heuristics, identifying critical friction points in system visibility and consistency.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
           <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">User Task Mapping</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades[cite: 1].</span>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Plotted step-by-step user pathways to measure user behavior and click-counts during common tasks like accessing grades.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 16px; padding: 28px;">
-          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframe Frameworks</strong>
-          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen[cite: 1].</span>
+          <strong style="color: #ffffff; font-size: 14px; display: block; margin-bottom: 10px;">Wireframing & Layouts</strong>
+          <span style="font-size: 13px; line-height: 1.65; color: #94a3b8; display: block;">Sketched a low-fidelity card layout structure to compress the multi-layered dashboard into a unified, responsive front-end screen.</span>
         </div>
       </div>
 
-      <!-- Clean Evaluation Log Dashboard Grid with Fixed Skinny Mobile Wrapper -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 35px; margin-bottom: 45px;">
         <div style="border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 16px; margin-bottom: 20px;">
           <h4 style="margin: 0; color: #ffffff; font-size: 17px; font-weight: 700; letter-spacing: -0.3px;">Empirical Usability Diagnostic Log</h4>
-          <p style="font-size: 13px; color: #64748b; margin: 4px 0 0 0;">Comprehensive architectural defects tracked across the production system environment[cite: 1].</p>
+          <p style="font-size: 13px; color: #64748b; margin: 4px 0 0 0;">Comprehensive architectural defects tracked across the production system environment.</p>
         </div>
         
-        <!-- Fixed: Encapsulated inside a structural overflow horizontal scroll preventer to maintain thickness on small screens -->
         <div class="audit-table-wrapper">
           <table class="audit-table">
             <thead>
@@ -541,31 +534,31 @@
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V01</td>
                 <td>H2: System & Real World</td>
-                <td>System-facing database keys and strings leaked into prominent header templates[cite: 1].</td>
+                <td>System-facing database keys and strings leaked into prominent header templates.</td>
                 <td><span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 2</span></td>
               </tr>
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V02</td>
                 <td>H5: Error Prevention</td>
-                <td>Intake information strings hard-coded into legal name entries, blocking user flexibility controls[cite: 1].</td>
+                <td>Intake information strings hard-coded into legal name entries, blocking user flexibility controls.</td>
                 <td><span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 2</span></td>
               </tr>
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V03</td>
                 <td>H4: Consistency Standards</td>
-                <td>Directory filtration systems return blank screens for active upper-tier student accounts[cite: 1].</td>
+                <td>Directory filtration systems return blank screens for active upper-tier student accounts.</td>
                 <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3</span></td>
               </tr>
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V04</td>
                 <td>H7: Efficiency of Use</td>
-                <td>Workspace directories flooded with static, expired course cells with no archival triggers[cite: 1].</td>
+                <td>Workspace directories flooded with static, expired course cells with no archival triggers.</td>
                 <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3</span></td>
               </tr>
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V08</td>
                 <td>H1: Visibility of Status</td>
-                <td>Global generic `Messages 99+` notification badges combine urgent lecturer notes with basic student club logs[cite: 1].</td>
+                <td>Global generic `Messages 99+` notification badges combine urgent lecturer notes with basic student club logs.</td>
                 <td><span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 2</span></td>
               </tr>
             </tbody>
@@ -573,12 +566,10 @@
         </div>
       </div>
 
-      <!-- Updated Clean Asset Link Card with Legible Text Styling -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Audited Layouts</h4>
-        <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations[cite: 1].</p>
+        <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations.</p>
         <div style="display: flex; justify-content: center;">
-          <!-- Fixed Button Text Color Contrast Layout -->
           <div onclick="openReportModal()" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);">📋 View the Report Here</div>
         </div>
       </div>
@@ -587,17 +578,17 @@
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding[cite: 1].
+            <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
             <br><br>
-            <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked[cite: 1].
+            <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked.
           </p>
         </div>
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>Outcomes:</strong> Empirical validation runs recorded an immediate drop in manual task processing loops and execution delays[cite: 1].
+            <strong>Outcomes:</strong> Empirical validation runs recorded an immediate drop in manual task processing loops and execution delays.
             <br><br>
-            <strong>Feedback:</strong> Student peer focus group checks confirmed that a contextual dashboard matrix feels more intuitive under high data volumes[cite: 1].
+            <strong>Feedback:</strong> Student peer focus group checks confirmed that a contextual dashboard matrix feels more intuitive under high data volumes.
           </p>
         </div>
       </div>
@@ -605,7 +596,6 @@
     </div>
   </div>
 
-  <!-- Personal Challenges Section -->
   <div id="personal-challenges" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#6366f1, #a855f7);"></div>
@@ -645,9 +635,9 @@
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
         <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Learning Portal Navigation Friction</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
-          <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads[cite: 1].
+          <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
           <br><br>
-          <strong>Resolution:</strong> Designed a compressed, expandable grid framework to make common actions instantly accessible[cite: 1].
+          <strong>Resolution:</strong> Designed a compressed, expandable grid framework to make common actions instantly accessible.
         </p>
       </div>
 
@@ -673,39 +663,34 @@
 
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
-  <!-- Submission Verification -->
   <div id="submission" style="padding-top: 20px; margin-bottom: 60px;">
     <div class="premium-card glow-blue" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
       <div style="flex: 1; min-width: 260px;">
         <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">Academic Integrity & Submission Verification</h3>
         <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.7; margin: 0;">
-          This web portfolio is submitted in strict alignment with university academic integrity code standards[cite: 1]. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term[cite: 1]. Artificial intelligence assistive tooling was deployed exclusively to optimize grammatical layout properties[cite: 1].
+          This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term. Artificial intelligence assistive tooling was deployed exclusively to optimize grammatical layout properties.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Interactive Lightbox Pop-up Poster Component Layout -->
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
     <div class="custom-modal-window" id="modalWindow">
-      <img id="posterImg" class="custom-modal-content" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster Document Container" />
+      <img id="posterImg" class="custom-modal-content" src="https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster" />
     </div>
   </div>
 
-  <!-- Interactive Lightbox Report PDF Modal Overlay Container -->
   <div id="reportModal" class="custom-modal-overlay" onclick="closeReportModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closeReportModal()">&times;</button>
     <div class="report-modal-window">
-      <!-- Fixed: Added generic embedded viewer parameters to enforce robust cross-page viewport layout scroll tracking on mobile webviews -->
       <iframe class="report-frame" src="22078778_Assignment1.pdf#toolbar=1&navpanes=1&scrollbar=1"></iframe>
     </div>
   </div>
 
 </div>
 
-<!-- Lightbox Trigger & Toggle Click-To-Zoom Panning Engine -->
 <script>
   const posterModal = document.getElementById('posterModal');
   const reportModal = document.getElementById('reportModal');
