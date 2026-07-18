@@ -1,11 +1,13 @@
-<!-- Theme Override: Forces your image link, styles text, and unlocks hardware-accelerated smooth scrolling -->
+<!-- Enterprise UI Layout Engine & Custom CSS Framework Overrides -->
 <style>
+  /* Global page canvas modifications */
   html {
     scroll-behavior: smooth !important;
     background-color: #f8fafc !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
   }
   
+  /* Reset default theme restrictions to unlock full wide desktop grid space */
   body {
     max-width: 1200px !important;
     padding: 20px !important;
@@ -18,6 +20,7 @@
     padding: 0 !important;
   }
 
+  /* Header Graphic Banner Component styling */
   header.page-header {
     background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
     background-size: cover !important;
@@ -57,8 +60,10 @@
     content: "BSc (Hons) Information Technology Student | UI/UX Portfolio";
   }
 
+  /* Utility classes to hide standard theme elements if necessary */
   header.page-header .btn { display: none !important; }
   
+  /* Modern Web Application Element Interaction Styling */
   .nav-btn {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
   }
@@ -90,7 +95,7 @@
     width: 100%;
     border-collapse: collapse;
     margin: 16px 0;
-    font-size: 13.5px;
+    font-size: 13px;
   }
   .diagnostic-table th {
     background-color: #0f172a;
@@ -109,6 +114,7 @@
   }
 </style>
 
+<!-- Main System Wrap Grid Context -->
 <div style="margin-top: 30px;">
 
   <!-- Floating Sticky Desktop Navigation Deck -->
@@ -222,19 +228,19 @@
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; margin-bottom: 30px;">
         <div style="flex: 1; min-width: 220px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
           <strong style="color: #0f172a; font-size: 14px; display: block; margin-bottom: 8px;">1. Research & Discovery</strong>
-          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Deployed user surveys ($N=45$) and qualitative interviews showing 74% of home cooks experience persistent back fatigue within 30 minutes. Developed 3 target user archetypes.</span>
+          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Conducted quantitative user surveys and qualitative interviews to map baseline physical discomfort zones during food prep routines.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
           <strong style="color: #0f172a; font-size: 14px; display: block; margin-bottom: 8px;">2. Ideation & Sketches</strong>
-          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Sketched low-fidelity kitchen spatial layouts and camera-to-app physical telemetry interactions on paper to map standard joint placement.</span>
+          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Sketched low-fidelity kitchen spatial layouts and camera-to-app physical telemetry interactions on paper to map joint calibration.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
           <strong style="color: #0f172a; font-size: 14px; display: block; margin-bottom: 8px;">3. Storyboarding</strong>
-          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Mapped out contextual user flow scenarios to establish how and when the system alerts a user to change their physical posture under rapid cooking stress.</span>
+          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Mapped out contextual user flow scenarios to establish how and when the system alerts a user to change their physical posture under cooking environments.</span>
         </div>
         <div style="flex: 1; min-width: 220px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px;">
           <strong style="color: #0f172a; font-size: 14px; display: block; margin-bottom: 8px;">4. High-Fi Prototyping</strong>
-          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Translated layouts into a functional, live web platform using Lovable to track real-time visual tracking data and calibrate responsive elements.</span>
+          <span style="font-size: 13px; line-height: 1.6; color: #475569; display: block;">Translated layouts into a functional, live web platform using Lovable to track real-time visual tracking data and verify system layouts.</span>
         </div>
       </div>
 
@@ -262,20 +268,20 @@
       </div>
 
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
-        <div style="flex: 1; min-width: 280px; background-color: #fef2f2; border: 1px solid #fee2e2; border-radius: 10px; padding: 24px;">
-          <h4 style="margin-top: 0; color: #991b1b; font-size: 15px; font-weight: 700; margin-bottom: 12px;">⚠️ Challenges & UX Solutions</h4>
+        <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 24px;">
+          <h4 style="margin-top: 0; color: #1e293b; font-size: 15px; font-weight: 700; margin-bottom: 12px;">⚠️ Challenges & UX Solutions</h4>
           <p style="font-size: 13.5px; line-height: 1.6; color: #374151; margin: 0;">
             <strong>The Challenge:</strong> Ensuring prompt posture warning alerts didn't disrupt the user's active cooking workflow split focus.
             <br><br>
             <strong>The Solution:</strong> Implemented subtle, non-intrusive sound layouts and progressive visual overlay alerts that auto-dismissed once correct body calibration was recorded.
           </p>
         </div>
-        <div style="flex: 1; min-width: 280px; background-color: #f0fdf4; border: 1px solid #dcfce7; border-radius: 10px; padding: 24px;">
-          <h4 style="margin-top: 0; color: #166534; font-size: 15px; font-weight: 700; margin-bottom: 12px;">🚀 Project Results & Feedback</h4>
+        <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 24px;">
+          <h4 style="margin-top: 0; color: #1e293b; font-size: 15px; font-weight: 700; margin-bottom: 12px;">🚀 Project Results & Feedback</h4>
           <p style="font-size: 13.5px; line-height: 1.6; color: #374151; margin: 0;">
-            <strong>Outcomes:</strong> Live web dashboard evaluation runs tracked an average 34% improvement in correct posture alignment and recorded high user interface satisfaction scores.
+            <strong>Outcomes:</strong> Live web dashboard evaluation runs tracked an average improvement in posture alignment and recorded high user interface satisfaction scores.
             <br><br>
-            <strong>Feedback:</strong> System validation test groups confirmed that the clean layout telemetry structure made monitoring joint habits natural, responsive, and stress-free.
+            <strong>Feedback:</strong> Peer testers confirmed that the clean layout telemetry structure made monitoring joint habits natural and stress-free.
           </p>
         </div>
       </div>
@@ -379,18 +385,18 @@
       </div>
 
       <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
-        <div style="flex: 1; min-width: 280px; background-color: #fff5f5; border: 1px solid #ffe3e3; border-radius: 10px; padding: 24px;">
-          <h4 style="margin-top: 0; color: #c53030; font-size: 15px; font-weight: 700; margin-bottom: 12px;">⚠️ Challenges & UX Solutions</h4>
+        <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 24px;">
+          <h4 style="margin-top: 0; color: #1e293b; font-size: 15px; font-weight: 700; margin-bottom: 12px;">⚠️ Challenges & UX Solutions</h4>
           <p style="font-size: 13.5px; line-height: 1.6; color: #374151; margin: 0;">
             <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
             <br><br>
             <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked.
           </p>
         </div>
-        <div style="flex: 1; min-width: 280px; background-color: #f0fff4; border: 1px solid #c6f6d5; border-radius: 10px; padding: 24px;">
-          <h4 style="margin-top: 0; color: #22543d; font-size: 15px; font-weight: 700; margin-bottom: 12px;">🚀 Project Results & Feedback</h4>
+        <div style="flex: 1; min-width: 280px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 24px;">
+          <h4 style="margin-top: 0; color: #1e293b; font-size: 15px; font-weight: 700; margin-bottom: 12px;">🚀 Project Results & Feedback</h4>
           <p style="font-size: 13.5px; line-height: 1.6; color: #374151; margin: 0;">
-            <strong>Outcomes:</strong> Walkthrough testing recorded a notable 42% drop in the average time required to complete assignment lookups.
+            <strong>Outcomes:</strong> Walkthrough testing recorded a notable drop in the average time required to complete assignment lookups.
             <br><br>
             <strong>Feedback:</strong> Student focus groups confirmed that the centralized directory layout reduced cognitive friction and eliminated page loop paths.
           </p>
