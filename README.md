@@ -31,60 +31,61 @@
     z-index: 2;
   }
 
-  /* Ambient Cosmic Shooting Stars Animations Framework */
+  /* High-Velocity Symmetrical Ambient Background Shooting Stars Framework */
   .space-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 1;
-    overflow: hidden;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+    overflow: hidden !important;
   }
   .shooting-star {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 2px;
-    background: linear-gradient(-45deg, #5b21b6, rgba(0, 0, 0, 0));
-    border-radius: 999px;
-    filter: drop-shadow(0 0 6px #60a5fa);
-    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+    position: absolute !important;
+    height: 2px !important;
+    background: linear-gradient(-45deg, #38bdf8, rgba(0, 0, 0, 0)) !important;
+    border-radius: 999px !important;
+    filter: drop-shadow(0 0 8px #60a5fa) !important;
+    animation: tail 1200ms ease-in-out infinite, shooting 1200ms ease-in-out infinite !important;
   }
   .shooting-star::before, .shooting-star::after {
-    content: '';
-    position: absolute;
-    top: calc(50% - 1px);
-    right: 0;
-    height: 2px;
-    background: linear-gradient(-45deg, rgba(0, 0, 0, 0), #38bdf8, rgba(0, 0, 0, 0));
-    border-radius: 999px;
-    animation: shining 3000ms ease-in-out infinite;
+    content: '' !important;
+    position: absolute !important;
+    top: calc(50% - 1px) !important;
+    right: 0 !important;
+    height: 2px !important;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0), #818cf8, rgba(0, 0, 0, 0)) !important;
+    border-radius: 999px !important;
+    animation: shining 1200ms ease-in-out infinite !important;
   }
-  .shooting-star::after {
-    transform: translateX(50%) rotateZ(-45deg);
-  }
-  .shooting-star::before {
-    transform: translateX(50%) rotateZ(45deg);
-  }
-  .shooting-star:nth-child(1) { top: 10%; left: 80%; animation-delay: 0s; }
-  .shooting-star:nth-child(2) { top: 25%; left: 90%; animation-delay: 1.2s; animation-duration: 3500ms; }
-  .shooting-star:nth-child(3) { top: 60%; left: 85%; animation-delay: 2.5s; animation-duration: 4000ms; }
+  .shooting-star::after { transform: translateX(50%) rotateZ(-45deg) !important; }
+  .shooting-star::before { transform: translateX(50%) rotateZ(45deg) !important; }
+
+  /* Symmetrical Positions & Staggered Launch Cycles */
+  .star-left-1  { top: 5%;  left: 15%; animation-delay: 0s !important; animation-duration: 1000ms !important; }
+  .star-right-1 { top: 12%; left: 85%; animation-delay: 0.3s !important; animation-duration: 1100ms !important; }
+  .star-left-2  { top: 45%; left: 10%; animation-delay: 0.6s !important; animation-duration: 900ms !important; }
+  .star-right-2 { top: 55%; left: 90%; animation-delay: 0.2s !important; animation-duration: 1300ms !important; }
+  .star-left-3  { top: 75%; left: 12%; animation-delay: 0.8s !important; animation-duration: 1000ms !important; }
+  .star-right-3 { top: 80%; left: 80%; animation-delay: 0.5s !important; animation-duration: 1200ms !important; }
 
   @keyframes tail {
     0% { width: 0; }
-    30% { width: 100px; }
+    30% { width: 120px; }
     100% { width: 0; }
   }
   @keyframes shining {
     0% { width: 0; }
-    50% { width: 30px; }
+    50% { width: 35px; }
     100% { width: 0; }
   }
   @keyframes shooting {
-    0% { transform: translateX(0) translateY(0) rotateZ(-45deg); opacity: 1; }
-    100% { transform: translateX(-350px) translateY(350px) rotateZ(-45deg); opacity: 0; }
+    0% { transform: translateX(0) translateY(0) rotateZ(-45deg); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(-400px) translateY(400px) rotateZ(-45deg); opacity: 0; }
   }
 
   /* Executive Header Typewriter Component styling */
@@ -102,6 +103,8 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    position: relative;
+    z-index: 2;
   }
   
   header.page-header h1.project-name {
@@ -400,14 +403,26 @@
   }
 </style>
 
-<!-- Fixed Background Animations Canvas Container -->
+<!-- High-Velocity Symmetrical Starfield Engine Backplane Context Layer -->
 <div class="space-canvas">
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
-  <div class="shooting-star"></div>
+  <div class="shooting-star star-left-1"></div>
+  <div class="shooting-star star-right-1"></div>
+  <div class="shooting-star star-left-2"></div>
+  <div class="shooting-star star-right-2"></div>
+  <div class="shooting-star star-left-3"></div>
+  <div class="shooting-star star-right-3"></div>
 </div>
 
 <div style="margin-top: 10px;">
+
+  <div class="nav-container">
+    <a href="#who-i-am" class="nav-btn">Profile</a>
+    <a href="#projects-overview" class="nav-btn">Featured Projects</a>
+    <a href="#case-study-1-ergochef" class="nav-btn">Case 1: ErgoChef+</a>
+    <a href="#case-study-2-elearn-ux-audit" class="nav-btn">Case 2: eLearn Audit</a>
+    <a href="#personal-challenges" class="nav-btn">Diagnostics</a>
+    <a href="#submission" class="nav-btn">Submission</a>
+  </div>
 
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
@@ -522,23 +537,14 @@
         </div>
       </div>
 
-      <!-- Design Artefacts Block (Side-by-Side Unified Preview Deck) -->
-      <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px;">
-        <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px; text-align: center;">Design Artefacts & Live Media</h4>
-        <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0; text-align: center;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
-        
-        <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 28px; align-items: center;">
-          <!-- Left Column: Action Launch Links -->
-          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 14px;">
-            <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4); display: block;">Launch Live App Prototype</a>
-            <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4); display: block;">Watch Video Presentation</a>
-            <div onclick="openPosterModal()" class="badge-btn" style="background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2); display: block;">View Full Project Poster</div>
-          </div>
-          
-          <!-- Right Column: Inline Poster Preview Frame -->
-          <div style="flex: 1; min-width: 280px; display: flex; justify-content: center;">
-            <img src="https://raw.githubusercontent.com/malcolmjeremiah/malcolmjeremiah.github.io/main/ErgoChef+%20(3).png?raw=true" alt="ErgoChef+ Project Poster Preview" style="width: 100%; max-width: 340px; height: auto; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 40px rgba(0,0,0,0.5); cursor: pointer;" onclick="openPosterModal()" />
-          </div>
+      <!-- Design Artefacts Block (Symmetrical Action Layout Room Grid) -->
+      <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
+        <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
+        <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; justify-content: center;">
+          <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);">Launch Live App Prototype</a>
+          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</a>
+          <div onclick="openPosterModal()" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</div>
         </div>
       </div>
 
@@ -888,7 +894,7 @@
     posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
   });
 
-  window.addEventListener('touchend', () => {
+  window.addEventListener('touchmove', () => {
     isDragging = false;
   });
 
