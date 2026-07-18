@@ -43,7 +43,7 @@
   header.page-header h1.project-name {
     display: block !important;
     color: #ffffff !important;
-    font-size: 52px !important;
+    font-size: 48px !important;
     font-weight: 800 !important;
     letter-spacing: -1.5px !important;
     margin: 0 !important;
@@ -58,7 +58,7 @@
   header.page-header h2.project-tagline {
     display: block !important;
     color: #e2e8f0 !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
     letter-spacing: 5px !important;
@@ -602,7 +602,7 @@
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
-            <strong>Outcomes:</strong> Empirical validation runs recorded an immediate 42% drop in manual student task processing loops and modular execution delays.
+            <strong>Outcomes:</strong> Empirical validation runs recorded an immediate drop in manual student task processing loops and modular execution delays.
             <br><br>
             <strong>Feedback:</strong> Student peer focus group checks confirmed that a contextual dashboard matrix feels more intuitive under high layout data volumes.
           </p>
@@ -621,7 +621,7 @@
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px; margin-bottom: 24px;">
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">1. GitHub Layout Processing Collisions</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">GitHub Layout Processing Collisions</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (like # or ##).
           <br><br>
@@ -630,7 +630,7 @@
       </div>
 
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">2. Theme Layout Banner Overrides</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Theme Layout Banner Overrides</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Default layout headers forced rigid green gradient branding boxes on desktop viewports.
           <br><br>
@@ -639,7 +639,7 @@
       </div>
 
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">3. Non-Intrusive Telemetry Alerts</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Non-Intrusive Telemetry Alerts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
           <br><br>
@@ -650,7 +650,7 @@
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">4. Learning Portal Navigation Friction</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Learning Portal Navigation Friction</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
           <br><br>
@@ -659,7 +659,7 @@
       </div>
 
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">5. Anchor Link Navigation Shifts</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Anchor Link Navigation Shifts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Traditional link clicks caused abrupt page snaps, lowering the overall presentation feel.
           <br><br>
@@ -668,7 +668,7 @@
       </div>
 
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">6. Viewport Adaptability Constraints</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Viewport Adaptability Constraints</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
           <strong>Problem:</strong> Rigid dimension styling scales skewed multi-column layout matrices on mobile interfaces.
           <br><br>
