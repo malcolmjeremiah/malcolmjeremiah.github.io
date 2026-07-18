@@ -42,24 +42,21 @@
     z-index: -1 !important;
     overflow: hidden !important;
     background-image: 
-      radial-gradient(1px 1px at 10px 30px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 50px 100px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1px at 120px 40px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 300px 150px, #7dd3fc, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 190px 280px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 240px 340px, #fff, rgba(0,0,0,0)),
-      radial-gradient(2px 1.5px at 450px 80px, #a5b4fc, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 560px 210px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1px at 720px 130px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 890px 60px, #7dd3fc, rgba(0,0,0,0)),
-      radial-gradient(2px 2px at 950px 310px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1px 1.5px at 1150px 180px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1px at 1300px 420px, #a5b4fc, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 1450px 100px, #fff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 1600px 250px, #fff, rgba(0,0,0,0)) !important;
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 75px 130px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(2px 1.5px at 140px 70px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 290px 180px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 210px 310px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 340px 420px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 490px 110px, #a5b4fc, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 610px 250px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1px at 780px 160px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 920px 90px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 990px 380px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1.5px at 1190px 220px, #ffffff, rgba(0,0,0,0)) !important;
     background-repeat: repeat !important;
-    background-size: 600px 600px !important;
-    opacity: 0.65;
+    background-size: 500px 500px !important;
+    opacity: 0.55;
   }
   
   .diagonal-shooting-star {
@@ -72,21 +69,21 @@
   }
 
   /* Rapid, high-velocity true straight diagonal movements completely behind cards */
-  .star-d1 { right: 80%; width: 100px; animation: diagonalStreak 2.5s ease-in-out infinite !important; animation-delay: 0.2s !important; }
-  .star-d2 { right: 40%; width: 140px; animation: diagonalStreak 3.2s ease-in-out infinite !important; animation-delay: 1.5s !important; }
-  .star-d3 { right: 10%; width: 120px; animation: diagonalStreak 2.8s ease-in-out infinite !important; animation-delay: 0.8s !important; }
-  .star-d4 { right: 65%; width: 110px; animation: diagonalStreak 3.5s ease-in-out infinite !important; animation-delay: 2.2s !important; }
+  .star-d1 { right: 82%; width: 110px; animation: diagonalStreak 2.3s ease-in-out infinite !important; animation-delay: 0.1s !important; }
+  .star-d2 { right: 44%; width: 130px; animation: diagonalStreak 3.0s ease-in-out infinite !important; animation-delay: 1.2s !important; }
+  .star-d3 { right: 12%; width: 120px; animation: diagonalStreak 2.6s ease-in-out infinite !important; animation-delay: 0.6s !important; }
+  .star-d4 { right: 62%; width: 105px; animation: diagonalStreak 3.3s ease-in-out infinite !important; animation-delay: 1.9s !important; }
 
   @keyframes diagonalStreak {
     0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
     5% { opacity: 1; }
-    30% { transform: translateX(-450px) translateY(450px) rotate(-45deg); opacity: 0; }
-    100% { transform: translateX(-450px) translateY(450px) rotate(-45deg); opacity: 0; }
+    28% { transform: translateX(-480px) translateY(450px) rotate(-45deg); opacity: 0; }
+    100% { transform: translateX(-480px) translateY(450px) rotate(-45deg); opacity: 0; }
   }
 
   /* Executive Header Framework Styling */
   header.page-header {
-    background-image: linear-gradient(rgba(2, 6, 23, 0.88), rgba(2, 6, 23, 0.96)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
+    background-image: linear-gradient(rgba(2, 6, 23, 0.90), rgba(2, 6, 23, 0.97)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
     background-size: cover !important;
     background-position: center !important;
     padding: 9rem 2rem !important;
@@ -103,7 +100,7 @@
     z-index: 2;
   }
   
-  /* Bulletproof Typewriter Animation Engine with Terminal Style Underscore Cursor */
+  /* Bulletproof Text Block Typewriter Engine with Hardcoded Explicit Data Strings */
   .typewriter-title {
     display: inline-block !important;
     color: #ffffff !important;
@@ -132,7 +129,7 @@
     animation: typeTagline 2.2s steps(58, end) 1.9s forwards !important;
   }
 
-  /* Native Blinking Underscore Cursor Block */
+  /* Coding IDE Style Blinking Terminal Underscore Cursor */
   .blinking-cursor {
     display: inline-block !important;
     color: #38bdf8 !important;
@@ -140,16 +137,16 @@
     font-size: 36px !important;
     animation: pulseCursor 0.8s step-end infinite !important;
     vertical-align: baseline !important;
-    margin-left: 4px !important;
+    margin-left: 6px !important;
   }
 
   @keyframes typeName {
     from { width: 0; }
-    to { width: 100%; }
+    to { width: 100%; max-width: 610px; }
   }
   @keyframes typeTagline {
     from { width: 0; opacity: 1; }
-    to { width: 100%; opacity: 1; }
+    to { width: 100%; max-width: 660px; opacity: 1; }
   }
   @keyframes pulseCursor {
     from, to { opacity: 0; }
@@ -158,7 +155,7 @@
 
   header.page-header .btn { display: none !important; }
   
-  /* Next-Gen Ultra-Thin Floating Navigation */
+  /* Floating Glassmorphic Navigation Dock */
   .nav-container {
     position: -webkit-sticky;
     position: sticky;
@@ -227,7 +224,7 @@
     }
   }
 
-  /* Next-Gen Frosted Card Framework */
+  /* Frosted Matrix Card Component */
   .premium-card {
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.45) 0%, rgba(30, 41, 59, 0.25) 100%) !important;
     backdrop-filter: blur(20px) !important;
@@ -407,7 +404,7 @@
   }
 </style>
 
-<!-- High-Velocity Diagonal Cosmic Starfield Background Canvas -->
+<!-- High-Velocity Diagonal Cosmic Starfield Background Canvas Container -->
 <div class="space-canvas">
   <div class="diagonal-shooting-star star-d1"></div>
   <div class="diagonal-shooting-star star-d2"></div>
@@ -498,7 +495,6 @@
     </div>
   </div>
 
-  <!-- Case Study 1 Container -->
   <div id="case-study-1-ergochef" style="padding-top: 40px; margin-bottom: 80px;">
     <div class="premium-card glow-orange" style="border-radius: 28px; padding: 45px; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.6);">
       
@@ -542,7 +538,7 @@
         </div>
       </div>
 
-      <!-- Balanced Horizontally Layout Badges -->
+      <!-- Balanced Horizontally Layout Badges Component -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -653,7 +649,7 @@
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V04</td>
                 <td>H7: Efficiency of Use</td>
-                <td>Workspace directories flooded with static, expired course cells with no automated archival triggers.</td>
+                <td>Workspace directories flooded with static, expired course cells with no archival triggers.</td>
                 <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3</span></td>
               </tr>
               <tr>
@@ -778,7 +774,7 @@
     </div>
   </div>
 
-  <!-- Dynamic Modal Engines (Lightbox Overlay Targets) -->
+  <!-- Dynamic Modal Lightbox Overlay Systems -->
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
     <div class="custom-modal-window" id="modalWindow">
