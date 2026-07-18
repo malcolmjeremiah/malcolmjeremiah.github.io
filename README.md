@@ -15,11 +15,11 @@
     padding: 60px 20px !important;
     margin: 0 auto !important;
     background-color: #030712 !important;
-    /* Ambient cosmic mesh illumination */
+    /* Immersive Space Cosmic Mesh Illumination */
     background-image: 
-      radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.07) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.05) 0px, transparent 50%),
-      radial-gradient(at 50% 100%, rgba(15, 23, 42, 0.95) 0px, transparent 70%) !important;
+      radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 55%),
+      radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.06) 0px, transparent 55%),
+      radial-gradient(at 50% 100%, rgba(15, 23, 42, 0.98) 0px, transparent 75%) !important;
     background-attachment: fixed !important;
     position: relative;
   }
@@ -31,7 +31,7 @@
     z-index: 2;
   }
 
-  /* Deep Space Background Canvas with Real Sharp Pinpoint Stars & Fast Diagonal Shooting Stars */
+  /* Deep Space Canvas Backdrop Layer */
   .space-canvas {
     position: fixed !important;
     top: 0 !important;
@@ -41,24 +41,26 @@
     pointer-events: none !important;
     z-index: -1 !important;
     overflow: hidden !important;
+    /* Multi-layered field of fine cosmic starlight points */
     background-image: 
-      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 75px 130px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(2px 1.5px at 140px 70px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 290px 180px, #7dd3fc, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 210px 310px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 340px 420px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(2px 2px at 490px 110px, #a5b4fc, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 610px 250px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1px at 780px 160px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 920px 90px, #7dd3fc, rgba(0,0,0,0)),
-      radial-gradient(2px 2px at 990px 380px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1.5px at 1190px 220px, #ffffff, rgba(0,0,0,0)) !important;
+      radial-gradient(1px 1px at 25px 45px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 80px 150px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 150px 85px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 270px 210px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 310px 340px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 420px 480px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 520px 130px, #a5b4fc, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 650px 290px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1px at 790px 190px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 870px 110px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 940px 410px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 1120px 260px, #ffffff, rgba(0,0,0,0)) !important;
     background-repeat: repeat !important;
-    background-size: 500px 500px !important;
-    opacity: 0.55;
+    background-size: 400px 400px !important;
+    opacity: 0.6;
   }
   
+  /* High-Velocity Straight-Line Diagonal Shooting Stars completely behind cards */
   .diagonal-shooting-star {
     position: absolute !important;
     top: -50px;
@@ -68,25 +70,24 @@
     opacity: 0;
   }
 
-  /* Rapid, high-velocity true straight diagonal movements completely behind cards */
-  .star-d1 { right: 82%; width: 110px; animation: diagonalStreak 2.3s ease-in-out infinite !important; animation-delay: 0.1s !important; }
-  .star-d2 { right: 44%; width: 130px; animation: diagonalStreak 3.0s ease-in-out infinite !important; animation-delay: 1.2s !important; }
-  .star-d3 { right: 12%; width: 120px; animation: diagonalStreak 2.6s ease-in-out infinite !important; animation-delay: 0.6s !important; }
-  .star-d4 { right: 62%; width: 105px; animation: diagonalStreak 3.3s ease-in-out infinite !important; animation-delay: 1.9s !important; }
+  .star-d1 { right: 84%; width: 110px; animation: diagonalStreak 2.2s linear infinite !important; animation-delay: 0.1s !important; }
+  .star-d2 { right: 46%; width: 130px; animation: diagonalStreak 2.9s linear infinite !important; animation-delay: 1.3s !important; }
+  .star-d3 { right: 10%; width: 120px; animation: diagonalStreak 2.5s linear infinite !important; animation-delay: 0.5s !important; }
+  .star-d4 { right: 66%; width: 105px; animation: diagonalStreak 3.4s linear infinite !important; animation-delay: 1.8s !important; }
 
   @keyframes diagonalStreak {
     0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
     5% { opacity: 1; }
-    28% { transform: translateX(-480px) translateY(450px) rotate(-45deg); opacity: 0; }
-    100% { transform: translateX(-480px) translateY(450px) rotate(-45deg); opacity: 0; }
+    25% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
+    100% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
   }
 
-  /* Executive Header Framework Styling */
+  /* Executive Header Frame Styling */
   header.page-header {
-    background-image: linear-gradient(rgba(2, 6, 23, 0.90), rgba(2, 6, 23, 0.97)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
+    background-image: linear-gradient(rgba(2, 6, 23, 0.91), rgba(2, 6, 23, 0.97)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
     background-size: cover !important;
     background-position: center !important;
-    padding: 9rem 2rem !important;
+    padding: 8.5rem 2rem !important;
     text-align: center !important;
     border-radius: 28px !important;
     box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.9) !important;
@@ -98,35 +99,29 @@
     justify-content: center !important;
     position: relative;
     z-index: 2;
+    min-height: 220px;
   }
   
-  /* Bulletproof Text Block Typewriter Engine with Hardcoded Explicit Data Strings */
+  /* Robust Text Containers for JavaScript Injection Layouts */
   .typewriter-title {
-    display: inline-block !important;
     color: #ffffff !important;
     font-size: 38px !important;
     font-weight: 800 !important;
     letter-spacing: -0.5px !important;
-    margin: 0 auto !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    width: 0;
-    animation: typeName 1.8s steps(24, end) forwards !important;
+    margin: 0 !important;
+    display: inline !important;
+    line-height: 1.2;
   }
 
   .typewriter-tagline {
-    display: inline-block !important;
     color: #94a3b8 !important;
     font-size: 11.5px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
     letter-spacing: 3.5px !important;
-    margin: 18px auto 0 auto !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    width: 0;
-    opacity: 0;
-    animation: typeTagline 2.2s steps(58, end) 1.9s forwards !important;
+    margin: 18px 0 0 0 !important;
+    display: inline !important;
+    line-height: 1.4;
   }
 
   /* Coding IDE Style Blinking Terminal Underscore Cursor */
@@ -137,17 +132,15 @@
     font-size: 36px !important;
     animation: pulseCursor 0.8s step-end infinite !important;
     vertical-align: baseline !important;
-    margin-left: 6px !important;
+    margin-left: 4px !important;
+  }
+  
+  .tagline-cursor {
+    font-size: 13px !important;
+    color: #818cf8 !important;
+    margin-left: 4px !important;
   }
 
-  @keyframes typeName {
-    from { width: 0; }
-    to { width: 100%; max-width: 610px; }
-  }
-  @keyframes typeTagline {
-    from { width: 0; opacity: 1; }
-    to { width: 100%; max-width: 660px; opacity: 1; }
-  }
   @keyframes pulseCursor {
     from, to { opacity: 0; }
     50% { opacity: 1; }
@@ -163,7 +156,7 @@
     z-index: 999;
     display: flex;
     justify-content: center;
-    background-color: rgba(3, 7, 18, 0.7);
+    background-color: rgba(3, 7, 18, 0.75);
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
     padding: 6px;
@@ -224,7 +217,7 @@
     }
   }
 
-  /* Frosted Matrix Card Component */
+  /* Frosted Matrix Card Framework */
   .premium-card {
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.45) 0%, rgba(30, 41, 59, 0.25) 100%) !important;
     backdrop-filter: blur(20px) !important;
@@ -234,7 +227,6 @@
     transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
   }
   
-  /* Micro-Highlight Project Specific Glow Maps */
   .premium-card.glow-orange:hover {
     transform: translateY(-6px) !important;
     border-color: rgba(249, 115, 22, 0.3) !important;
@@ -279,7 +271,6 @@
     display: inline-block;
   }
 
-  /* Clean Responsive Table Wrapper */
   .audit-table-wrapper {
     width: 100% !important;
     overflow-x: auto !important;
@@ -311,7 +302,6 @@
     line-height: 1.6 !important;
   }
 
-  /* Fixed Pop-up Overlay CSS Framework */
   .custom-modal-overlay {
     position: fixed !important;
     top: 0 !important;
@@ -345,9 +335,7 @@
     cursor: grab !important;
     border-radius: 16px !important;
   }
-  .custom-modal-window:active {
-    cursor: grabbing !important;
-  }
+  .custom-modal-window:active { cursor: grabbing !important; }
   .custom-modal-content {
     max-width: 100% !important;
     max-height: 100% !important;
@@ -358,7 +346,6 @@
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7) !important;
   }
   
-  /* Report PDF Lightbox Modal Window Configurations */
   .report-modal-window {
     width: 85vw !important;
     height: 85vh !important;
@@ -397,14 +384,9 @@
     transition: all 0.2s ease !important;
     z-index: 10001 !important;
   }
-  .custom-modal-close-btn:hover {
-    color: #ffffff !important;
-    background: rgba(15, 23, 42, 0.9) !important;
-    transform: scale(1.05) !important;
-  }
 </style>
 
-<!-- High-Velocity Diagonal Cosmic Starfield Background Canvas Container -->
+<!-- High-Velocity Cosmic Backplane Canvas -->
 <div class="space-canvas">
   <div class="diagonal-shooting-star star-d1"></div>
   <div class="diagonal-shooting-star star-d2"></div>
@@ -414,17 +396,18 @@
 
 <div style="margin-top: 10px;">
 
-  <!-- Master Floating Dashboard Dock Component -->
-  <div class="nav-container">
-    <a href="#who-i-am" class="nav-btn">Profile</a>
-    <a href="#projects-overview" class="nav-btn">Featured Projects</a>
-    <a href="#case-study-1-ergochef" class="nav-btn">Case 1: ErgoChef+</a>
-    <a href="#case-study-2-elearn-ux-audit" class="nav-btn">Case 2: eLearn Audit</a>
-    <a href="#personal-challenges" class="nav-btn">Challenges</a>
-    <a href="#submission" class="nav-btn">Submission</a>
-  </div>
+  <!-- Executive Layout Header Component Framework -->
+  <header class="page-header">
+    <div style="min-height: 46px; display: flex; align-items: center; justify-content: center;">
+      <h1 id="js-type-name" class="typewriter-title"></h1>
+      <span id="js-cursor-name" class="blinking-cursor">_</span>
+    </div>
+    <div style="min-height: 24px; display: flex; align-items: center; justify-content: center; margin-top: 5px;">
+      <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
+      <span id="js-cursor-tagline" class="blinking-cursor tagline-cursor" style="display: none;">_</span>
+    </div>
+  </header>
 
-  <!-- Profile Section Frame -->
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#38bdf8, #818cf8);"></div>
@@ -538,7 +521,6 @@
         </div>
       </div>
 
-      <!-- Balanced Horizontally Layout Badges Component -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -761,7 +743,6 @@
 
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
-  <!-- Academic Verification Footer Component -->
   <div id="submission" style="padding-top: 20px; margin-bottom: 60px;">
     <div class="premium-card glow-blue" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
@@ -774,7 +755,6 @@
     </div>
   </div>
 
-  <!-- Dynamic Modal Lightbox Overlay Systems -->
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
     <div class="custom-modal-window" id="modalWindow">
@@ -791,8 +771,47 @@
 
 </div>
 
-<!-- Lightbox Modal Event Interface Controller Logic Engine -->
+<!-- Native JavaScript Injection Engine Layout -->
 <script>
+  /* Robust Sequential Typewriter Framework Mechanics */
+  const nameString = "MALCOLM JEREMIAH RICHARD";
+  const taglineString = "BSC (HONS) INFORMATION TECHNOLOGY STUDENT | UI/UX PORTFOLIO";
+  
+  const nameContainer = document.getElementById("js-type-name");
+  const taglineContainer = document.getElementById("js-type-tagline");
+  const nameCursor = document.getElementById("js-cursor-name");
+  const taglineCursor = document.getElementById("js-cursor-tagline");
+
+  let nameIndex = 0;
+  let taglineIndex = 0;
+
+  function typeName() {
+    if (nameIndex < nameString.length) {
+      nameContainer.innerHTML += nameString.charAt(nameIndex);
+      nameIndex++;
+      setTimeout(typeName, 55);
+    } else {
+      /* Transition underscore layout focus to the tagline row */
+      nameCursor.style.display = "none";
+      taglineCursor.style.display = "inline-block";
+      setTimeout(typeTagline, 300);
+    }
+  }
+
+  function typeTagline() {
+    if (taglineIndex < taglineString.length) {
+      taglineContainer.innerHTML += taglineString.charAt(taglineIndex);
+      taglineIndex++;
+      setTimeout(typeTagline, 35);
+    }
+  }
+
+  /* Secure Initialization Event */
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(typeName, 400);
+  });
+
+  /* Modal Control Mechanics Blueprint */
   const posterModal = document.getElementById('posterModal');
   const reportModal = document.getElementById('reportModal');
   const modalWindow = document.getElementById('modalWindow');
@@ -851,11 +870,9 @@
     if (!isZoomed) {
       isZoomed = true;
       posterImg.style.cursor = 'zoom-out';
-      
       const rect = modalWindow.getBoundingClientRect();
       const clickX = (event.clientX - rect.left) / rect.width;
       const clickY = (event.clientY - rect.top) / rect.height;
-      
       posterImg.style.transformOrigin = `${clickX * 100}% ${clickY * 100}%`;
       posterImg.style.transform = 'scale(2.5)';
     } else {
@@ -873,34 +890,12 @@
   window.addEventListener('mousemove', (event) => {
     if (!isDragging || !isZoomed) return;
     event.preventDefault();
-    
     translateX = event.clientX - startX;
     translateY = event.clientY - startY;
-    
     posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
   });
 
-  window.addEventListener('mouseup', () => {
-    isDragging = false;
-  });
-
-  modalWindow.addEventListener('touchstart', (event) => {
-    if (!isZoomed || event.touches.length > 1) return;
-    isDragging = true;
-    startX = event.touches[0].clientX - translateX;
-    startY = event.touches[0].clientY - translateY;
-  });
-
-  window.addEventListener('touchmove', (event) => {
-    if (!isDragging || !isZoomed) return;
-    translateX = event.touches[0].clientX - startX;
-    translateY = event.touches[0].clientY - startY;
-    posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
-  });
-
-  window.addEventListener('touchend', () => {
-    isDragging = false;
-  });
+  window.addEventListener('mouseup', () => { isDragging = false; });
 
   function resetZoom() {
     isZoomed = false;
