@@ -1,4 +1,4 @@
-<!-- Enterprise UI Layout Engine & Premium Dark Mesh Override Framework -->
+<!-- Enterprise UI Layout Engine & Premium Dark Space Override Framework -->
 <style>
   /* Global Page Canvas & Premium Typography System */
   html {
@@ -15,10 +15,10 @@
     padding: 60px 20px !important;
     margin: 0 auto !important;
     background-color: #030712 !important;
-    /* Ambient multi-axis mesh lighting background */
+    /* Ambient multi-axis mesh lighting space background */
     background-image: 
-      radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.05) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.04) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.04) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.03) 0px, transparent 50%),
       radial-gradient(at 50% 100%, rgba(15, 23, 42, 0.95) 0px, transparent 70%) !important;
     background-attachment: fixed !important;
     position: relative;
@@ -31,7 +31,7 @@
     z-index: 2;
   }
 
-  /* High-Velocity Symmetrical Ambient Background Shooting Stars Framework */
+  /* Deep Space Symmetrical Linear Shooting Stars Background */
   .space-canvas {
     position: fixed !important;
     top: 0 !important;
@@ -42,50 +42,29 @@
     z-index: 0 !important;
     overflow: hidden !important;
   }
-  .shooting-star {
+  .linear-star {
     position: absolute !important;
+    width: 2px !important;
     height: 2px !important;
-    background: linear-gradient(-45deg, #38bdf8, rgba(0, 0, 0, 0)) !important;
-    border-radius: 999px !important;
-    filter: drop-shadow(0 0 8px #60a5fa) !important;
-    animation: tail 1200ms ease-in-out infinite, shooting 1200ms ease-in-out infinite !important;
+    background: #ffffff !important;
+    border-radius: 50% !important;
+    opacity: 0;
+    box-shadow: 0 0 12px 1px #38bdf8 !important;
   }
-  .shooting-star::before, .shooting-star::after {
-    content: '' !important;
-    position: absolute !important;
-    top: calc(50% - 1px) !important;
-    right: 0 !important;
-    height: 2px !important;
-    background: linear-gradient(-45deg, rgba(0, 0, 0, 0), #818cf8, rgba(0, 0, 0, 0)) !important;
-    border-radius: 999px !important;
-    animation: shining 1200ms ease-in-out infinite !important;
-  }
-  .shooting-star::after { transform: translateX(50%) rotateZ(-45deg) !important; }
-  .shooting-star::before { transform: translateX(50%) rotateZ(45deg) !important; }
+  
+  /* Symmetrical left/right border lanes with high-velocity linear movement trajectories */
+  .star-l1 { left: 5%;  top: -10%; animation: streakLinear 3.5s linear infinite !important; animation-delay: 0.2s !important; }
+  .star-r1 { left: 92%; top: -10%; animation: streakLinear 4.0s linear infinite !important; animation-delay: 1.5s !important; }
+  .star-l2 { left: 10%; top: -10%; animation: streakLinear 4.5s linear infinite !important; animation-delay: 2.3s !important; }
+  .star-r2 { left: 88%; top: -10%; animation: streakLinear 3.8s linear infinite !important; animation-delay: 0.8s !important; }
 
-  /* Symmetrical Positions & Staggered Launch Cycles */
-  .star-left-1  { top: 5%;  left: 15%; animation-delay: 0s !important; animation-duration: 1000ms !important; }
-  .star-right-1 { top: 12%; left: 85%; animation-delay: 0.3s !important; animation-duration: 1100ms !important; }
-  .star-left-2  { top: 45%; left: 10%; animation-delay: 0.6s !important; animation-duration: 900ms !important; }
-  .star-right-2 { top: 55%; left: 90%; animation-delay: 0.2s !important; animation-duration: 1300ms !important; }
-  .star-left-3  { top: 75%; left: 12%; animation-delay: 0.8s !important; animation-duration: 1000ms !important; }
-  .star-right-3 { top: 80%; left: 80%; animation-delay: 0.5s !important; animation-duration: 1200ms !important; }
-
-  @keyframes tail {
-    0% { width: 0; }
-    30% { width: 120px; }
-    100% { width: 0; }
-  }
-  @keyframes shining {
-    0% { width: 0; }
-    50% { width: 35px; }
-    100% { width: 0; }
-  }
-  @keyframes shooting {
-    0% { transform: translateX(0) translateY(0) rotateZ(-45deg); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateX(-400px) translateY(400px) rotateZ(-45deg); opacity: 0; }
+  @keyframes streakLinear {
+    0% { transform: translateY(0) scaleY(1); opacity: 0; }
+    10% { transform: translateY(10vh) scaleY(15); opacity: 0.8; }
+    20% { transform: translateY(30vh) scaleY(30); opacity: 1; }
+    30% { transform: translateY(60vh) scaleY(15); opacity: 0.4; }
+    40% { transform: translateY(90vh) scaleY(1); opacity: 0; }
+    100% { transform: translateY(100vh) scaleY(1); opacity: 0; }
   }
 
   /* Executive Header Typewriter Component styling */
@@ -117,7 +96,7 @@
     white-space: nowrap !important;
     overflow: hidden !important;
     border-right: 3px solid #38bdf8 !important;
-    animation: type 2.5s steps(24, end) forwards, blink 0.75s step-end infinite !important;
+    animation: typeName 2.2s steps(24, end) forwards, blinkCursor 0.75s step-end infinite !important;
     width: 0;
   }
   header.page-header h1.project-name::after {
@@ -125,31 +104,35 @@
   }
   
   header.page-header h2.project-tagline {
-    display: block !important;
+    display: inline-block !important;
     color: #e2e8f0 !important;
     font-size: 12px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
-    letter-spacing: 5px !important;
-    margin-top: 24px !important;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+    letter-spacing: 4px !important;
+    margin: 20px auto 0 auto !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    border-right: 2px solid #818cf8 !important;
     opacity: 0;
-    animation: fadeInTagline 0.5s ease-out 2.6s forwards !important;
+    animation: typeTagline 2.4s steps(58, end) 2.4s forwards, blinkCursor 0.75s step-end infinite !important;
+    width: 0;
   }
   header.page-header h2.project-tagline::after {
-    content: "BSc (Hons) Information Technology Student | UI/UX Portfolio";
+    content: "BSc (Hons) Information Technology Student | UI/UX Portfolio" !important;
   }
 
-  @keyframes type {
+  @keyframes typeName {
     from { width: 0; }
     to { width: 100%; max-width: 610px; }
   }
-  @keyframes blink {
+  @keyframes typeTagline {
+    from { width: 0; opacity: 1; }
+    to { width: 100%; max-width: 635px; opacity: 1; border-right-color: transparent; }
+  }
+  @keyframes blinkCursor {
     from, to { border-color: transparent; }
     50% { border-color: #38bdf8; }
-  }
-  @keyframes fadeInTagline {
-    to { opacity: 1; }
   }
 
   header.page-header .btn { display: none !important; }
@@ -403,14 +386,12 @@
   }
 </style>
 
-<!-- High-Velocity Symmetrical Starfield Engine Backplane Context Layer -->
+<!-- High-Velocity Linear Space Lanes Backplane Context Layer -->
 <div class="space-canvas">
-  <div class="shooting-star star-left-1"></div>
-  <div class="shooting-star star-right-1"></div>
-  <div class="shooting-star star-left-2"></div>
-  <div class="shooting-star star-right-2"></div>
-  <div class="shooting-star star-left-3"></div>
-  <div class="shooting-star star-right-3"></div>
+  <div class="linear-star star-l1"></div>
+  <div class="linear-star star-r1"></div>
+  <div class="linear-star star-l2"></div>
+  <div class="linear-star star-r2"></div>
 </div>
 
 <div style="margin-top: 10px;">
@@ -420,7 +401,7 @@
     <a href="#projects-overview" class="nav-btn">Featured Projects</a>
     <a href="#case-study-1-ergochef" class="nav-btn">Case 1: ErgoChef+</a>
     <a href="#case-study-2-elearn-ux-audit" class="nav-btn">Case 2: eLearn Audit</a>
-    <a href="#personal-challenges" class="nav-btn">Diagnostics</a>
+    <a href="#personal-challenges" class="nav-btn">Challenges</a>
     <a href="#submission" class="nav-btn">Submission</a>
   </div>
 
@@ -537,7 +518,7 @@
         </div>
       </div>
 
-      <!-- Design Artefacts Block (Symmetrical Action Layout Room Grid) -->
+      <!-- Design Artefacts Block (Symmetrical Action Layout Deck) -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -894,7 +875,7 @@
     posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
   });
 
-  window.addEventListener('touchmove', () => {
+  window.addEventListener('touchend', () => {
     isDragging = false;
   });
 
