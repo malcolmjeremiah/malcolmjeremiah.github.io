@@ -31,7 +31,7 @@
     z-index: 2;
   }
 
-  /* Deep Space Symmetrical Linear Shooting Stars Background */
+  /* Deep Space Canvas with Static Starlight Array & Linear High-Velocity Shooting Stars */
   .space-canvas {
     position: fixed !important;
     top: 0 !important;
@@ -41,7 +41,15 @@
     pointer-events: none !important;
     z-index: 0 !important;
     overflow: hidden !important;
+    /* CSS generated field of fine cosmic starlight points */
+    background-image: 
+      radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+      radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+      radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px) !important;
+    background-size: 550px 550px, 350px 350px, 250px 250px !important;
+    background-position: 0 0, 40px 60px, 130px 270px !important;
   }
+  
   .linear-star {
     position: absolute !important;
     width: 2px !important;
@@ -49,25 +57,25 @@
     background: #ffffff !important;
     border-radius: 50% !important;
     opacity: 0;
-    box-shadow: 0 0 12px 1px #38bdf8 !important;
+    box-shadow: 0 0 14px 2px #38bdf8 !important;
   }
   
-  /* Symmetrical left/right border lanes with high-velocity linear movement trajectories */
-  .star-l1 { left: 5%;  top: -10%; animation: streakLinear 3.5s linear infinite !important; animation-delay: 0.2s !important; }
-  .star-r1 { left: 92%; top: -10%; animation: streakLinear 4.0s linear infinite !important; animation-delay: 1.5s !important; }
-  .star-l2 { left: 10%; top: -10%; animation: streakLinear 4.5s linear infinite !important; animation-delay: 2.3s !important; }
-  .star-r2 { left: 88%; top: -10%; animation: streakLinear 3.8s linear infinite !important; animation-delay: 0.8s !important; }
+  /* Symmetrical left/right absolute outer border tracking lanes */
+  .star-l1 { left: 4%;  top: -10%; animation: streakLinear 3.2s linear infinite !important; animation-delay: 0.1s !important; }
+  .star-r1 { left: 94%; top: -10%; animation: streakLinear 3.8s linear infinite !important; animation-delay: 1.4s !important; }
+  .star-l2 { left: 9%;  top: -10%; animation: streakLinear 4.2s linear infinite !important; animation-delay: 2.0s !important; }
+  .star-r2 { left: 91%; top: -10%; animation: streakLinear 3.6s linear infinite !important; animation-delay: 0.7s !important; }
 
   @keyframes streakLinear {
     0% { transform: translateY(0) scaleY(1); opacity: 0; }
-    10% { transform: translateY(10vh) scaleY(15); opacity: 0.8; }
-    20% { transform: translateY(30vh) scaleY(30); opacity: 1; }
-    30% { transform: translateY(60vh) scaleY(15); opacity: 0.4; }
-    40% { transform: translateY(90vh) scaleY(1); opacity: 0; }
+    8% { transform: translateY(10vh) scaleY(18); opacity: 0.9; }
+    20% { transform: translateY(35vh) scaleY(35); opacity: 1; }
+    32% { transform: translateY(65vh) scaleY(18); opacity: 0.4; }
+    45% { transform: translateY(95vh) scaleY(1); opacity: 0; }
     100% { transform: translateY(100vh) scaleY(1); opacity: 0; }
   }
 
-  /* Executive Header Typewriter Component styling */
+  /* Executive Header Typewriter Component with Blinking Underscore Cursor */
   header.page-header {
     background-image: linear-gradient(rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.96)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
     background-size: cover !important;
@@ -86,6 +94,11 @@
     z-index: 2;
   }
   
+  .typewriter-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
   header.page-header h1.project-name {
     display: inline-block !important;
     color: #ffffff !important;
@@ -95,8 +108,7 @@
     margin: 0 auto !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    border-right: 3px solid #38bdf8 !important;
-    animation: typeName 2.2s steps(24, end) forwards, blinkCursor 0.75s step-end infinite !important;
+    animation: typeName 2.0s steps(24, end) forwards !important;
     width: 0;
   }
   header.page-header h1.project-name::after {
@@ -113,13 +125,26 @@
     margin: 20px auto 0 auto !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    border-right: 2px solid #818cf8 !important;
     opacity: 0;
-    animation: typeTagline 2.4s steps(58, end) 2.4s forwards, blinkCursor 0.75s step-end infinite !important;
+    animation: typeTagline 2.5s steps(60, end) 2.2s forwards !important;
     width: 0;
   }
   header.page-header h2.project-tagline::after {
     content: "BSc (Hons) Information Technology Student | UI/UX Portfolio" !important;
+  }
+
+  /* Blinking Underscore Cursor Coding Terminal Engine Component */
+  .terminal-cursor {
+    display: inline-block;
+    color: #38bdf8;
+    font-size: 42px;
+    font-weight: 800;
+    vertical-align: baseline;
+    margin-left: 2px;
+    animation: blinkCursor 0.75s step-end infinite, shiftCursor 0.1s linear 2.2s forwards;
+  }
+  .terminal-cursor::after {
+    content: "_";
   }
 
   @keyframes typeName {
@@ -128,11 +153,14 @@
   }
   @keyframes typeTagline {
     from { width: 0; opacity: 1; }
-    to { width: 100%; max-width: 635px; opacity: 1; border-right-color: transparent; }
+    to { width: 100%; max-width: 660px; opacity: 1; }
   }
   @keyframes blinkCursor {
-    from, to { border-color: transparent; }
-    50% { border-color: #38bdf8; }
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  @keyframes shiftCursor {
+    to { font-size: 12px; color: #818cf8; margin-left: 4px; }
   }
 
   header.page-header .btn { display: none !important; }
@@ -386,7 +414,7 @@
   }
 </style>
 
-<!-- High-Velocity Linear Space Lanes Backplane Context Layer -->
+<!-- Deep Space Symmetrical Linear Starfield Backplane Context Layer -->
 <div class="space-canvas">
   <div class="linear-star star-l1"></div>
   <div class="linear-star star-r1"></div>
@@ -743,7 +771,7 @@
     <div class="premium-card glow-blue" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
       <div style="flex: 1; min-width: 260px;">
-        <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">Academic Integrity & Submission Verification</h3>
+        <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0; 0 10px 0;">Academic Integrity & Submission Verification</h3>
         <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.7; margin: 0;">
           This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term. Artificial intelligence assistive tooling was deployed exclusively to optimize grammatical layout properties.
         </p>
