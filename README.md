@@ -1,9 +1,14 @@
 <!-- Enterprise UI Layout Engine & Premium Dark Space Override Framework -->
 <style>
+  /* Force hide GitHub Pages theme default header to eliminate the double-header bug */
+  header.page-header, .page-header {
+    display: none !important;
+  }
+
   /* Global Page Canvas & Premium Typography System */
   html {
     scroll-behavior: smooth !important;
-    background-color: #030712 !important;
+    background-color: #020617 !important;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "-apple-system-body", "Segoe UI", Roboto, sans-serif !important;
     color: #f8fafc !important;
     letter-spacing: -0.1px;
@@ -12,10 +17,10 @@
   
   body {
     max-width: 1140px !important;
-    padding: 60px 20px !important;
+    padding: 40px 20px !important;
     margin: 0 auto !important;
-    background-color: #030712 !important;
-    /* Immersive Space Cosmic Mesh Illumination */
+    background-color: #020617 !important;
+    /* Deep space multi-axis cosmic lighting background */
     background-image: 
       radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 55%),
       radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.06) 0px, transparent 55%),
@@ -31,7 +36,7 @@
     z-index: 2;
   }
 
-  /* Deep Space Canvas Backdrop Layer */
+  /* Immersive Full-Height Space Backdrop Canvas Layer */
   .space-canvas {
     position: fixed !important;
     top: 0 !important;
@@ -41,11 +46,11 @@
     pointer-events: none !important;
     z-index: -1 !important;
     overflow: hidden !important;
-    /* Multi-layered field of fine cosmic starlight points */
+    /* Layered layout field of sharp pinpoint stars */
     background-image: 
-      radial-gradient(1px 1px at 25px 45px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 80px 150px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 150px 85px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 25px 45px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 75px 130px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(2px 1.5px at 140px 70px, #ffffff, rgba(0,0,0,0)),
       radial-gradient(1px 1px at 270px 210px, #7dd3fc, rgba(0,0,0,0)),
       radial-gradient(1.5px 1.5px at 310px 340px, #ffffff, rgba(0,0,0,0)),
       radial-gradient(1px 1px at 420px 480px, #ffffff, rgba(0,0,0,0)),
@@ -56,53 +61,53 @@
       radial-gradient(2px 2px at 940px 410px, #ffffff, rgba(0,0,0,0)),
       radial-gradient(1.5px 1.5px at 1120px 260px, #ffffff, rgba(0,0,0,0)) !important;
     background-repeat: repeat !important;
-    background-size: 400px 400px !important;
-    opacity: 0.6;
+    background-size: 500px 500px !important;
+    opacity: 0.65;
   }
   
-  /* High-Velocity Straight-Line Diagonal Shooting Stars completely behind cards */
+  /* Straight Diagonal High-Velocity Shooting Star Mechanics */
   .diagonal-shooting-star {
     position: absolute !important;
-    top: -50px;
-    height: 1px;
+    top: -60px;
+    height: 1.5px;
     background: linear-gradient(-45deg, #ffffff, rgba(56, 189, 248, 0));
-    filter: drop-shadow(0 0 6px #38bdf8);
+    filter: drop-shadow(0 0 8px #60a5fa);
     opacity: 0;
   }
 
-  .star-d1 { right: 84%; width: 110px; animation: diagonalStreak 2.2s linear infinite !important; animation-delay: 0.1s !important; }
-  .star-d2 { right: 46%; width: 130px; animation: diagonalStreak 2.9s linear infinite !important; animation-delay: 1.3s !important; }
-  .star-d3 { right: 10%; width: 120px; animation: diagonalStreak 2.5s linear infinite !important; animation-delay: 0.5s !important; }
-  .star-d4 { right: 66%; width: 105px; animation: diagonalStreak 3.4s linear infinite !important; animation-delay: 1.8s !important; }
+  .star-d1 { right: 85%; width: 120px; animation: diagonalStreak 2.0s linear infinite !important; animation-delay: 0.1s !important; }
+  .star-d2 { right: 45%; width: 140px; animation: diagonalStreak 2.7s linear infinite !important; animation-delay: 1.1s !important; }
+  .star-d3 { right: 8%;  width: 130px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 0.4s !important; }
+  .star-d4 { right: 65%; width: 110px; animation: diagonalStreak 3.2s linear infinite !important; animation-delay: 1.6s !important; }
 
   @keyframes diagonalStreak {
     0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
-    5% { opacity: 1; }
-    25% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
-    100% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
+    4% { opacity: 1; }
+    22% { transform: translateX(-600px) translateY(600px) rotate(-45deg); opacity: 0; }
+    100% { transform: translateX(-600px) translateY(600px) rotate(-45deg); opacity: 0; }
   }
 
-  /* Executive Header Frame Styling */
-  header.page-header {
-    background-image: linear-gradient(rgba(2, 6, 23, 0.91), rgba(2, 6, 23, 0.97)), url('https://github.com/malcolmjeremiah/malcolmjeremiah.github.io/blob/main/1763479411435.jpeg?raw=true') !important;
-    background-size: cover !important;
-    background-position: center !important;
+  /* Single Premium Consolidated Header Hero Card */
+  .custom-portfolio-header {
+    background-color: rgba(15, 23, 42, 0.35) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
     padding: 8.5rem 2rem !important;
     text-align: center !important;
     border-radius: 28px !important;
-    box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.95) !important;
     border: 1px solid rgba(255, 255, 255, 0.04) !important;
-    margin-bottom: 50px !important;
+    margin-top: 20px !important;
+    margin-bottom: 45px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     position: relative;
     z-index: 2;
-    min-height: 220px;
+    min-height: 200px;
   }
   
-  /* Robust Text Containers for JavaScript Injection Layouts */
   .typewriter-title {
     color: #ffffff !important;
     font-size: 38px !important;
@@ -124,21 +129,15 @@
     line-height: 1.4;
   }
 
-  /* Coding IDE Style Blinking Terminal Underscore Cursor */
+  /* Blinking Terminal Style Cursor Component */
   .blinking-cursor {
     display: inline-block !important;
-    color: #38bdf8 !important;
+    color: #ffffff !important; /* Pure White Code Cursor */
     font-weight: 800 !important;
     font-size: 36px !important;
     animation: pulseCursor 0.8s step-end infinite !important;
     vertical-align: baseline !important;
-    margin-left: 4px !important;
-  }
-  
-  .tagline-cursor {
-    font-size: 13px !important;
-    color: #818cf8 !important;
-    margin-left: 4px !important;
+    margin-left: 6px !important;
   }
 
   @keyframes pulseCursor {
@@ -146,8 +145,6 @@
     50% { opacity: 1; }
   }
 
-  header.page-header .btn { display: none !important; }
-  
   /* Floating Glassmorphic Navigation Dock */
   .nav-container {
     position: -webkit-sticky;
@@ -196,9 +193,7 @@
     transition: all 0.3s ease !important;
     transform: translateX(-50%) !important;
   }
-  .nav-btn:hover::after {
-    width: 25% !important;
-  }
+  .nav-btn:hover::after { width: 25% !important; }
 
   @media (max-width: 768px) {
     .nav-container {
@@ -209,15 +204,11 @@
       padding: 6px !important;
       margin-bottom: 40px;
     }
-    .nav-container::-webkit-scrollbar {
-      display: none !important;
-    }
-    .nav-btn {
-      padding: 12px 18px !important;
-    }
+    .nav-container::-webkit-scrollbar { display: none !important; }
+    .nav-btn { padding: 12px 18px !important; }
   }
 
-  /* Frosted Matrix Card Framework */
+  /* Frosted Matrix Card Component */
   .premium-card {
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.45) 0%, rgba(30, 41, 59, 0.25) 100%) !important;
     backdrop-filter: blur(20px) !important;
@@ -319,10 +310,7 @@
     transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
   }
   
-  .custom-modal-overlay.is-active {
-    display: flex !important;
-    opacity: 1 !important;
-  }
+  .custom-modal-overlay.is-active { display: flex !important; opacity: 1 !important; }
   
   .custom-modal-window {
     position: relative !important;
@@ -363,30 +351,9 @@
     border: none !important;
     background: #111827 !important;
   }
-
-  .custom-modal-close-btn {
-    position: fixed !important;
-    top: 25px !important;
-    right: 35px !important;
-    background: rgba(15, 23, 42, 0.7) !important;
-    border: 1px solid rgba(255,255,255,0.08) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
-    color: #94a3b8 !important;
-    font-size: 24px !important;
-    width: 44px !important;
-    height: 44px !important;
-    border-radius: 50% !important;
-    cursor: pointer !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.2s ease !important;
-    z-index: 10001 !important;
-  }
 </style>
 
-<!-- High-Velocity Cosmic Backplane Canvas -->
+<!-- High-Velocity Diagonal Cosmic Starfield Background Canvas -->
 <div class="space-canvas">
   <div class="diagonal-shooting-star star-d1"></div>
   <div class="diagonal-shooting-star star-d2"></div>
@@ -394,20 +361,30 @@
   <div class="diagonal-shooting-star star-d4"></div>
 </div>
 
-<div style="margin-top: 10px;">
+<div class="main-content">
 
-  <!-- Executive Layout Header Component Framework -->
-  <header class="page-header">
+  <!-- Clean Unified Header Area Component -->
+  <div class="custom-portfolio-header">
     <div style="min-height: 46px; display: flex; align-items: center; justify-content: center;">
       <h1 id="js-type-name" class="typewriter-title"></h1>
       <span id="js-cursor-name" class="blinking-cursor">_</span>
     </div>
     <div style="min-height: 24px; display: flex; align-items: center; justify-content: center; margin-top: 5px;">
       <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
-      <span id="js-cursor-tagline" class="blinking-cursor tagline-cursor" style="display: none;">_</span>
     </div>
-  </header>
+  </div>
 
+  <!-- Master Floating Dashboard Dock Component -->
+  <div class="nav-container">
+    <a href="#who-i-am" class="nav-btn">Profile</a>
+    <a href="#projects-overview" class="nav-btn">Featured Projects</a>
+    <a href="#case-study-1-ergochef" class="nav-btn">Case 1: ErgoChef+</a>
+    <a href="#case-study-2-elearn-ux-audit" class="nav-btn">Case 2: eLearn Audit</a>
+    <a href="#personal-challenges" class="nav-btn">Challenges</a>
+    <a href="#submission" class="nav-btn">Submission</a>
+  </div>
+
+  <!-- Profile Section Frame -->
   <div id="who-i-am" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#38bdf8, #818cf8);"></div>
@@ -521,6 +498,7 @@
         </div>
       </div>
 
+      <!-- Action Launch Deck Buttons -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -780,7 +758,6 @@
   const nameContainer = document.getElementById("js-type-name");
   const taglineContainer = document.getElementById("js-type-tagline");
   const nameCursor = document.getElementById("js-cursor-name");
-  const taglineCursor = document.getElementById("js-cursor-tagline");
 
   let nameIndex = 0;
   let taglineIndex = 0;
@@ -791,9 +768,7 @@
       nameIndex++;
       setTimeout(typeName, 55);
     } else {
-      /* Transition underscore layout focus to the tagline row */
-      nameCursor.style.display = "none";
-      taglineCursor.style.display = "inline-block";
+      /* Remove the blink animation freeze layout constraints, start tagline type block */
       setTimeout(typeTagline, 300);
     }
   }
