@@ -37,7 +37,7 @@
     box-sizing: border-box !important;
   }
 
-  /* Immersive Full-Height Symmetrical Space Backdrop Canvas Layer */
+  /* Dense Cosmic Night Sky Canvas Backdrop Layer */
   .space-canvas {
     position: fixed !important;
     top: 0 !important;
@@ -47,26 +47,41 @@
     pointer-events: none !important;
     z-index: -1 !important;
     overflow: hidden !important;
-    /* Layered layout field of sharp pinpoint stars */
+    /* Layered field replicating a crisp night sky with twinkling point variances */
     background-image: 
-      radial-gradient(1.5px 1.5px at 25px 45px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 75px 130px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(2px 1.5px at 140px 70px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 270px 210px, #7dd3fc, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 310px 340px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 420px 480px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 520px 130px, #a5b4fc, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 650px 290px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1px at 790px 190px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1px 1px at 870px 110px, #7dd3fc, rgba(0,0,0,0)),
-      radial-gradient(2px 2px at 940px 410px, #ffffff, rgba(0,0,0,0)),
-      radial-gradient(1.5px 1.5px at 1120px 260px, #ffffff, rgba(0,0,0,0)) !important;
+      radial-gradient(1.2px 1.2px at 15px 25px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 45px 90px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 110px 65px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 210px 140px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(1.2px 1.2px at 190px 240px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 310px 380px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 420px 95px, #a5b4fc, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 580px 210px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.2px 1.2px at 690px 130px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 810px 80px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(1.8px 1.8px at 890px 320px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.2px 1.2px at 1050px 190px, #ffffff, rgba(0,0,0,0)),
+      /* Secondary dense matrix cluster layer */
+      radial-gradient(1px 1px at 35px 280px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 145px 420px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 280px 510px, #a5b4fc, rgba(0,0,0,0)),
+      radial-gradient(1.2px 1.2px at 490px 320px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 670px 460px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.5px 1.5px at 830px 240px, #7dd3fc, rgba(0,0,0,0)),
+      radial-gradient(1px 1px at 960px 490px, #ffffff, rgba(0,0,0,0)),
+      radial-gradient(1.2px 1.2px at 1110px 410px, #ffffff, rgba(0,0,0,0)) !important;
     background-repeat: repeat !important;
-    background-size: 500px 500px !important;
-    opacity: 0.7;
+    background-size: 400px 400px !important;
+    opacity: 0.85;
+    animation: celestialShimmer 4s ease-in-out infinite alternate !important;
+  }
+
+  @keyframes celestialShimmer {
+    0% { opacity: 0.65; }
+    100% { opacity: 0.90; }
   }
   
-  /* Straight Diagonal High-Velocity Shooting Star Mechanics Matrix */
+  /* Straight Diagonal High-Velocity Shooting Star Mechanics Matrix (+30% Volume Injection) */
   .diagonal-shooting-star {
     position: absolute !important;
     height: 1.5px;
@@ -75,23 +90,26 @@
     opacity: 0;
   }
 
-  /* Multi-Axis Symmetrical Spawning Lanes across the entire page background */
-  .star-d1 { top: -50px; left: 5%;   width: 120px; animation: diagonalStreak 2.0s linear infinite !important; animation-delay: 0.1s !important; }
-  .star-d2 { top: -50px; left: 25%;  width: 150px; animation: diagonalStreak 2.8s linear infinite !important; animation-delay: 1.5s !important; }
-  .star-d3 { top: -50px; left: 45%;  width: 110px; animation: diagonalStreak 2.3s linear infinite !important; animation-delay: 0.7s !important; }
-  .star-d4 { top: -50px; left: 65%;  width: 140px; animation: diagonalStreak 3.1s linear infinite !important; animation-delay: 2.1s !important; }
-  .star-d5 { top: -50px; left: 80%;  width: 125px; animation: diagonalStreak 2.5s linear infinite !important; animation-delay: 0.3s !important; }
-  .star-d6 { top: -50px; left: 92%;  width: 135px; animation: diagonalStreak 2.9s linear infinite !important; animation-delay: 1.1s !important; }
+  /* Multi-Axis Symmetrical Spawning Lanes distributed comprehensively over background frame bounds */
+  .star-d1 { top: -60px; left: 3%;   width: 130px; animation: diagonalStreak 1.8s linear infinite !important; animation-delay: 0.1s !important; }
+  .star-d2 { top: -60px; left: 20%;  width: 160px; animation: diagonalStreak 2.5s linear infinite !important; animation-delay: 1.2s !important; }
+  .star-d3 { top: -60px; left: 38%;  width: 115px; animation: diagonalStreak 2.1s linear infinite !important; animation-delay: 0.5s !important; }
+  .star-d4 { top: -60px; left: 55%;  width: 150px; animation: diagonalStreak 2.9s linear infinite !important; animation-delay: 1.8s !important; }
+  .star-d5 { top: -60px; left: 72%;  width: 135px; animation: diagonalStreak 2.3s linear infinite !important; animation-delay: 0.2s !important; }
+  .star-d6 { top: -60px; left: 88%;  width: 145px; animation: diagonalStreak 2.6s linear infinite !important; animation-delay: 0.9s !important; }
+  .star-d7 { top: -60px; left: 96%;  width: 120px; animation: diagonalStreak 2.2s linear infinite !important; animation-delay: 1.4s !important; }
   
-  /* Secondary scroll-depth staggered spawning lanes to populate lower page areas */
-  .star-d7 { top: 30vh;  left: 2%;   width: 115px; animation: diagonalStreak 2.6s linear infinite !important; animation-delay: 0.9s !important; }
-  .star-d8 { top: 45vh;  left: 85%;  width: 130px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 1.6s !important; }
+  /* Staggered vertical space coordinates to ensure distribution during long scroll depths */
+  .star-d8  { top: 25vh;  left: 1%;   width: 110px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 0.7s !important; }
+  .star-d9  { top: 40vh;  left: 84%;  width: 135px; animation: diagonalStreak 2.2s linear infinite !important; animation-delay: 1.3s !important; }
+  .star-d10 { top: 60vh;  left: 15%;  width: 125px; animation: diagonalStreak 2.7s linear infinite !important; animation-delay: 0.4s !important; }
+  .star-d11 { top: 75vh;  left: 90%;  width: 140px; animation: diagonalStreak 2.5s linear infinite !important; animation-delay: 1.1s !important; }
 
   @keyframes diagonalStreak {
     0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
-    4% { opacity: 1; }
-    26% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
-    100% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
+    3% { opacity: 1; }
+    22% { transform: translateX(-550px) translateY(500px) rotate(-45deg); opacity: 0; }
+    100% { transform: translateX(-550px) translateY(500px) rotate(-45deg); opacity: 0; }
   }
 
   /* Single Premium Consolidated Header Hero Card */
@@ -114,7 +132,7 @@
     z-index: 2;
   }
   
-  /* Inline Word Wrapper to prevent floating cursor bugs on mobile devices */
+  /* Inline Word Wrapper to prevent floating cursor bugs on mobile screens */
   .name-word-group {
     display: inline-block !important;
     white-space: nowrap !important;
@@ -128,6 +146,7 @@
     margin: 0 !important;
     text-align: center !important;
     line-height: 1.25;
+    min-height: 48px;
   }
 
   .typewriter-tagline {
@@ -141,6 +160,7 @@
     line-height: 1.5;
     width: 100% !important;
     display: block !important;
+    min-height: 18px;
   }
 
   /* Coding IDE Style Blinking Terminal Underscore Cursor */
@@ -417,6 +437,9 @@
   <div class="diagonal-shooting-star star-d6"></div>
   <div class="diagonal-shooting-star star-d7"></div>
   <div class="diagonal-shooting-star star-d8"></div>
+  <div class="diagonal-shooting-star star-d9"></div>
+  <div class="diagonal-shooting-star star-d10"></div>
+  <div class="diagonal-shooting-star star-d11"></div>
 </div>
 
 <div class="main-content">
@@ -424,9 +447,9 @@
   <!-- Clean Unified Header Area Component -->
   <div class="custom-portfolio-header">
     <h1 class="typewriter-title">
-      <span class="name-word-group">MALCOLM</span> 
-      <span class="name-word-group">JEREMIAH</span> 
-      <span class="name-word-group">RICHARD<span id="js-cursor-name" class="blinking-cursor">_</span></span>
+      <span class="name-word-group" id="js-type-name-1"></span> 
+      <span class="name-word-group" id="js-type-name-2"></span> 
+      <span class="name-word-group"><span id="js-type-name-3"></span><span id="js-cursor-name" class="blinking-cursor">_</span></span>
     </h1>
     <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
   </div>
@@ -665,7 +688,7 @@
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V04</td>
                 <td>H7: Efficiency of Use</td>
-                <td>Workspace directories flooded with static, expired course cells with no automated archival triggers.</td>
+                <td>Workspace directories flooded with static, expired course cells with no archival triggers.</td>
                 <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3</span></td>
               </tr>
               <tr>
@@ -710,7 +733,7 @@
     </div>
   </div>
 
-  <!-- Personal Challenges Section -->
+  <!-- Personal Challenges Section (Overhauled to Student Real-World Cases) -->
   <div id="personal-challenges" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#6366f1, #a855f7);"></div>
@@ -719,40 +742,40 @@
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px; margin-bottom: 24px;">
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">GitHub Layout Processing Collisions</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Markdown Styling Restrictions</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
-          <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements.
+          <strong>Problem:</strong> Standard GitHub theme parsers stripped out traditional CSS layouts, breaking typography sizes and rendering empty workspace boxes on narrow phone viewports.
           <br><br>
-          <strong>Resolution:</strong> Refactored structural elements into explicit inline HTML layout components using encoded wrappers to completely bypass theme build interference.
+          <strong>Resolution:</strong> Shifted all structural elements into raw inline HTML wrapper components with explicit inline style assignments to completely bypass theme preprocessing limitations.
         </p>
       </div>
 
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Theme Layout Banner Overrides</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Git Push Merge Tree Conflicts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
-          <strong>Problem:</strong> Default layout headers forced rigid green gradient branding boxes on desktop viewports.
+          <strong>Problem:</strong> Simultaneously updating layout media assets across multiple laboratory test terminals triggered branch collisions, dropping layout history files.
           <br><br>
-          <strong>Resolution:</strong> Injected targeted style element modifications to manually reset header containers with responsive asset URLs.
+          <strong>Resolution:</strong> Structured a strict staging upstream directory path using clean tracking tags and branch rebase strategies to synchronize terminal updates safely.
         </p>
       </div>
 
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Non-Intrusive Telemetry Alerts</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Asset URL Broken Paths</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
-          <strong>Problem:</strong> ErgoChef+ warning windows disrupted physical user cooking flows.
+          <strong>Problem:</strong> Referencing local file directory links caused broken icon indicators to display on the live web portal instead of structural design poster previews.
           <br><br>
-          <strong>Resolution:</strong> Restructured notification cycles using progressive visual overlays that clear as soon as posture metrics correct.
+          <strong>Resolution:</strong> Migrated all production imagery into raw absolute content links pointing directly to root master repository links to ensure permanent visibility.
         </p>
       </div>
     </div>
     
     <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
-        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Learning Portal Navigation Friction</strong>
+        <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">Mobile Text-Wrap Alignment Shifts</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
-          <strong>Problem:</strong> Complex link nesting on eLearn websites increased user multi-click journey loops and cognitive loads.
+          <strong>Problem:</strong> Scripted text strings caused character indicators to overflow and detach terminal styling symbols onto floating empty space lines on small screens.
           <br><br>
-          <strong>Resolution:</strong> Designed a compressed, expandable grid framework to make common actions instantly accessible.
+          <strong>Resolution:</strong> Wrapped adjacent text fields inside distinct word spans to isolate formatting scopes, locking character anchors to font baselines dynamically.
         </p>
       </div>
 
@@ -808,24 +831,61 @@
 
 </div>
 
-<!-- Native JavaScript Injection Engine Layout -->
+<!-- JavaScript Sequential Typewriter Application Engine Script -->
 <script>
-  /* Robust Tagline Typewriter Component Framework */
-  const taglineString = "BSC (HONS) INFORMATION TECHNOLOGY STUDENT | UI/UX PORTFOLIO";
-  const taglineContainer = document.getElementById("js-type-tagline");
-  let taglineIndex = 0;
+  /* Robust Multi-Word Token Typewriter Framework */
+  const w1 = "MALCOLM";
+  const w2 = "JEREMIAH";
+  const w3 = "RICHARD";
+  const taglineStr = "BSC (HONS) INFORMATION TECHNOLOGY STUDENT | UI/UX PORTFOLIO";
+  
+  const c1 = document.getElementById("js-type-name-1");
+  const c2 = document.getElementById("js-type-name-2");
+  const c3 = document.getElementById("js-type-name-3");
+  const tagline = document.getElementById("js-type-tagline");
+  const nameCursor = document.getElementById("js-cursor-name");
 
-  function typeTagline() {
-    if (taglineIndex < taglineString.length) {
-      taglineContainer.innerHTML += taglineString.charAt(taglineIndex);
-      taglineIndex++;
-      setTimeout(typeTagline, 40);
+  let idx = 0;
+
+  function typeSequence() {
+    // Type Word 1
+    if (idx < w1.length) {
+      c1.innerHTML += w1.charAt(idx);
+      idx++;
+      setTimeout(typeSequence, 50);
+    } 
+    // Space and Type Word 2
+    else if (idx < w1.length + w2.length) {
+      if(idx === w1.length) { c1.innerHTML += "&nbsp;"; }
+      c2.innerHTML += w2.charAt(idx - w1.length);
+      idx++;
+      setTimeout(typeSequence, 50);
+    } 
+    // Space and Type Word 3
+    else if (idx < w1.length + w2.length + w3.length) {
+      if(idx === w1.length + w2.length) { c2.innerHTML += "&nbsp;"; }
+      c3.innerHTML += w3.charAt(idx - (w1.length + w2.length));
+      idx++;
+      setTimeout(typeSequence, 50);
+    } 
+    // Launch Tagline Run
+    else {
+      idx = 0;
+      setTimeout(typeTagline, 250);
     }
   }
 
-  /* Secure Initialization Trigger */
+  function typeTagline() {
+    if (idx < taglineStr.length) {
+      tagline.innerHTML += taglineStr.charAt(idx);
+      idx++;
+      setTimeout(typeTagline, 35);
+    }
+  }
+
+  /* Safe Dom Boot Loader Loop */
   window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(typeTagline, 600);
+    setTimeout(typeSequence, 400);
   });
 
   /* Modal Control Mechanics Blueprint */
