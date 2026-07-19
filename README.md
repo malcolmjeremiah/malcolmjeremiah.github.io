@@ -342,8 +342,17 @@
     align-items: center !important;
     justify-content: center !important;
     overflow: hidden !important;
-    cursor: grab !important;
     border-radius: 16px !important;
+  }
+  .custom-modal-content {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    user-select: none !important;
+    -webkit-user-drag: none !important;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7) !important;
+    cursor: zoom-in !important;
   }
   
   .report-modal-window {
@@ -488,15 +497,15 @@
         <h4 style="margin-top: 0; margin-bottom: 16px; color: #475569; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Core Architecture Stack</h4>
         <div style="margin-bottom: 28px; display: flex; flex-wrap: wrap; gap: 8px;">
           <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #38bdf8; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(56, 189, 248, 0.15);">Python</span>
-          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #e2e8f0; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">PHP</span>
-          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #e2e8f0; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">JavaScript</span>
-          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #e2e8f0; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">GIT</span>
+          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #e2e8f0; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">PHP</span>
+          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #e2e8f0; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">JavaScript</span>
+          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #e2e8f0; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">GIT</span>
         </div>
         <h4 style="margin-top: 0; margin-bottom: 16px; color: #475569; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Methodologies</h4>
         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
           <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #a5b4fc; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(129, 140, 248, 0.12);">Heuristic Evaluation</span>
-          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #94a3b8; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">Cognitive Walkthrough</span>
-          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #94a3b8; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">Task Mapping</span>
+          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #94a3b8; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">Cognitive Walkthrough</span>
+          <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #94a3b8; padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.05);">Task Mapping</span>
         </div>
       </div>
     </div>
@@ -543,7 +552,7 @@
           <h2 style="color: #ffffff; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 1: ErgoChef+</h2>
           <p style="color: #f97316; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">AI-Powered Context Cooking Ecosystem</p>
         </div>
-        <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UI & Interaction Designer</span>
+        <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.08);">Lead UI & Interaction Designer</span>
       </div>
       
       <div style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.02) 0%, rgba(234, 88, 12, 0.05) 100%); border: 1px solid rgba(249, 115, 22, 0.12); border-radius: 16px; padding: 32px; margin-bottom: 45px;">
@@ -583,8 +592,8 @@
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; justify-content: center;">
           <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);">Launch Live App Prototype</a>
-          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</a>
-          <div onclick="openPosterModal()" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</div>
+          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</a>
+          <div onclick="openPosterModal()" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</div>
         </div>
       </div>
 
@@ -619,7 +628,7 @@
           <h2 style="color: #ffffff; font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.5px;">Case Study 2: Institutional eLearn UX Audit</h2>
           <p style="color: #38bdf8; font-size: 13px; font-weight: 700; margin: 8px 0 0 0; text-transform: uppercase; letter-spacing: 1px;">Learning Management Portal Optimization Study</p>
         </div>
-        <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.08);">Lead UX Auditor</span>
+        <span style="font-size: 12px; font-weight: 600; background-color: rgba(255,255,255,0.03); color: #cbd5e1; padding: 8px 20px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.08);">Lead UX Auditor</span>
       </div>
       
       <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.02) 0%, rgba(56, 189, 248, 0.03) 100%); border: 1px solid rgba(56, 189, 248, 0.08); border-radius: 16px; padding: 32px; margin-bottom: 40px;">
@@ -688,7 +697,7 @@
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V04</td>
                 <td>H7: Efficiency of Use</td>
-                <td>Workspace directories flooded with static, expired course cells with no archival triggers.</td>
+                <td>Workspace directories flooded with static, expired course cells with no automated archival triggers.</td>
                 <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3</span></td>
               </tr>
               <tr>
@@ -843,7 +852,6 @@
   const c2 = document.getElementById("js-type-name-2");
   const c3 = document.getElementById("js-type-name-3");
   const tagline = document.getElementById("js-type-tagline");
-  const nameCursor = document.getElementById("js-cursor-name");
 
   let idx = 0;
 
@@ -900,9 +908,9 @@
   let translateX = 0, translateY = 0;
 
   function openPosterModal() {
+    resetZoom();
     posterModal.classList.add('is-active');
     document.body.style.overflow = 'hidden'; 
-    resetZoom();
   }
 
   function closePosterModal() {
@@ -912,7 +920,7 @@
   }
 
   function closePosterModalFromOverlay(event) {
-    if (event.target.id === 'posterModal') {
+    if (event.target.id === 'posterModal' || event.target.id === 'modalWindow') {
       closePosterModal();
     }
   }
@@ -940,28 +948,29 @@
     }
   }
 
-  /* Multi-Touch Zoom-and-Drag Telemetry Engine */
-  modalWindow.addEventListener('click', (event) => {
-    if (event.target.classList.contains('custom-modal-close-btn') || event.target.tagName === 'BUTTON') return;
-    
+  /* Separate Zoom Toggle Handler to Prevent Premature Execution on Click */
+  posterImg.addEventListener('click', (event) => {
+    event.stopPropagation(); // Stop overlay triggers
     if (!isZoomed) {
       isZoomed = true;
       posterImg.style.cursor = 'zoom-out';
-      const rect = modalWindow.getBoundingClientRect();
+      const rect = posterImg.getBoundingClientRect();
       const clickX = (event.clientX - rect.left) / rect.width;
       const clickY = (event.clientY - rect.top) / rect.height;
       posterImg.style.transformOrigin = `${clickX * 100}% ${clickY * 100}%`;
-      posterImg.style.transform = 'scale(2.5)';
+      posterImg.style.transform = 'scale(2.2)';
     } else {
       resetZoom();
     }
   });
 
-  modalWindow.addEventListener('mousedown', (event) => {
+  /* Pan Drag Controls while Zoomed In */
+  posterImg.addEventListener('mousedown', (event) => {
     if (!isZoomed) return;
     isDragging = true;
     startX = event.clientX - translateX;
     startY = event.clientY - translateY;
+    posterImg.style.cursor = 'grabbing';
   });
 
   window.addEventListener('mousemove', (event) => {
@@ -969,10 +978,13 @@
     event.preventDefault();
     translateX = event.clientX - startX;
     translateY = event.clientY - startY;
-    posterImg.style.transform = `scale(2.5) translate(${translateX / 2.5}px, ${translateY / 2.5}px)`;
+    posterImg.style.transform = `scale(2.2) translate(${translateX / 2.2}px, ${translateY / 2.2}px)`;
   });
 
-  window.addEventListener('mouseup', () => { isDragging = false; });
+  window.addEventListener('mouseup', () => { 
+    if(isZoomed) posterImg.style.cursor = 'zoom-out';
+    isDragging = false; 
+  });
 
   function resetZoom() {
     isZoomed = false;
@@ -980,7 +992,7 @@
     translateX = 0;
     translateY = 0;
     posterImg.style.cursor = 'zoom-in';
-    posterImg.style.transform = 'scale(1)';
+    posterImg.style.transform = 'scale(1) translate(0px, 0px)';
     posterImg.style.transformOrigin = 'center center';
   }
 </script>
