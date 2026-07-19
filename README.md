@@ -36,7 +36,7 @@
     z-index: 2;
   }
 
-  /* Immersive Full-Height Space Backdrop Canvas Layer */
+  /* Immersive Full-Height Symmetrical Space Backdrop Canvas Layer */
   .space-canvas {
     position: fixed !important;
     top: 0 !important;
@@ -65,7 +65,7 @@
     opacity: 0.65;
   }
   
-  /* Straight Diagonal High-Velocity Shooting Star Mechanics */
+  /* Straight Diagonal High-Velocity Shooting Star Mechanics - Locked to extreme viewport edges */
   .diagonal-shooting-star {
     position: absolute !important;
     top: -60px;
@@ -75,21 +75,21 @@
     opacity: 0;
   }
 
-  .star-d1 { right: 85%; width: 120px; animation: diagonalStreak 2.0s linear infinite !important; animation-delay: 0.1s !important; }
-  .star-d2 { right: 45%; width: 140px; animation: diagonalStreak 2.7s linear infinite !important; animation-delay: 1.1s !important; }
-  .star-d3 { right: 8%;  width: 130px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 0.4s !important; }
-  .star-d4 { right: 65%; width: 110px; animation: diagonalStreak 3.2s linear infinite !important; animation-delay: 1.6s !important; }
+  .star-d1 { left: 2%;  width: 120px; animation: diagonalStreak 2.0s linear infinite !important; animation-delay: 0.1s !important; }
+  .star-d2 { left: 12%; width: 140px; animation: diagonalStreak 2.7s linear infinite !important; animation-delay: 1.1s !important; }
+  .star-d3 { left: 88%; width: 130px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 0.4s !important; }
+  .star-d4 { left: 96%; width: 110px; animation: diagonalStreak 3.2s linear infinite !important; animation-delay: 1.6s !important; }
 
   @keyframes diagonalStreak {
     0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
     4% { opacity: 1; }
-    22% { transform: translateX(-600px) translateY(600px) rotate(-45deg); opacity: 0; }
-    100% { transform: translateX(-600px) translateY(600px) rotate(-45deg); opacity: 0; }
+    22% { transform: translateX(-400px) translateY(400px) rotate(-45deg); opacity: 0; }
+    100% { transform: translateX(-400px) translateY(400px) rotate(-45deg); opacity: 0; }
   }
 
   /* Single Premium Consolidated Header Hero Card */
   .custom-portfolio-header {
-    background-color: rgba(15, 23, 42, 0.35) !important;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.4) 0%, rgba(30, 41, 59, 0.15) 100%) !important;
     backdrop-filter: blur(24px) !important;
     -webkit-backdrop-filter: blur(24px) !important;
     padding: 8.5rem 2rem !important;
@@ -105,17 +105,27 @@
     justify-content: center !important;
     position: relative;
     z-index: 2;
-    min-height: 200px;
   }
   
+  /* Text Container Layout Configuration */
+  .header-text-block {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+  }
+
   .typewriter-title {
     color: #ffffff !important;
     font-size: 38px !important;
     font-weight: 800 !important;
     letter-spacing: -0.5px !important;
     margin: 0 !important;
-    display: inline !important;
+    white-space: normal !important;
+    text-align: center !important;
     line-height: 1.2;
+    display: inline !important;
   }
 
   .typewriter-tagline {
@@ -125,19 +135,21 @@
     text-transform: uppercase !important;
     letter-spacing: 3.5px !important;
     margin: 18px 0 0 0 !important;
-    display: inline !important;
-    line-height: 1.4;
+    text-align: center !important;
+    line-height: 1.5;
+    width: 100% !important;
   }
 
-  /* Blinking Terminal Style Cursor Component */
+  /* Coding IDE Style Blinking Terminal Underscore Cursor */
   .blinking-cursor {
     display: inline-block !important;
-    color: #ffffff !important; /* Pure White Code Cursor */
+    color: #ffffff !important;
     font-weight: 800 !important;
     font-size: 36px !important;
     animation: pulseCursor 0.8s step-end infinite !important;
     vertical-align: baseline !important;
-    margin-left: 6px !important;
+    margin-left: 4px !important;
+    line-height: 1.2 !important;
   }
 
   @keyframes pulseCursor {
@@ -195,19 +207,6 @@
   }
   .nav-btn:hover::after { width: 25% !important; }
 
-  @media (max-width: 768px) {
-    .nav-container {
-      justify-content: flex-start !important;
-      overflow-x: auto !important;
-      -webkit-overflow-scrolling: touch !important;
-      border-radius: 16px !important;
-      padding: 6px !important;
-      margin-bottom: 40px;
-    }
-    .nav-container::-webkit-scrollbar { display: none !important; }
-    .nav-btn { padding: 12px 18px !important; }
-  }
-
   /* Frosted Matrix Card Component */
   .premium-card {
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.45) 0%, rgba(30, 41, 59, 0.25) 100%) !important;
@@ -219,15 +218,15 @@
   }
   
   .premium-card.glow-orange:hover {
-    transform: translateY(-6px) !important;
+    transform: translateY(-4px) !important;
     border-color: rgba(249, 115, 22, 0.3) !important;
-    box-shadow: 0 35px 60px -15px rgba(249, 115, 22, 0.2) !important;
+    box-shadow: 0 30px 60px -15px rgba(249, 115, 22, 0.25) !important;
   }
   
   .premium-card.glow-blue:hover {
-    transform: translateY(-6px) !important;
+    transform: translateY(-4px) !important;
     border-color: rgba(56, 189, 248, 0.3) !important;
-    box-shadow: 0 35px 60px -15px rgba(56, 189, 248, 0.2) !important;
+    box-shadow: 0 30px 60px -15px rgba(56, 189, 248, 0.25) !important;
   }
   
   .badge-btn {
@@ -235,8 +234,8 @@
     cursor: pointer !important;
   }
   .badge-btn:hover {
-    transform: translateY(-3px) !important;
-    filter: brightness(1.2);
+    transform: translateY(-2px) !important;
+    filter: brightness(1.15);
   }
 
   .section-title-wrapper {
@@ -351,9 +350,77 @@
     border: none !important;
     background: #111827 !important;
   }
+
+  .custom-modal-close-btn {
+    position: fixed !important;
+    top: 25px !important;
+    right: 35px !important;
+    background: rgba(15, 23, 42, 0.7) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    color: #94a3b8 !important;
+    font-size: 24px !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+    z-index: 10001 !important;
+  }
+
+  /* Ultra-Responsive Layout Grid Normalization System for Mobile */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px 0 !important; /* Strip empty borders from extreme right/left margins */
+    }
+    
+    .custom-portfolio-header, #who-i-am, #projects-overview, #case-study-1-ergochef, #case-study-2-elearn-ux-audit, #personal-challenges, #submission {
+      border-radius: 0px !important; /* Fill page smoothly on mobile devices */
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+    
+    .nav-container {
+      justify-content: flex-start !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+      border-radius: 0px !important;
+      padding: 6px !important;
+      margin-bottom: 40px;
+      top: 0px;
+    }
+    .nav-container::-webkit-scrollbar { display: none !important; }
+    .nav-btn { padding: 12px 18px !important; }
+
+    /* Force symmetrical cell stretching on multi-column split bubbles */
+    .case-split-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+    .case-split-grid > div {
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    
+    /* Ensure the Report button aligns perfectly inside its container box bounds */
+    .badge-btn-container {
+      width: 100% !important;
+      box-sizing: border-box !important;
+      padding: 0 10px !important;
+    }
+    .badge-btn-container > .badge-btn {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }
 </style>
 
-<!-- High-Velocity Diagonal Cosmic Starfield Background Canvas -->
+<!-- High-Velocity Symmetrical Diagonal Cosmic Starfield Background Canvas Container -->
 <div class="space-canvas">
   <div class="diagonal-shooting-star star-d1"></div>
   <div class="diagonal-shooting-star star-d2"></div>
@@ -365,11 +432,11 @@
 
   <!-- Clean Unified Header Area Component -->
   <div class="custom-portfolio-header">
-    <div style="min-height: 46px; display: flex; align-items: center; justify-content: center;">
+    <div class="header-text-block">
       <h1 id="js-type-name" class="typewriter-title"></h1>
       <span id="js-cursor-name" class="blinking-cursor">_</span>
     </div>
-    <div style="min-height: 24px; display: flex; align-items: center; justify-content: center; margin-top: 5px;">
+    <div class="header-text-block">
       <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
     </div>
   </div>
@@ -498,7 +565,7 @@
         </div>
       </div>
 
-      <!-- Action Launch Deck Buttons -->
+      <!-- Action Launch Badges Row Component -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -509,8 +576,9 @@
         </div>
       </div>
 
-      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
-        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.06); border-radius: 16px; padding: 28px;">
+      <!-- Mobile wrap normalized grid -->
+      <div class="case-split-grid" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
+        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.06); border-radius: 16px; padding: 28px; box-sizing: border-box;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>The Challenge:</strong> Ensuring prompt posture warning alerts didn't disrupt the user's active cooking workflow split focus.
@@ -518,7 +586,7 @@
             <strong>The Solution:</strong> Implemented subtle, non-intrusive sound layouts and progressive visual overlay alerts that auto-dismissed once correct body calibration was recorded.
           </p>
         </div>
-        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.06); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.06); border-radius: 16px; padding: 28px; box-sizing: border-box;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>Outcomes:</strong> Live web dashboard evaluation runs tracked an average improvement in posture alignment and high user interface satisfaction.
@@ -609,7 +677,7 @@
               <tr>
                 <td style="color: #38bdf8; font-weight: 600;">V04</td>
                 <td>H7: Efficiency of Use</td>
-                <td>Workspace directories flooded with static, expired course cells with no archival triggers.</td>
+                <td>Workspace directories flooded with static, expired course cells with no automated archival triggers.</td>
                 <td><span style="background: rgba(239, 68, 68, 0.1); color: #ef4444; padding: 2px 8px; border-radius: 4px; font-size: 11px;">Severity 3</span></td>
               </tr>
               <tr>
@@ -623,16 +691,17 @@
         </div>
       </div>
 
-      <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
+      <!-- Normalized Button Frame Wrapper to preserve alignment on mobile viewports -->
+      <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; width: 100%;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Audited Layouts</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations.</p>
-        <div style="display: flex; justify-content: center;">
-          <div onclick="openReportModal()" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);">📋 View the Report Here</div>
+        <div class="badge-btn-container" style="display: flex; justify-content: center; width: 100%;">
+          <div onclick="openReportModal()" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3); box-sizing: border-box;">📋 View the Report Here</div>
         </div>
       </div>
 
-      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
-        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px;">
+      <div class="case-split-grid" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
+        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 28px; box-sizing: border-box;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>The Challenge:</strong> Consolidating extensive, fragmented module links into a small viewport without triggering secondary layout overcrowding.
@@ -640,7 +709,7 @@
             <strong>The Solution:</strong> Applied an expandable web directory system that keeps primary folders prominent while dynamically grouping inner module links until clicked.
           </p>
         </div>
-        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px;">
+        <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(34, 197, 94, 0.01) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.08); border-radius: 16px; padding: 28px; box-sizing: border-box;">
           <h4 style="margin-top: 0; color: #22c55e; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Project Results & Feedback</h4>
           <p style="font-size: 14px; line-height: 1.7; color: #cbd5e1; margin: 0;">
             <strong>Outcomes:</strong> Empirical validation runs recorded an immediate drop in manual task processing loops and execution delays.
@@ -664,7 +733,7 @@
       <div class="premium-card glow-blue" style="flex: 1; min-width: 320px; border-radius: 16px; padding: 32px;">
         <strong style="color: #ffffff; font-size: 15px; display: block; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px;">GitHub Layout Processing Collisions</strong>
         <p style="font-size: 14px; line-height: 1.7; color: #94a3b8; margin: 0;">
-          <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements (like # or ##).
+          <strong>Problem:</strong> Root standard layout wrapping caused theme processors to strip out native Markdown header elements.
           <br><br>
           <strong>Resolution:</strong> Refactored structural elements into explicit inline HTML layout components using encoded wrappers to completely bypass theme build interference.
         </p>
@@ -721,6 +790,7 @@
 
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
+  <!-- Academic Verification Footer Component - Completely Transparent of Tooling Use -->
   <div id="submission" style="padding-top: 20px; margin-bottom: 60px;">
     <div class="premium-card glow-blue" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
@@ -733,6 +803,7 @@
     </div>
   </div>
 
+  <!-- Dynamic Modal Lightbox Overlay Systems -->
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
     <div class="custom-modal-window" id="modalWindow">
@@ -757,7 +828,6 @@
   
   const nameContainer = document.getElementById("js-type-name");
   const taglineContainer = document.getElementById("js-type-tagline");
-  const nameCursor = document.getElementById("js-cursor-name");
 
   let nameIndex = 0;
   let taglineIndex = 0;
@@ -768,7 +838,7 @@
       nameIndex++;
       setTimeout(typeName, 55);
     } else {
-      /* Remove the blink animation freeze layout constraints, start tagline type block */
+      /* Proceed to type tagline rows sequentially */
       setTimeout(typeTagline, 300);
     }
   }
