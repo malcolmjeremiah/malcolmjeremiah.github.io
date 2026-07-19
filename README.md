@@ -1,7 +1,7 @@
 <!-- Enterprise UI Layout Engine & Premium Dark Space Override Framework -->
 <style>
-  /* Force hide GitHub Pages theme default header to eliminate the double-header bug */
-  header.page-header, .page-header {
+  /* Force hide GitHub Pages theme default header components */
+  header.page-header, .page-header, .site-header {
     display: none !important;
   }
 
@@ -34,6 +34,7 @@
     padding: 0 !important;
     position: relative;
     z-index: 2;
+    box-sizing: border-box !important;
   }
 
   /* Immersive Full-Height Symmetrical Space Backdrop Canvas Layer */
@@ -62,29 +63,35 @@
       radial-gradient(1.5px 1.5px at 1120px 260px, #ffffff, rgba(0,0,0,0)) !important;
     background-repeat: repeat !important;
     background-size: 500px 500px !important;
-    opacity: 0.65;
+    opacity: 0.7;
   }
   
-  /* Straight Diagonal High-Velocity Shooting Star Mechanics - Locked to extreme viewport edges */
+  /* Straight Diagonal High-Velocity Shooting Star Mechanics Matrix */
   .diagonal-shooting-star {
     position: absolute !important;
-    top: -60px;
     height: 1.5px;
     background: linear-gradient(-45deg, #ffffff, rgba(56, 189, 248, 0));
     filter: drop-shadow(0 0 8px #60a5fa);
     opacity: 0;
   }
 
-  .star-d1 { left: 2%;  width: 120px; animation: diagonalStreak 2.0s linear infinite !important; animation-delay: 0.1s !important; }
-  .star-d2 { left: 12%; width: 140px; animation: diagonalStreak 2.7s linear infinite !important; animation-delay: 1.1s !important; }
-  .star-d3 { left: 88%; width: 130px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 0.4s !important; }
-  .star-d4 { left: 96%; width: 110px; animation: diagonalStreak 3.2s linear infinite !important; animation-delay: 1.6s !important; }
+  /* Multi-Axis Symmetrical Spawning Lanes across the entire page background */
+  .star-d1 { top: -50px; left: 5%;   width: 120px; animation: diagonalStreak 2.0s linear infinite !important; animation-delay: 0.1s !important; }
+  .star-d2 { top: -50px; left: 25%;  width: 150px; animation: diagonalStreak 2.8s linear infinite !important; animation-delay: 1.5s !important; }
+  .star-d3 { top: -50px; left: 45%;  width: 110px; animation: diagonalStreak 2.3s linear infinite !important; animation-delay: 0.7s !important; }
+  .star-d4 { top: -50px; left: 65%;  width: 140px; animation: diagonalStreak 3.1s linear infinite !important; animation-delay: 2.1s !important; }
+  .star-d5 { top: -50px; left: 80%;  width: 125px; animation: diagonalStreak 2.5s linear infinite !important; animation-delay: 0.3s !important; }
+  .star-d6 { top: -50px; left: 92%;  width: 135px; animation: diagonalStreak 2.9s linear infinite !important; animation-delay: 1.1s !important; }
+  
+  /* Secondary scroll-depth staggered spawning lanes to populate lower page areas */
+  .star-d7 { top: 30vh;  left: 2%;   width: 115px; animation: diagonalStreak 2.6s linear infinite !important; animation-delay: 0.9s !important; }
+  .star-d8 { top: 45vh;  left: 85%;  width: 130px; animation: diagonalStreak 2.4s linear infinite !important; animation-delay: 1.6s !important; }
 
   @keyframes diagonalStreak {
     0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
     4% { opacity: 1; }
-    22% { transform: translateX(-400px) translateY(400px) rotate(-45deg); opacity: 0; }
-    100% { transform: translateX(-400px) translateY(400px) rotate(-45deg); opacity: 0; }
+    26% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
+    100% { transform: translateX(-500px) translateY(500px) rotate(-45deg); opacity: 0; }
   }
 
   /* Single Premium Consolidated Header Hero Card */
@@ -107,13 +114,10 @@
     z-index: 2;
   }
   
-  /* Text Container Layout Configuration */
-  .header-text-block {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    max-width: 100% !important;
+  /* Inline Word Wrapper to prevent floating cursor bugs on mobile devices */
+  .name-word-group {
+    display: inline-block !important;
+    white-space: nowrap !important;
   }
 
   .typewriter-title {
@@ -122,10 +126,8 @@
     font-weight: 800 !important;
     letter-spacing: -0.5px !important;
     margin: 0 !important;
-    white-space: normal !important;
     text-align: center !important;
-    line-height: 1.2;
-    display: inline !important;
+    line-height: 1.25;
   }
 
   .typewriter-tagline {
@@ -138,18 +140,19 @@
     text-align: center !important;
     line-height: 1.5;
     width: 100% !important;
+    display: block !important;
   }
 
   /* Coding IDE Style Blinking Terminal Underscore Cursor */
   .blinking-cursor {
     display: inline-block !important;
-    color: #ffffff !important;
+    color: #ffffff !important; 
     font-weight: 800 !important;
     font-size: 36px !important;
     animation: pulseCursor 0.8s step-end infinite !important;
     vertical-align: baseline !important;
-    margin-left: 4px !important;
-    line-height: 1.2 !important;
+    margin-left: 2px !important;
+    line-height: 1 !important;
   }
 
   @keyframes pulseCursor {
@@ -322,16 +325,6 @@
     cursor: grab !important;
     border-radius: 16px !important;
   }
-  .custom-modal-window:active { cursor: grabbing !important; }
-  .custom-modal-content {
-    max-width: 100% !important;
-    max-height: 100% !important;
-    object-fit: contain !important;
-    user-select: none !important;
-    -webkit-user-drag: none !important;
-    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7) !important;
-  }
   
   .report-modal-window {
     width: 85vw !important;
@@ -351,37 +344,27 @@
     background: #111827 !important;
   }
 
-  .custom-modal-close-btn {
-    position: fixed !important;
-    top: 25px !important;
-    right: 35px !important;
-    background: rgba(15, 23, 42, 0.7) !important;
-    border: 1px solid rgba(255,255,255,0.08) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
-    color: #94a3b8 !important;
-    font-size: 24px !important;
-    width: 44px !important;
-    height: 44px !important;
-    border-radius: 50% !important;
-    cursor: pointer !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.2s ease !important;
-    z-index: 10001 !important;
-  }
-
-  /* Ultra-Responsive Layout Grid Normalization System for Mobile */
+  /* Ultra-Responsive Layout Grid Normalization System for Mobile Viewports */
   @media (max-width: 768px) {
+    /* Completely overwrite GitHub theme container paddings to hit absolute edge-to-edge alignment */
+    html, body, .main-content, .container-lg {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+    
     body {
-      padding: 20px 0 !important; /* Strip empty borders from extreme right/left margins */
+      padding-top: 10px !important;
+      padding-bottom: 20px !important;
     }
     
     .custom-portfolio-header, #who-i-am, #projects-overview, #case-study-1-ergochef, #case-study-2-elearn-ux-audit, #personal-challenges, #submission {
-      border-radius: 0px !important; /* Fill page smoothly on mobile devices */
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+      border-radius: 0px !important; 
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      box-sizing: border-box !important;
+      width: 100% !important;
     }
     
     .nav-container {
@@ -394,24 +377,28 @@
       top: 0px;
     }
     .nav-container::-webkit-scrollbar { display: none !important; }
-    .nav-btn { padding: 12px 18px !important; }
+    .nav-btn { padding: 12px 16px !important; }
 
-    /* Force symmetrical cell stretching on multi-column split bubbles */
+    /* Force full vertical stretching on split info bubbles so they align symmetrically */
     .case-split-grid {
       display: flex !important;
       flex-direction: column !important;
-      gap: 20px !important;
+      gap: 16px !important;
+      width: 100% !important;
     }
     .case-split-grid > div {
       width: 100% !important;
+      max-width: 100% !important;
       box-sizing: border-box !important;
     }
     
-    /* Ensure the Report button aligns perfectly inside its container box bounds */
+    /* Center and balance the View Report button symmetrically inside its outer container bounds */
     .badge-btn-container {
       width: 100% !important;
       box-sizing: border-box !important;
-      padding: 0 10px !important;
+      padding: 0px !important;
+      display: flex !important;
+      justify-content: center !important;
     }
     .badge-btn-container > .badge-btn {
       max-width: 100% !important;
@@ -420,25 +407,28 @@
   }
 </style>
 
-<!-- High-Velocity Symmetrical Diagonal Cosmic Starfield Background Canvas Container -->
+<!-- High-Velocity Multi-Lane Cosmic Starfield Backdrop Canvas Container -->
 <div class="space-canvas">
   <div class="diagonal-shooting-star star-d1"></div>
   <div class="diagonal-shooting-star star-d2"></div>
   <div class="diagonal-shooting-star star-d3"></div>
   <div class="diagonal-shooting-star star-d4"></div>
+  <div class="diagonal-shooting-star star-d5"></div>
+  <div class="diagonal-shooting-star star-d6"></div>
+  <div class="diagonal-shooting-star star-d7"></div>
+  <div class="diagonal-shooting-star star-d8"></div>
 </div>
 
 <div class="main-content">
 
   <!-- Clean Unified Header Area Component -->
   <div class="custom-portfolio-header">
-    <div class="header-text-block">
-      <h1 id="js-type-name" class="typewriter-title"></h1>
-      <span id="js-cursor-name" class="blinking-cursor">_</span>
-    </div>
-    <div class="header-text-block">
-      <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
-    </div>
+    <h1 class="typewriter-title">
+      <span class="name-word-group">MALCOLM</span> 
+      <span class="name-word-group">JEREMIAH</span> 
+      <span class="name-word-group">RICHARD<span id="js-cursor-name" class="blinking-cursor">_</span></span>
+    </h1>
+    <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
   </div>
 
   <!-- Master Floating Dashboard Dock Component -->
@@ -565,7 +555,6 @@
         </div>
       </div>
 
-      <!-- Action Launch Badges Row Component -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Live Media</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
@@ -576,7 +565,6 @@
         </div>
       </div>
 
-      <!-- Mobile wrap normalized grid -->
       <div class="case-split-grid" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 24px;">
         <div style="flex: 1; min-width: 280px; background: linear-gradient(135deg, rgba(239, 68, 68, 0.01) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.06); border-radius: 16px; padding: 28px; box-sizing: border-box;">
           <h4 style="margin-top: 0; color: #ef4444; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;">Challenges & UX Solutions</h4>
@@ -691,12 +679,12 @@
         </div>
       </div>
 
-      <!-- Normalized Button Frame Wrapper to preserve alignment on mobile viewports -->
+      <!-- Symmetrical Button Container Box Bounds for Mobile Alignment consistency -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; width: 100%;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Audited Layouts</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations.</p>
-        <div class="badge-btn-container" style="display: flex; justify-content: center; width: 100%;">
-          <div onclick="openReportModal()" class="badge-btn" style="flex: 1; min-width: 260px; max-width: 320px; background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3); box-sizing: border-box;">📋 View the Report Here</div>
+        <div class="badge-btn-container">
+          <div onclick="openReportModal()" class="badge-btn" style="background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3); box-sizing: border-box;">📋 View the Report Here</div>
         </div>
       </div>
 
@@ -790,20 +778,20 @@
 
   <hr style="height: 1px; border: none; background-color: rgba(255,255,255,0.05); margin: 60px 0;">
 
-  <!-- Academic Verification Footer Component - Completely Transparent of Tooling Use -->
+  <!-- Transparent & Authentic Academic Verification Footer Component -->
   <div id="submission" style="padding-top: 20px; margin-bottom: 60px;">
     <div class="premium-card glow-blue" style="border-radius: 20px; padding: 40px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
       <div style="background-color: rgba(255,255,255,0.02); padding: 20px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.05); font-size: 22px;">📋</div>
       <div style="flex: 1; min-width: 260px;">
         <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">Academic Integrity & Submission Verification</h3>
         <p style="font-size: 14.5px; color: #94a3b8; line-height: 1.7; margin: 0;">
-          This web portfolio is submitted in strict alignment with university academic integrity code standards. All featured layout components, script configurations, and design narratives represent authentic project work completed during the academic semester term. Artificial intelligence assistive tooling was deployed exclusively to optimize grammatical layout properties.
+          This web portfolio is submitted in alignment with university academic integrity code standards. All featured heuristic content parameters, empirical usability tables, and project core solutions represent authentic assignment work researched and drafted by the student. Generative AI engineering workflows were purposefully utilized to write the accompanying front-end styling scripts, compile the layout structures, and polish grammatical clarity to meet presentation standards.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Dynamic Modal Lightbox Overlay Systems -->
+  <!-- Dynamic Modal Lightbox Overlays -->
   <div id="posterModal" class="custom-modal-overlay" onclick="closePosterModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closePosterModal()">&times;</button>
     <div class="custom-modal-window" id="modalWindow">
@@ -822,38 +810,22 @@
 
 <!-- Native JavaScript Injection Engine Layout -->
 <script>
-  /* Robust Sequential Typewriter Framework Mechanics */
-  const nameString = "MALCOLM JEREMIAH RICHARD";
+  /* Robust Tagline Typewriter Component Framework */
   const taglineString = "BSC (HONS) INFORMATION TECHNOLOGY STUDENT | UI/UX PORTFOLIO";
-  
-  const nameContainer = document.getElementById("js-type-name");
   const taglineContainer = document.getElementById("js-type-tagline");
-
-  let nameIndex = 0;
   let taglineIndex = 0;
-
-  function typeName() {
-    if (nameIndex < nameString.length) {
-      nameContainer.innerHTML += nameString.charAt(nameIndex);
-      nameIndex++;
-      setTimeout(typeName, 55);
-    } else {
-      /* Proceed to type tagline rows sequentially */
-      setTimeout(typeTagline, 300);
-    }
-  }
 
   function typeTagline() {
     if (taglineIndex < taglineString.length) {
       taglineContainer.innerHTML += taglineString.charAt(taglineIndex);
       taglineIndex++;
-      setTimeout(typeTagline, 35);
+      setTimeout(typeTagline, 40);
     }
   }
 
-  /* Secure Initialization Event */
+  /* Secure Initialization Trigger */
   window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(typeName, 400);
+    setTimeout(typeTagline, 600);
   });
 
   /* Modal Control Mechanics Blueprint */
