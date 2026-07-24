@@ -117,7 +117,7 @@
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.4) 0%, rgba(30, 41, 59, 0.15) 100%) !important;
     backdrop-filter: blur(24px) !important;
     -webkit-backdrop-filter: blur(24px) !important;
-    padding: 7rem 2rem 6rem 2rem !important;
+    padding: 7rem 2rem 5rem 2rem !important;
     text-align: center !important;
     border-radius: 28px !important;
     box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.95) !important;
@@ -163,29 +163,31 @@
     min-height: 18px;
   }
 
-  /* Primary Walkthrough Hero Button Component */
-  .hero-walkthrough-btn {
-    margin-top: 32px !important;
+  /* Subtle Subtle Glassmorphic Walkthrough Pill Button */
+  .subtle-walkthrough-btn {
+    margin-top: 24px !important;
     display: inline-flex !important;
     align-items: center !important;
-    gap: 10px !important;
-    background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%) !important;
-    color: #ffffff !important;
-    padding: 14px 28px !important;
-    border-radius: 30px !important;
-    font-weight: 700 !important;
-    font-size: 13.5px !important;
-    text-decoration: none !important;
+    gap: 8px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: #38bdf8 !important;
+    padding: 8px 18px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
     letter-spacing: 0.3px !important;
-    box-shadow: 0 10px 30px -5px rgba(56, 189, 248, 0.4) !important;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
   }
 
-  .hero-walkthrough-btn:hover {
-    transform: translateY(-3px) scale(1.02) !important;
-    box-shadow: 0 15px 35px -5px rgba(56, 189, 248, 0.6) !important;
-    filter: brightness(1.1);
+  .subtle-walkthrough-btn:hover {
+    background: rgba(56, 189, 248, 0.1) !important;
+    color: #ffffff !important;
+    border-color: rgba(56, 189, 248, 0.4) !important;
+    transform: translateY(-2px) !important;
   }
 
   /* Coding IDE Style Blinking Terminal Underscore Cursor */
@@ -340,6 +342,7 @@
     line-height: 1.6 !important;
   }
 
+  /* Universal Modal Architecture */
   .custom-modal-overlay {
     position: fixed !important;
     top: 0 !important;
@@ -378,6 +381,29 @@
     transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
     box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7) !important;
     cursor: zoom-in !important;
+  }
+
+  /* Video Lightbox Player Window */
+  .video-modal-window {
+    width: 80vw !important;
+    max-width: 960px !important;
+    height: 0 !important;
+    padding-bottom: 45% !important; /* 16:9 Aspect Ratio */
+    background-color: #000000 !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.9) !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  .video-frame {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
   }
   
   .report-modal-window {
@@ -448,6 +474,11 @@
       padding-right: 16px !important;
       box-sizing: border-box !important;
       width: 100% !important;
+    }
+
+    .video-modal-window {
+      width: 92vw !important;
+      padding-bottom: 56.25% !important; /* Mobile 16:9 ratio */
     }
     
     .nav-container {
@@ -522,13 +553,13 @@
     </h1>
     <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
 
-    <!-- Prominent Video Walkthrough Action Button -->
-    <a href="https://youtu.be/JaEmmGhA464" target="_blank" class="hero-walkthrough-btn">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle;">
+    <!-- Subtle, Minimalist Walkthrough Video Trigger -->
+    <button onclick="openVideoModal('walkthrough')" class="subtle-walkthrough-btn">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
         <path d="M8 5v14l11-7z"/>
       </svg>
       Watch Portfolio Walkthrough
-    </a>
+    </button>
   </div>
 
   <!-- Master Floating Dashboard Dock Component -->
@@ -660,7 +691,7 @@
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; justify-content: center;">
           <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);">Launch Live App Prototype</a>
-          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Project Video</a>
+          <div onclick="openVideoModal('ergochef')" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</div>
           <div onclick="openPosterModal()" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</div>
         </div>
       </div>
@@ -899,6 +930,14 @@
     </div>
   </div>
 
+  <!-- Video Modal Lightbox Overlay Frame -->
+  <div id="videoModal" class="custom-modal-overlay" onclick="closeVideoModalFromOverlay(event)">
+    <button class="custom-modal-close-btn" onclick="closeVideoModal()">&times;</button>
+    <div class="video-modal-window">
+      <iframe id="videoPlayerFrame" class="video-frame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <!-- PDF Modal with Dual Engine Layout for iOS Support -->
   <div id="reportModal" class="custom-modal-overlay" onclick="closeReportModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closeReportModal()">&times;</button>
@@ -968,13 +1007,41 @@
 
   /* Modal Control Mechanics Blueprint */
   const posterModal = document.getElementById('posterModal');
+  const videoModal = document.getElementById('videoModal');
   const reportModal = document.getElementById('reportModal');
   const posterImg = document.getElementById('posterImg');
+  const videoPlayerFrame = document.getElementById('videoPlayerFrame');
 
   let isZoomed = false;
   let isDragging = false;
   let startX, startY;
   let translateX = 0, translateY = 0;
+
+  /* Embedded Video Pop-Up Engine */
+  function openVideoModal(videoType) {
+    let embedUrl = "";
+    if (videoType === 'walkthrough') {
+      embedUrl = "https://www.youtube-nocookie.com/embed/JaEmmGhA464?autoplay=1";
+    } else if (videoType === 'ergochef') {
+      embedUrl = "https://www.youtube-nocookie.com/embed/-QOms8I-tbM?autoplay=1";
+    }
+    
+    videoPlayerFrame.src = embedUrl;
+    videoModal.classList.add('is-active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeVideoModal() {
+    videoPlayerFrame.src = ""; // Clears video stream on close
+    videoModal.classList.remove('is-active');
+    document.body.style.overflow = '';
+  }
+
+  function closeVideoModalFromOverlay(event) {
+    if (event.target.id === 'videoModal') {
+      closeVideoModal();
+    }
+  }
 
   function openPosterModal() {
     resetZoom();
@@ -1002,6 +1069,7 @@
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
       closePosterModal();
+      closeVideoModal();
       closeReportModal();
     }
   });
