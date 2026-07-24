@@ -117,7 +117,7 @@
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.4) 0%, rgba(30, 41, 59, 0.15) 100%) !important;
     backdrop-filter: blur(24px) !important;
     -webkit-backdrop-filter: blur(24px) !important;
-    padding: 8.5rem 2rem !important;
+    padding: 7rem 2rem 6rem 2rem !important;
     text-align: center !important;
     border-radius: 28px !important;
     box-shadow: 0 40px 100px -30px rgba(0, 0, 0, 0.95) !important;
@@ -161,6 +161,31 @@
     width: 100% !important;
     display: block !important;
     min-height: 18px;
+  }
+
+  /* Primary Walkthrough Hero Button Component */
+  .hero-walkthrough-btn {
+    margin-top: 32px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%) !important;
+    color: #ffffff !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+    text-decoration: none !important;
+    letter-spacing: 0.3px !important;
+    box-shadow: 0 10px 30px -5px rgba(56, 189, 248, 0.4) !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .hero-walkthrough-btn:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+    box-shadow: 0 15px 35px -5px rgba(56, 189, 248, 0.6) !important;
+    filter: brightness(1.1);
   }
 
   /* Coding IDE Style Blinking Terminal Underscore Cursor */
@@ -496,6 +521,14 @@
       <span class="name-word-group"><span id="js-type-name-3"></span><span id="js-cursor-name" class="blinking-cursor">_</span></span>
     </h1>
     <h2 id="js-type-tagline" class="typewriter-tagline"></h2>
+
+    <!-- Prominent Video Walkthrough Action Button -->
+    <a href="https://youtu.be/JaEmmGhA464" target="_blank" class="hero-walkthrough-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block; vertical-align:middle;">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      Watch Portfolio Walkthrough
+    </a>
   </div>
 
   <!-- Master Floating Dashboard Dock Component -->
@@ -627,7 +660,7 @@
         <p style="font-size: 14px; color: #64748b; margin: 0 0 32px 0;">Explore the production-ready application layout interface running spatial computer vision logic live from your system dashboard.</p>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 16px; justify-content: center;">
           <a href="https://ergo-chef-journey.lovable.app/" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);">Launch Live App Prototype</a>
-          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Video Presentation</a>
+          <a href="https://youtu.be/-QOms8I-tbM" target="_blank" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #111827; color: #ffffff; padding: 16px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);">Watch Project Video</a>
           <div onclick="openPosterModal()" class="badge-btn" style="flex: 1; min-width: 240px; max-width: 280px; background-color: #374151; color: #e5e7eb; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 13.5px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.2);">View Full Project Poster</div>
         </div>
       </div>
