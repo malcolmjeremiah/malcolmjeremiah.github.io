@@ -81,7 +81,7 @@
     100% { opacity: 0.90; }
   }
   
-  /* Straight Diagonal High-Velocity Shooting Star Mechanics Matrix (+30% Volume Injection) */
+  /* Straight Diagonal High-Velocity Shooting Star Mechanics Matrix */
   .diagonal-shooting-star {
     position: absolute !important;
     height: 1.5px;
@@ -365,6 +365,9 @@
     overflow: hidden !important;
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
   }
   .report-frame {
     width: 100% !important;
@@ -373,9 +376,35 @@
     background: #111827 !important;
   }
 
+  .mobile-pdf-fallback {
+    display: none;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .custom-modal-close-btn {
+    position: fixed !important;
+    top: 25px !important;
+    right: 35px !important;
+    background: rgba(15, 23, 42, 0.7) !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    color: #94a3b8 !important;
+    font-size: 24px !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+    z-index: 10001 !important;
+  }
+
   /* Ultra-Responsive Layout Grid Normalization System for Mobile Viewports */
   @media (max-width: 768px) {
-    /* Completely overwrite GitHub theme container paddings to hit absolute edge-to-edge alignment */
     html, body, .main-content, .container-lg {
       padding-left: 0px !important;
       padding-right: 0px !important;
@@ -408,7 +437,6 @@
     .nav-container::-webkit-scrollbar { display: none !important; }
     .nav-btn { padding: 12px 16px !important; }
 
-    /* Force full vertical stretching on split info bubbles so they align symmetrically */
     .case-split-grid {
       display: flex !important;
       flex-direction: column !important;
@@ -421,7 +449,6 @@
       box-sizing: border-box !important;
     }
     
-    /* Center and balance the View Report button symmetrically inside its outer container bounds */
     .badge-btn-container {
       width: 100% !important;
       box-sizing: border-box !important;
@@ -432,6 +459,14 @@
     .badge-btn-container > .badge-btn {
       max-width: 100% !important;
       width: 100% !important;
+    }
+
+    /* iOS Mobile Safari PDF Fallback Toggle */
+    .mobile-pdf-fallback {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
   }
 </style>
@@ -711,12 +746,12 @@
         </div>
       </div>
 
-      <!-- Symmetrical Button Container Box Bounds for Mobile Alignment consistency -->
+      <!-- Symmetrical Button Container Box Bounds without Emoji -->
       <div style="background-color: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.03); border-radius: 20px; padding: 40px; margin-bottom: 45px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; width: 100%;">
         <h4 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: -0.3px;">Design Artefacts & Audited Layouts</h4>
         <p style="font-size: 14px; color: #64748b; margin: 0 0 28px 0;">Access the complete unedited usability assessment report mapping out system constraints and data triangulations.</p>
         <div class="badge-btn-container">
-          <div onclick="openReportModal()" class="badge-btn" style="background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3); box-sizing: border-box;">📋 View the Report Here</div>
+          <div onclick="openReportModal()" class="badge-btn" style="background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617 !important; padding: 16px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-align: center; box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3); box-sizing: border-box;">View Report Here</div>
         </div>
       </div>
 
@@ -742,7 +777,7 @@
     </div>
   </div>
 
-  <!-- Personal Challenges Section (Overhauled to Student Real-World Cases) -->
+  <!-- Personal Challenges Section -->
   <div id="personal-challenges" style="padding-top: 20px; margin-bottom: 80px;">
     <div class="section-title-wrapper">
       <div class="section-bar" style="background: linear-gradient(#6366f1, #a855f7);"></div>
@@ -831,10 +866,17 @@
     </div>
   </div>
 
+  <!-- PDF Modal with Dual Engine Layout for iOS Support -->
   <div id="reportModal" class="custom-modal-overlay" onclick="closeReportModalFromOverlay(event)">
     <button class="custom-modal-close-btn" onclick="closeReportModal()">&times;</button>
     <div class="report-modal-window">
       <iframe class="report-frame" src="22078778_Assignment1.pdf#toolbar=1&navpanes=1&scrollbar=1"></iframe>
+      
+      <!-- Fallback button automatically rendered for iOS mobile safari viewports -->
+      <div class="mobile-pdf-fallback">
+        <p style="color: #94a3b8; font-size: 14px; margin-bottom: 16px;">iOS Safari requires launching PDFs in native view mode:</p>
+        <a href="22078778_Assignment1.pdf" target="_blank" style="background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%); color: #020617; padding: 14px 28px; border-radius: 10px; font-weight: 700; font-size: 14px; text-decoration: none;">Open Report PDF directly</a>
+      </div>
     </div>
   </div>
 
@@ -842,7 +884,7 @@
 
 <!-- JavaScript Sequential Typewriter Application Engine Script -->
 <script>
-  /* Robust Multi-Word Token Typewriter Framework */
+  /* Multi-Word Token Typewriter Framework */
   const w1 = "MALCOLM";
   const w2 = "JEREMIAH";
   const w3 = "RICHARD";
@@ -856,27 +898,23 @@
   let idx = 0;
 
   function typeSequence() {
-    // Type Word 1
     if (idx < w1.length) {
       c1.innerHTML += w1.charAt(idx);
       idx++;
       setTimeout(typeSequence, 50);
     } 
-    // Space and Type Word 2
     else if (idx < w1.length + w2.length) {
       if(idx === w1.length) { c1.innerHTML += "&nbsp;"; }
       c2.innerHTML += w2.charAt(idx - w1.length);
       idx++;
       setTimeout(typeSequence, 50);
     } 
-    // Space and Type Word 3
     else if (idx < w1.length + w2.length + w3.length) {
       if(idx === w1.length + w2.length) { c2.innerHTML += "&nbsp;"; }
       c3.innerHTML += w3.charAt(idx - (w1.length + w2.length));
       idx++;
       setTimeout(typeSequence, 50);
     } 
-    // Launch Tagline Run
     else {
       idx = 0;
       setTimeout(typeTagline, 250);
@@ -891,7 +929,6 @@
     }
   }
 
-  /* Safe Dom Boot Loader Loop */
   window.addEventListener("DOMContentLoaded", () => {
     setTimeout(typeSequence, 400);
   });
@@ -899,7 +936,6 @@
   /* Modal Control Mechanics Blueprint */
   const posterModal = document.getElementById('posterModal');
   const reportModal = document.getElementById('reportModal');
-  const modalWindow = document.getElementById('modalWindow');
   const posterImg = document.getElementById('posterImg');
 
   let isZoomed = false;
@@ -948,9 +984,9 @@
     }
   }
 
-  /* Separate Zoom Toggle Handler to Prevent Premature Execution on Click */
+  /* Zoom and Pan Handler */
   posterImg.addEventListener('click', (event) => {
-    event.stopPropagation(); // Stop overlay triggers
+    event.stopPropagation();
     if (!isZoomed) {
       isZoomed = true;
       posterImg.style.cursor = 'zoom-out';
@@ -964,7 +1000,6 @@
     }
   });
 
-  /* Pan Drag Controls while Zoomed In */
   posterImg.addEventListener('mousedown', (event) => {
     if (!isZoomed) return;
     isDragging = true;
